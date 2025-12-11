@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { loadMDX } from '@/lib/mdx';
-import { getPaymentMethod } from '@/content/data/payments';
+import { getPayment } from '@/content/data/payments';
 
 export const metadata: Metadata = {
   title: "STICPAY／スティックペイで入出金できるオンラインカジノ完全ガイド",
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default async function SticpayPaymentPage() {
   const { content, frontmatter } = await loadMDX('payment', 'sticpay');
-  const paymentData = getPaymentMethod('sticpay');
+  const paymentData = getPayment('sticpay');
 
   return (
     <main className="min-h-screen bg-gray-50">

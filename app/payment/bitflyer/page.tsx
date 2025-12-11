@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { loadMDX } from '@/lib/mdx';
-import { getPaymentMethod } from '@/content/data/payments';
+import { getPayment } from '@/content/data/payments';
 
 export const metadata: Metadata = {
   title: "bitFlyer（ビットフライヤー）でビットコイン入出金！日本人向け完全ガイド",
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default async function BitflyerPaymentPage() {
   const { content, frontmatter } = await loadMDX('payment', 'bitflyer');
-  const paymentData = getPaymentMethod('bitflyer');
+  const paymentData = getPayment('bitflyer');
 
   return (
     <main className="min-h-screen bg-gray-50">

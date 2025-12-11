@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { loadMDX } from '@/lib/mdx';
-import { getPaymentMethod } from '@/content/data/payments';
+import { getPayment } from '@/content/data/payments';
 
 export const metadata: Metadata = {
   title: "マッチペイ（MatchPay）完全ガイド｜日本のオンラインカジノユーザー必見！",
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default async function MatchpayPaymentPage() {
   const { content, frontmatter } = await loadMDX('payment', 'matchpay');
-  const paymentData = getPaymentMethod('matchpay');
+  const paymentData = getPayment('matchpay');
 
   return (
     <main className="min-h-screen bg-gray-50">

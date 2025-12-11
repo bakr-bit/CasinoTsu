@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { loadMDX } from '@/lib/mdx';
-import { getPaymentMethod } from '@/content/data/payments';
+import { getPayment } from '@/content/data/payments';
 
 export const metadata: Metadata = {
   title: "Venus Pointサービス終了と2022年6月スタートのVega Wallet徹底ガイド",
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default async function VenuspointPaymentPage() {
   const { content, frontmatter } = await loadMDX('payment', 'venuspoint');
-  const paymentData = getPaymentMethod('venuspoint');
+  const paymentData = getPayment('venuspoint');
 
   return (
     <main className="min-h-screen bg-gray-50">

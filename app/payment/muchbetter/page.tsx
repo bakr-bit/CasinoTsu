@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { loadMDX } from '@/lib/mdx';
-import { getPaymentMethod } from '@/content/data/payments';
+import { getPayment } from '@/content/data/payments';
 
 export const metadata: Metadata = {
   title: "MuchBetter（マッチベター）｜日本のオンラインカジノにおすすめの決済方法ガイド",
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default async function MuchbetterPaymentPage() {
   const { content, frontmatter } = await loadMDX('payment', 'muchbetter');
-  const paymentData = getPaymentMethod('muchbetter');
+  const paymentData = getPayment('muchbetter');
 
   return (
     <main className="min-h-screen bg-gray-50">

@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { loadMDX } from '@/lib/mdx';
-import { getPaymentMethod } from '@/content/data/payments';
+import { getPayment } from '@/content/data/payments';
 
 export const metadata: Metadata = {
   title: "SUMOPAY（相撲ペイ）2025年最新版レビュー｜安全性と実態を徹底解説",
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default async function SumopayPaymentPage() {
   const { content, frontmatter } = await loadMDX('payment', 'sumopay');
-  const paymentData = getPaymentMethod('sumopay');
+  const paymentData = getPayment('sumopay');
 
   return (
     <main className="min-h-screen bg-gray-50">

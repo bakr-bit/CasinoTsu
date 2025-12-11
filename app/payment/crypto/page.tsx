@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { loadMDX } from '@/lib/mdx';
-import { getPaymentMethod } from '@/content/data/payments';
+import { getPayment } from '@/content/data/payments';
 
 export const metadata: Metadata = {
   title: "仮想通貨（暗号資産）を使う完全ガイド",
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default async function CryptoPaymentPage() {
   const { content, frontmatter } = await loadMDX('payment', 'crypto');
-  const paymentData = getPaymentMethod('crypto');
+  const paymentData = getPayment('crypto');
 
   return (
     <main className="min-h-screen bg-gray-50">

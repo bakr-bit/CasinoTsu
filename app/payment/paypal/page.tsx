@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { loadMDX } from '@/lib/mdx';
-import { getPaymentMethod } from '@/content/data/payments';
+import { getPayment } from '@/content/data/payments';
 
 export const metadata: Metadata = {
   title: "PayPal（ペイパル）とは？オンラインカジノ決済の最前線ガイド",
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default async function PaypalPaymentPage() {
   const { content, frontmatter } = await loadMDX('payment', 'paypal');
-  const paymentData = getPaymentMethod('paypal');
+  const paymentData = getPayment('paypal');
 
   return (
     <main className="min-h-screen bg-gray-50">

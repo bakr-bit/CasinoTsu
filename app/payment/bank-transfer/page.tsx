@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { loadMDX } from '@/lib/mdx';
-import { getPaymentMethod } from '@/content/data/payments';
+import { getPayment } from '@/content/data/payments';
 
 export const metadata: Metadata = {
   title: "国内銀行振込で快適に！オンカジ入出金完全ガイド",
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default async function BankTransferPaymentPage() {
   const { content, frontmatter } = await loadMDX('payment', 'bank-transfer');
-  const paymentData = getPaymentMethod('bank-transfer');
+  const paymentData = getPayment('bank-transfer');
 
   return (
     <main className="min-h-screen bg-gray-50">

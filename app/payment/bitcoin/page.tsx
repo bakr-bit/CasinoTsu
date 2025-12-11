@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { loadMDX } from '@/lib/mdx';
-import { getPaymentMethod } from '@/content/data/payments';
+import { getPayment } from '@/content/data/payments';
 
 export const metadata: Metadata = {
   title: "【2024年最新版】日本人向けオンラインカジノで使うビットコイン完全ガイド",
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default async function BitcoinPaymentPage() {
   const { content, frontmatter } = await loadMDX('payment', 'bitcoin');
-  const paymentData = getPaymentMethod('bitcoin');
+  const paymentData = getPayment('bitcoin');
 
   return (
     <main className="min-h-screen bg-gray-50">

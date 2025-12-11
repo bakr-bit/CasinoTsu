@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { loadMDX } from '@/lib/mdx';
-import { getPaymentMethod } from '@/content/data/payments';
+import { getPayment } from '@/content/data/payments';
 
 export const metadata: Metadata = {
   title: "【2024年版】オンラインカジノでマスターカードを安全に使う方法｜日本人向け完全ガイド",
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default async function MastercardPaymentPage() {
   const { content, frontmatter } = await loadMDX('payment', 'mastercard');
-  const paymentData = getPaymentMethod('mastercard');
+  const paymentData = getPayment('mastercard');
 
   return (
     <main className="min-h-screen bg-gray-50">

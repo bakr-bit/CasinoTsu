@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { loadMDX } from '@/lib/mdx';
-import { getPaymentMethod } from '@/content/data/payments';
+import { getPayment } from '@/content/data/payments';
 
 export const metadata: Metadata = {
   title: "Slash Payment｜日本のオンラインカジノユーザー向け完全ガイド",
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default async function SlashPaymentPage() {
   const { content, frontmatter } = await loadMDX('payment', 'slash');
-  const paymentData = getPaymentMethod('slash');
+  const paymentData = getPayment('slash');
 
   return (
     <main className="min-h-screen bg-gray-50">

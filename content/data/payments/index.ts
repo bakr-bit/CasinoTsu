@@ -10,15 +10,15 @@ import type { PaymentMethodData, PaymentMethodRegistry } from './types';
 
 // Import individual payment data
 import { astropay } from './astropay';
-import { bankTransfer } from './bank-transfer';
+import { bank_transfer } from './bank-transfer';
 import { bitcoin } from './bitcoin';
 import { bitflyer } from './bitflyer';
 import { crypto } from './crypto';
 import { ethereum } from './ethereum';
 import { ezeebill } from './ezeebill';
 import { iwallet } from './iwallet';
-import { jPay } from './j-pay';
-import { japaneseYenCasinos } from './japanese-yen-casinos';
+import { j_pay } from './j-pay';
+import { japanese_yen_casinos } from './japanese-yen-casinos';
 import { jcb } from './jcb';
 import { mastercard } from './mastercard';
 import { matchpay } from './matchpay';
@@ -27,13 +27,13 @@ import { payment } from './payment';
 import { paypal } from './paypal';
 import { paypay } from './paypay';
 import { point66 } from './point66';
-import { slashPayment } from './slash-payment';
+import { slash_payment } from './slash-payment';
 import { slash } from './slash';
 import { sticpay } from './sticpay';
 import { sumopay } from './sumopay';
-import { tigerPay } from './tiger-pay';
+import { tiger_pay } from './tiger-pay';
 import { usdt } from './usdt';
-import { vegaWallet } from './vega-wallet';
+import { vega_wallet } from './vega-wallet';
 import { venuspoint } from './venuspoint';
 import { visa } from './visa';
 
@@ -45,15 +45,15 @@ export type { PaymentMethodData, PaymentMethodRegistry } from './types';
  */
 export const paymentsRegistry: PaymentMethodRegistry = {
   astropay: astropay,
-  'bank-transfer': bankTransfer,
+  'bank-transfer': bank_transfer,
   bitcoin: bitcoin,
   bitflyer: bitflyer,
   crypto: crypto,
   ethereum: ethereum,
   ezeebill: ezeebill,
   iwallet: iwallet,
-  'j-pay': jPay,
-  'japanese-yen-casinos': japaneseYenCasinos,
+  'j-pay': j_pay,
+  'japanese-yen-casinos': japanese_yen_casinos,
   jcb: jcb,
   mastercard: mastercard,
   matchpay: matchpay,
@@ -62,13 +62,13 @@ export const paymentsRegistry: PaymentMethodRegistry = {
   paypal: paypal,
   paypay: paypay,
   point66: point66,
-  'slash-payment': slashPayment,
+  'slash-payment': slash_payment,
   slash: slash,
   sticpay: sticpay,
   sumopay: sumopay,
-  'tiger-pay': tigerPay,
+  'tiger-pay': tiger_pay,
   usdt: usdt,
-  'vega-wallet': vegaWallet,
+  'vega-wallet': vega_wallet,
   venuspoint: venuspoint,
   visa: visa,
 };

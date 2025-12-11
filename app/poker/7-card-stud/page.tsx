@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "セブンカードスタッドの遊び方、ルール、戦略、そして日本のオンラインカジノで楽しむためのポイントをCasinoTsuが詳しく解説します。観察力と心理戦が光るクラシックポーカーをマスターしましょう。",
 };
 
-export default async function 7CardStudPokerPage() {
+export default async function N7CardStudPokerPage() {
   const { content, frontmatter } = await loadMDX('poker', '7-card-stud');
   const pokerData = getPoker('7-card-stud');
 

@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { loadMDX } from '@/lib/mdx';
-import { getPaymentMethod } from '@/content/data/payments';
+import { getPayment } from '@/content/data/payments';
 
 export const metadata: Metadata = {
   title: "イージービル（Ezeebill）オンラインカジノ入金＆出金ガイド【2024年最新】",
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default async function EzeebillPaymentPage() {
   const { content, frontmatter } = await loadMDX('payment', 'ezeebill');
-  const paymentData = getPaymentMethod('ezeebill');
+  const paymentData = getPayment('ezeebill');
 
   return (
     <main className="min-h-screen bg-gray-50">

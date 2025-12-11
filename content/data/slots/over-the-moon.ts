@@ -1,0 +1,249 @@
+import type { SlotData } from './types';
+
+export const over_the_moon: SlotData = {
+  slug: 'over-the-moon',
+  title: 'Over The Moon',
+  hero: {
+    title: 'OVER THE MOON',
+    subheading: 'オーバー・ザ・ムーン',
+    description: 'BTG社のメガウェイズスロットは最大配当13,570倍。ヒット連発のオーバー・ザ・ムーン最新レビュー！',
+    score: 4.3,
+    scoreMax: 5,
+    rtp: '96.55%',
+    maxMultiplier: 'x13,570',
+    provider: 'Big Time Gaming',
+    volatility: 'High',
+    reels: '6',
+    paylines: '117,649',
+    minBet: '$0.10',
+    maxBet: '$30',
+    slotImageSrc: '/slots/over-the-moon.png',
+    highlights: [
+      'メガウェイズシステム搭載',
+      '最大配当13,570倍',
+      'ウィンエクスチェンジ機能',
+      'メテオ賞',
+      'フリースピン＆エンハンス無料スピン',
+      'カスケードウィン機能',
+    ],
+    watchouts: [
+      'ハイボラティリティのため、大きな勝利を得るには時間がかかる可能性がある',
+      'ウィンエクスチェンジのギャンブル機能はリスクを伴う',
+    ],
+  },
+  gameInfo: {
+    intro: 'オーバー・ザ・ムーンは、Big Time Gaming（BTG）社が開発した、宇宙をテーマにしたメガウェイズスロットです。最大117,649通りのペイラインと、最大13,570倍の配当倍率が魅力です。',
+    basicInfo: {
+      rtp: '96.55%',
+      volatility: 'High',
+      reels: '6',
+      paylines: '117,649',
+      minBet: '$0.10',
+      maxBet: '$30',
+      provider: 'Big Time Gaming',
+    },
+  },
+  payoutTable: {
+    title: 'シンボルと配当',
+    symbols: [
+      {
+        name: '宝石（赤）',
+        description: '高配当シンボル',
+        payout5: '$100',
+        payout4: '$25',
+        payout3: '$5',
+      },
+      {
+        name: '宝石（青）',
+        description: '高配当シンボル',
+        payout5: '$50',
+        payout4: '$15',
+        payout3: '$4',
+      },
+      {
+        name: '宝石（緑）',
+        description: '高配当シンボル',
+        payout5: '$40',
+        payout4: '$12',
+        payout3: '$3',
+      },
+      {
+        name: '宝石（黄）',
+        description: '高配当シンボル',
+        payout5: '$30',
+        payout4: '$10',
+        payout3: '$2',
+      },
+      {
+        name: 'A',
+        description: '低配当シンボル',
+        payout5: '$20',
+        payout4: '$8',
+        payout3: '$1',
+      },
+      {
+        name: 'K',
+        description: '低配当シンボル',
+        payout5: '$15',
+        payout4: '$7',
+        payout3: '$1',
+      },
+      {
+        name: 'Q',
+        description: '低配当シンボル',
+        payout5: '$12',
+        payout4: '$6',
+        payout3: '$0.8',
+      },
+      {
+        name: 'J',
+        description: '低配当シンボル',
+        payout5: '$10',
+        payout4: '$5',
+        payout3: '$0.7',
+      },
+      {
+        name: '10',
+        description: '低配当シンボル',
+        payout5: '$8',
+        payout4: '$4',
+        payout3: '$0.6',
+      },
+      {
+        name: '9',
+        description: '低配当シンボル',
+        payout5: '$6',
+        payout4: '$3',
+        payout3: '$0.5',
+      },
+      {
+        name: 'WILD',
+        description: 'スキャッターとメテオシンボルを除く全てのシンボルの代わりになる',
+        payout5: '-',
+        payout4: '-',
+        payout3: '-',
+        isSpecial: true,
+      },
+      {
+        name: 'SCATTER (星型)',
+        description: '3つ以上でフリースピン突入',
+        payout5: '-',
+        payout4: '-',
+        payout3: '-',
+        isSpecial: true,
+      },
+      {
+        name: 'MEGA SCATTER (星型)',
+        description: 'エンハンス無料スピン獲得の権利を得る',
+        payout5: '-',
+        payout4: '-',
+        payout3: '-',
+        isSpecial: true,
+      },
+    ],
+    maxPayout: '13,570x',
+    notes: [
+      '配当は賭け額$1の場合のものです。',
+      '隣接する同一シンボルが左から3つ以上（最高配当シンボルは2つ以上）出現すると配当成立。',
+      'メガウェイズシステムにより、ペイラインは最大117,649通り。',
+    ],
+  },
+  features: {
+    title: 'ゲーム機能',
+    items: [
+      {
+        name: 'メガウェイズ',
+        description: '各リールに最大7つのシンボルが表示され、最大117,649通りのペイラインを提供します。',
+      },
+      {
+        name: 'カスケードウィン（リアクション）',
+        description: '勝利したシンボルが消え、新しいシンボルが落ちてくることで連続勝利の可能性があります。',
+      },
+      {
+        name: 'メテオ賞',
+        description: 'ベースゲーム中にランダムでメテオが出現し、マルチプライヤー付きのロケットと一致すると賞金が得られます。',
+      },
+      {
+        name: 'ウィンエクスチェンジ',
+        description: '賭け額の80倍以上の配当で12回のフリースピンを獲得、または25倍～79倍の配当でフリースピン獲得のギャンブルに挑戦できます。',
+      },
+      {
+        name: 'フリースピン',
+        description: 'スキャッターシンボル3つ以上で12回のフリースピンを獲得。マルチプライヤーは1倍からスタートし、勝利ごとに増加します。',
+      },
+      {
+        name: 'エンハンス無料スピン',
+        description: 'メガスキャッターが含まれる場合や、ウィンエクスチェンジのギャンブルでアップグレードされた場合に獲得。マルチプライヤーは2倍からスタートし、勝利ごとに2倍ずつ増加します。',
+      },
+      {
+        name: 'フリースピン購入',
+        description: '通常のフリースピン（70倍）またはエンハンス無料スピン（140倍）を直接購入できます。',
+      },
+    ],
+  },
+  similarGames: [
+    {
+      name: 'Devourer',
+      href: '/slots/devourer',
+      provider: 'Air Dice',
+      description: 'ブラックホールが登場するAir Dice社スロット。独特な世界観が魅力的。',
+    },
+    {
+      name: 'Moon Princess',
+      href: '/slots/moon-princess',
+      provider: 'Play\'n GO',
+      description: 'Play\'n GO社の大ヒット作。美少女戦士たちが活躍します。',
+    },
+    {
+      name: 'Moon Princess 100',
+      href: '/slots/moon-princess-100',
+      provider: 'Play\'n GO',
+      description: 'ムーンプリンセスの続編。',
+    },
+    {
+      name: 'Moon Princess Trinity',
+      href: '/slots/moon-princess-trinity',
+      provider: 'Play\'n GO',
+      description: 'ムーンプリンセスシリーズの最新作。',
+    },
+  ],
+  prosCons: {
+    pros: [
+      'メガウェイズシステムによる豊富なペイライン',
+      '最大13,570倍の高配当倍率',
+      'ウィンエクスチェンジやメテオ賞などユニークな機能',
+      'フリースピン購入機能搭載',
+      '宇宙をテーマにした魅力的なグラフィックとサウンド',
+    ],
+    cons: [
+      'ハイボラティリティのため、大きな勝利を得るには時間がかかる可能性がある',
+      'ウィンエクスチェンジのギャンブル機能はリスクを伴う',
+    ],
+  },
+  faq: [
+    {
+      q: '最大配当はどのくらいですか？',
+      a: 'オーバー・ザ・ムーンの最大配当は 13,570倍 です。',
+    },
+    {
+      q: 'メテオ賞とはどのような機能ですか？',
+      a: 'オーバー・ザ・ムーンのゲームフィーチャーの一つです。ベースゲーム中にメテオ（流星）が出現し、ロケットに表示されているマルチプライヤーがメテオの配当に掛け合わされます。メテオシンボルは、ベット額の 最大100倍 の賞金をもたらす可能性があります。',
+    },
+    {
+      q: 'フリースピンはどのように獲得できますか？',
+      a: '通常スキャッターシンボルが3つ以上出現した場合、またはウィンエクスチェンジ機能をご利用いただくことでフリースピンを獲得できます。ボーナスラウンド中にさらにスキャッターシンボルが出現すると、フリースピンが追加されます。',
+    },
+    {
+      q: 'エンハンス無料スピンと通常のフリースピンの違いは何ですか？',
+      a: 'エンハンス無料スピンは、通常のフリースピンよりも有利な条件でプレイいただけます。マルチプライヤーが2倍からスタートし、勝利ごとに2倍ずつ増加していくため、より高額な配当が期待できます。',
+    },
+    {
+      q: 'ロケットの燃料システムについて教えてください。',
+      a: 'ロケットには最大3つの燃料タンクが搭載されており、勝利が発生するたびに燃料が1つ消費されます。燃料が尽きるとロケットは画面から消え、メテオ賞を獲得できなくなります。フリースピン中は、バッテリーシンボルが出現すると燃料を補給することができます。',
+    },
+  ],
+  meta: {
+    title: 'Over The Moon',
+    description: 'BTG社のメガウェイズスロットは最大配当13,570倍。ヒット連発のオーバー・ザ・ムーン最新レビュー！',
+  },
+};

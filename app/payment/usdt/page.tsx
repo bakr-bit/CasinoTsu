@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { loadMDX } from '@/lib/mdx';
-import { getPaymentMethod } from '@/content/data/payments';
+import { getPayment } from '@/content/data/payments';
 
 export const metadata: Metadata = {
   title: "日本のオンラインカジノでUSDT（テザー）を使う完全ガイド",
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default async function UsdtPaymentPage() {
   const { content, frontmatter } = await loadMDX('payment', 'usdt');
-  const paymentData = getPaymentMethod('usdt');
+  const paymentData = getPayment('usdt');
 
   return (
     <main className="min-h-screen bg-gray-50">

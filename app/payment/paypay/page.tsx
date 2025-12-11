@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { loadMDX } from '@/lib/mdx';
-import { getPaymentMethod } from '@/content/data/payments';
+import { getPayment } from '@/content/data/payments';
 
 export const metadata: Metadata = {
   title: "【2025年最新版】PayPay銀行対応オンラインカジノ徹底ガイド｜入出金の安全・手数料・利用方法まとめ",
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default async function PaypayPaymentPage() {
   const { content, frontmatter } = await loadMDX('payment', 'paypay');
-  const paymentData = getPaymentMethod('paypay');
+  const paymentData = getPayment('paypay');
 
   return (
     <main className="min-h-screen bg-gray-50">

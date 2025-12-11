@@ -1,0 +1,211 @@
+import type { SlotData } from './types';
+
+export const ripe_rewards: SlotData = {
+  slug: 'ripe-rewards',
+  title: 'ライプ・リワード (Ripe Rewards) スロットレビュー | Pragmatic Play',
+  hero: {
+    title: 'ライプ・リワード (Ripe Rewards)',
+    subheading: 'Pragmatic Play社の最新フルーツ系スロット！',
+    description: 'クラシックなフルーツテーマに、爽やかなアクセントを加えたゲーム性。最大10,000倍のポテンシャルを秘めたハイボラティリティスロット。',
+    score: 4.5,
+    scoreMax: 5,
+    rtp: '96.02% / 94.99% / 94.02%',
+    maxMultiplier: '10,000x',
+    provider: 'Pragmatic Play',
+    releaseDate: '2024-04-01',
+    volatility: 'High',
+    reels: '5',
+    paylines: '40',
+    minBet: '$0.2',
+    maxBet: '$360',
+    slotImageSrc: '/slots/ripe-rewards.jpg',
+    highlights: [
+      'クラシックリール',
+      'マルチプライヤーワイルド',
+      'ホールドワイルド',
+      'ボーナス購入機能',
+      'アンティベット機能',
+    ],
+    watchouts: [
+      'RTPはカジノにより異なる場合があるため、ゲーム内確認が必要',
+      'ハイボラティリティのため、損失リスクも考慮する必要がある',
+    ],
+  },
+  gameInfo: {
+    intro: 'Pragmatic Play社がお届けする最新スロット、『ライプ・リワード』は、クラシックなフルーツテーマと現代的なゲームプレイが見事に融合した作品です。最大配当10,000倍のポテンシャルを秘めたハイボラティリティスロットでありながら、そのゲームメカニクスはシンプルで理解しやすいものとなっています。',
+    basicInfo: {
+      rtp: '96.02% / 94.99% / 94.02% (ボーナス購入時: 96.04%)',
+      volatility: 'High',
+      reels: '5',
+      paylines: '40',
+      minBet: '$0.2',
+      maxBet: '$360',
+      provider: 'Pragmatic Play',
+      releaseDate: '2024-04-01',
+    },
+  },
+  payoutTable: {
+    title: 'ライプ・リワードのシンボルとペイアウト',
+    symbols: [
+      {
+        name: 'ザクロ',
+        description: '最高配当シンボル',
+        payout5: 'x10',
+        payout4: 'x5',
+        payout3: 'x2',
+      },
+      {
+        name: '桃',
+        description: '高配当シンボル',
+        payout5: 'x8',
+        payout4: 'x4',
+        payout3: 'x1.5',
+      },
+      {
+        name: 'ラフランス',
+        description: '高配当シンボル',
+        payout5: 'x6',
+        payout4: 'x3',
+        payout3: 'x1.2',
+      },
+      {
+        name: 'オレンジ',
+        description: '高配当シンボル',
+        payout5: 'x5',
+        payout4: 'x2.5',
+        payout3: 'x1',
+      },
+      {
+        name: 'チェリー',
+        description: '高配当シンボル',
+        payout5: 'x4',
+        payout4: 'x2',
+        payout3: 'x0.8',
+      },
+      {
+        name: 'A',
+        description: '低配当シンボル',
+        payout5: 'x3',
+        payout4: 'x1.5',
+        payout3: 'x0.6',
+      },
+      {
+        name: 'K',
+        description: '低配当シンボル',
+        payout5: 'x2.5',
+        payout4: 'x1.2',
+        payout3: 'x0.5',
+      },
+      {
+        name: 'Q',
+        description: '低配当シンボル',
+        payout5: 'x2',
+        payout4: 'x1',
+        payout3: 'x0.4',
+      },
+      {
+        name: 'J',
+        description: '低配当シンボル',
+        payout5: 'x1.5',
+        payout4: 'x0.8',
+        payout3: 'x0.3',
+      },
+      {
+        name: '10',
+        description: '低配当シンボル',
+        payout5: 'x1',
+        payout4: 'x0.6',
+        payout3: 'x0.2',
+      },
+      {
+        name: 'WILD',
+        description: 'ワイルドシンボル。スキャッターを除く全てのシンボルの代わりになる。ランダムに2倍、3倍、5倍のマルチプライヤーが付与されることがある。',
+        payout5: 'x10',
+        payout4: 'x5',
+        payout3: 'x2',
+        isSpecial: true,
+      },
+      {
+        name: '777',
+        description: 'スキャッターシンボル。3つ以上でフリースピンをトリガー。',
+        payout5: '-',
+        payout4: '-',
+        payout3: '-',
+        isSpecial: true,
+      },
+    ],
+    maxPayout: '10,000x',
+    notes: [
+      '配当額はベット額$2の場合の例です。',
+      '複数のマルチプライヤーワイルドが同じ勝利ラインに貢献する場合、それらのマルチプライヤーは合算されます。',
+    ],
+  },
+  features: {
+    title: 'ゲーム特徴・フィーチャー',
+    items: [
+      {
+        name: 'マルチプライヤーワイルド',
+        description: 'ワイルドシンボルは、他のシンボルの代わりになるだけでなく、ランダムに2倍、3倍、または5倍のマルチプライヤーが付与されることがあります。複数のマルチプライヤーワイルドは合算されます。',
+      },
+      {
+        name: 'フリースピン',
+        description: 'スキャッターシンボル（777）が3つ以上出現すると、7回のフリースピンが付与されます。フリースピン中は出現したワイルドシンボルがリール上に固定（ホールド）され、スキャッターコレクションシステムにより追加スピンやマルチプライヤー強化のチャンスがあります。',
+      },
+      {
+        name: 'ボーナス購入機能',
+        description: 'ベット額の100倍のコストで、即座にフリースピンラウンドを購入できます。',
+      },
+      {
+        name: 'アンティベット機能',
+        description: 'スピンあたりのベット額が50%増加しますが、フリースピンがトリガーされるチャンスが2倍になります。',
+      },
+    ],
+  },
+  similarGames: [
+    {
+      name: 'Berryburst',
+      href: '/slots/berryburst-max',
+      provider: 'NetEnt',
+      description: '超有名スロット Starburst（スターバースト）のフルーツバージョン🍎',
+    },
+    {
+      name: 'Multi Fruit 81',
+      href: '/slots/multifruit-81',
+      provider: 'Play\'n GO',
+      description: '古き良きクラシックスロット。シンプルさが魅力🎰。',
+    },
+  ],
+  prosCons: {
+    pros: [
+      '最大10,000倍のポテンシャル',
+      'ホールドされるワイルドシンボル搭載のフリースピン',
+      'マルチプライヤー機能で配当を増幅',
+      'ボーナス購入機能とアンティベット機能搭載',
+      'クラシックなフルーツテーマとモダンなデザインの融合',
+      'Pragmatic Play社による高品質なゲーム',
+    ],
+    cons: [
+      'ハイボラティリティのため、損失リスクも高い',
+      'RTPはカジノにより異なる場合がある',
+      'フリースピンのトリガーが難しい場合がある',
+    ],
+  },
+  faq: [
+    {
+      q: 'ライプ・リワードの還元率は？',
+      a: '還元率は、96.02%、94.99%、94.02% のいずれかの設定があります。プレイするオンラインカジノによって異なる場合があるため、ゲーム内の説明画面で確認することをおすすめします。',
+    },
+    {
+      q: 'ライプ・リワードの最大配当倍率は？',
+      a: '最大配当倍率は 10,000倍 です。',
+    },
+    {
+      q: 'ライプ・リワードのボラティリティは？',
+      a: 'ボラティリティは Very High（非常に高い）です。これは、勝利の頻度は低いかもしれませんが、一度当たった時の配当は大きくなる傾向があることを意味します。',
+    },
+  ],
+  meta: {
+    title: 'ライプ・リワード (Ripe Rewards) スロットレビュー | Pragmatic Play',
+    description: 'クラシックなフルーツテーマに、爽やかなアクセントを加えたゲーム性。最大10,000倍のポテンシャルを秘めたハイボラティリティスロット。',
+  },
+};

@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { loadMDX } from '@/lib/mdx';
-import { getPaymentMethod } from '@/content/data/payments';
+import { getPayment } from '@/content/data/payments';
 
 export const metadata: Metadata = {
   title: "iWallet（アイウォレット）完全ガイド ─ 日本のオンラインカジノユーザー向け決済サービス解説",
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default async function IwalletPaymentPage() {
   const { content, frontmatter } = await loadMDX('payment', 'iwallet');
-  const paymentData = getPaymentMethod('iwallet');
+  const paymentData = getPayment('iwallet');
 
   return (
     <main className="min-h-screen bg-gray-50">

@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { loadMDX } from '@/lib/mdx';
-import { getPaymentMethod } from '@/content/data/payments';
+import { getPayment } from '@/content/data/payments';
 
 export const metadata: Metadata = {
   title: "Vega Wallet（ベガウォレット）とは？日本のオンカジユーザー向け総合ガイド【2025年最新版】",
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default async function VegaWalletPaymentPage() {
   const { content, frontmatter } = await loadMDX('payment', 'vega-wallet');
-  const paymentData = getPaymentMethod('vega-wallet');
+  const paymentData = getPayment('vega-wallet');
 
   return (
     <main className="min-h-screen bg-gray-50">

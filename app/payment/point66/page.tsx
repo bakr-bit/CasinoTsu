@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { loadMDX } from '@/lib/mdx';
-import { getPaymentMethod } from '@/content/data/payments';
+import { getPayment } from '@/content/data/payments';
 
 export const metadata: Metadata = {
   title: "ポイント66（Point66）オンラインカジノ決済サービス完全ガイド 【終了済み】",
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default async function Point66PaymentPage() {
   const { content, frontmatter } = await loadMDX('payment', 'point66');
-  const paymentData = getPaymentMethod('point66');
+  const paymentData = getPayment('point66');
 
   return (
     <main className="min-h-screen bg-gray-50">

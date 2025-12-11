@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { loadMDX } from '@/lib/mdx';
-import { getPaymentMethod } from '@/content/data/payments';
+import { getPayment } from '@/content/data/payments';
 
 export const metadata: Metadata = {
   title: "オンラインカジノの入出金方法｜2025年最新まとめ＆徹底解説！",
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default async function PaymentPaymentPage() {
   const { content, frontmatter } = await loadMDX('payment', 'payment');
-  const paymentData = getPaymentMethod('payment');
+  const paymentData = getPayment('payment');
 
   return (
     <main className="min-h-screen bg-gray-50">

@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { loadMDX } from '@/lib/mdx';
-import { getPaymentMethod } from '@/content/data/payments';
+import { getPayment } from '@/content/data/payments';
 
 export const metadata: Metadata = {
   title: "タイガーペイ（Tiger Pay）完全ガイド～日本のオンラインカジノでの使い方・注意点",
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default async function TigerPayPaymentPage() {
   const { content, frontmatter } = await loadMDX('payment', 'tiger-pay');
-  const paymentData = getPaymentMethod('tiger-pay');
+  const paymentData = getPayment('tiger-pay');
 
   return (
     <main className="min-h-screen bg-gray-50">

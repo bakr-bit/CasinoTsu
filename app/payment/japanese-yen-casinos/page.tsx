@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { loadMDX } from '@/lib/mdx';
-import { getPaymentMethod } from '@/content/data/payments';
+import { getPayment } from '@/content/data/payments';
 
 export const metadata: Metadata = {
   title: "日本円で遊べるオンラインカジノ完全ガイド【2025年最新版】",
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default async function JapaneseYenCasinosPaymentPage() {
   const { content, frontmatter } = await loadMDX('payment', 'japanese-yen-casinos');
-  const paymentData = getPaymentMethod('japanese-yen-casinos');
+  const paymentData = getPayment('japanese-yen-casinos');
 
   return (
     <main className="min-h-screen bg-gray-50">

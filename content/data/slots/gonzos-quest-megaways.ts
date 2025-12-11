@@ -1,0 +1,168 @@
+import type { SlotData } from './types';
+
+export const gonzos_quest_megaways: SlotData = {
+  slug: 'gonzos-quest-megaways',
+  title: 'Gonzo’s Quest Megaways／ゴンゾーズ クエスト メガウェイズ 解説',
+  hero: {
+    title: 'Gonzo’s Quest Megaways／ゴンゾーズ クエスト メガウェイズ',
+    score: 4.6,
+    scoreMax: 5,
+    rtp: '96%',
+    maxMultiplier: 'x21,000',
+    provider: 'NetEnt / Red Tiger Gaming',
+    releaseDate: '2020年6月16日',
+    volatility: 'ハイ (High)',
+    reels: '6',
+    paylines: '最大 117,649通り',
+    minBet: '$0.10',
+    maxBet: '$100',
+    slotImageSrc: '/slots/gonzos-quest-megaways.jpg',
+    highlights: [
+      '革新的な「Megaways（メガウェイズ）」システム搭載',
+      '最大配当倍率が21,000倍に大幅アップ',
+      '最大117,649通りのペイライン',
+      'Avalanche（アバランチ）機能とIncreasing Win Multipliers（インクリーシングウィンマルチプライヤー）',
+      'ランダム発生のEarthquakes（アースクエイク）機能',
+      '特殊なUnbreakable Wilds（アンブレーカブルワイルド）',
+      '最大15倍まで上昇するフリーフォールラウンド中のマルチプライヤー',
+    ],
+    watchouts: [
+      'ハイボラティリティのため、勝利頻度は低い傾向にある',
+      'RTPはカジノによって異なる場合があるため、プレイ前に確認が必要',
+      'モバイル環境でのフリースピンでの配当が期待ほど伸びない、またはゲームがクラッシュする可能性も報告されている',
+    ],
+  },
+  gameInfo: {
+    intro: '「Gonzo\'s Quest Megaways」は、探検家ゴンゾーが伝説の黄金都市エルドラドを探す冒険をテーマにした、スリル満点のビジュアルと革新的なゲームプレイが特徴のスロットです。NetEntとRed Tiger Gamingの強力タッグにより、オリジナル版の魅力を継承しつつ、Megaways™システムを搭載してパワーアップしました。',
+    basicInfo: {
+      rtp: '96% (※カジノにより異なる場合あり)',
+      volatility: 'ハイ (High)',
+      reels: '6',
+      paylines: '最大 117,649通り',
+      minBet: '$0.10',
+      maxBet: '$100',
+      provider: 'NetEnt / Red Tiger Gaming (Megawaysライセンス)',
+      releaseDate: '2020年6月16日',
+    },
+  },
+  payoutTable: {
+    title: '「Gonzo\'s Quest Megaways」のシンボルと配当',
+    symbols: [
+      {
+        name: '石板（青）',
+        description: '最低配当シンボル',
+        payout5: 'x0.4',
+        payout4: '-',
+        payout3: '-',
+      },
+      {
+        name: '石板（緑）',
+        description: '最低配当シンボル',
+        payout5: 'x0.4',
+        payout4: '-',
+        payout3: '-',
+      },
+      {
+        name: '石板（紫）',
+        description: '低配当シンボル',
+        payout5: 'x0.6',
+        payout4: '-',
+        payout3: '-',
+      },
+      {
+        name: '石板（オレンジ）',
+        description: '低配当シンボル',
+        payout5: 'x0.6',
+        payout4: '-',
+        payout3: '-',
+      },
+      {
+        name: '石板（赤）',
+        description: '低配当シンボル',
+        payout5: 'x0.8',
+        payout4: '-',
+        payout3: '-',
+      },
+      {
+        name: '石板（青い顔）',
+        description: '中配当シンボル',
+        payout5: 'x2',
+        payout4: '-',
+        payout3: '-',
+      },
+      {
+        name: '石板（緑の顔）',
+        description: '中配当シンボル',
+        payout5: 'x2.4',
+        payout4: '-',
+        payout3: '-',
+      },
+      {
+        name: '石板（紫の顔）',
+        description: '高配当シンボル',
+        payout5: 'x3',
+        payout4: '-',
+        payout3: '-',
+      },
+      {
+        name: '石板（オレンジの顔）',
+        description: '高配当シンボル',
+        payout5: 'x4',
+        payout4: '-',
+        payout3: '-',
+      },
+      {
+        name: '石板（赤い顔）',
+        description: '最高配当シンボル',
+        payout5: 'x5',
+        payout4: '-',
+        payout3: '-',
+      },
+      {
+        name: 'ワイルドシンボル (Wild)',
+        description: '全ての通常シンボルの代わりとなり、配当成立を助けます。最大2つまで出現し、リール上に固定される「アンブレーカブルワイルド」も存在します。',
+        isSpecial: true,
+      },
+      {
+        name: 'フリーフォールシンボル (Free Fall)',
+        description: '3つ以上出現するとフリースピンラウンドに突入します。',
+        isSpecial: true,
+      },
+    ],
+    maxPayout: 'x21,000',
+    notes: [
+      'ペイアウトは、リール上に同じシンボルが左から右へと連続して出現することで成立します。',
+      '上記配当倍率は最大ベット額$100の場合の例です。',
+      'このゲームには、従来の「スキャッターシンボル」は存在しません。「フリーフォールシンボル」がスキャッターの役割を果たします。',
+    ],
+  },
+  features: {
+    title: '「Gonzo\'s Quest Megaways」の魅力的なフィーチャー',
+    items: [
+      {
+        name: 'Avalanche (アバランチ) 機能',
+        description: '勝利シンボルが爆発し、新たなシンボルが落下してくる連鎖システムです。勝利が続くほど、マルチプライヤーも増加します。',
+      },
+      {
+        name: 'Increasing Win Multipliers (インクリーシングウィンマルチプライヤー)',
+        description: 'アバランチ機能による勝利が連鎖するごとに、マルチプライヤーが上昇します。通常ゲームでは最大5倍までアップします。',
+      },
+      {
+        name: 'Earthquakes (アースクエイク / 地震) 機能',
+        description: '通常ゲーム中にランダムで発生する機能です。画面が揺れ、低配当シンボルが破壊され、高配当シンボルに置き換わることで、勝利のチャンスが生まれます。',
+      },
+      {
+        name: 'Unbreakable Wilds (アンブレーカブルワイルド)',
+        description: '最大2つまで出現する特殊なワイルドシンボルです。リール上に固定（スティッキー）され、連鎖が続く限り消えません。さらに、ボーナスシンボルに置き換わることも可能です。ワイルドシンボルは、 "?"（クエスチョンマーク）や金色の盾のシンボルで表されます。',
+      },
+      {
+        name: 'Free Falls (フリーフォール / フリースピン)',
+        description: 'リール1に3つ以上のフリーフォールシンボルが出現すると、フリーフォール（フリースピン）ラウンドに突入します。3シンボル出現で9回のフリースピン、4シンボル出現で12回のフリースピンが付与されます。フリーフォールラウンド中のマルチプライヤーはさらに強力になり、3倍、6倍、9倍、そして最大15倍まで上昇します。この高倍率マルチプライヤーと連鎖が組み合わさることで、巨額の配当獲得が期待できます！また、フリーフォールラウンド中もフリーフォールシンボルが出現すれば、追加のフリースピンを獲得可能です。',
+      },
+    ],
+  },
+  meta: {
+    title: 'Gonzo’s Quest Megaways／ゴンゾーズ クエスト メガウェイズ 解説',
+    description: '',
+  },
+};

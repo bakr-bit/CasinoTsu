@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { loadMDX } from '@/lib/mdx';
-import { getPaymentMethod } from '@/content/data/payments';
+import { getPayment } from '@/content/data/payments';
 
 export const metadata: Metadata = {
   title: "VISAカード｜日本で使えるオンラインカジノ入金ガイド【2024年最新版】",
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default async function VisaPaymentPage() {
   const { content, frontmatter } = await loadMDX('payment', 'visa');
-  const paymentData = getPaymentMethod('visa');
+  const paymentData = getPayment('visa');
 
   return (
     <main className="min-h-screen bg-gray-50">

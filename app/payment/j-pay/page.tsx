@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { loadMDX } from '@/lib/mdx';
-import { getPaymentMethod } from '@/content/data/payments';
+import { getPayment } from '@/content/data/payments';
 
 export const metadata: Metadata = {
   title: "J-Pay（銀行送金）2025年版｜日本人向けオンラインカジノでの使い方と注意点",
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default async function JPayPaymentPage() {
   const { content, frontmatter } = await loadMDX('payment', 'j-pay');
-  const paymentData = getPaymentMethod('j-pay');
+  const paymentData = getPayment('j-pay');
 
   return (
     <main className="min-h-screen bg-gray-50">

@@ -1,8 +1,10 @@
-import { getPaymentMethod } from '@/content/data/payments';
+import { getPayment } from '@/content/data/payments';
 
 interface PaymentTableProps {
   /** Payment method slug to display */
-  slug: string;
+  slug?: string;
+  /** Alternative prop name for payment method slug (used by some MDX files) */
+  paymentSlug?: string;
   /** Show only specific fields */
   fields?: Array<'processingTime' | 'limits' | 'fees' | 'features'>;
 }
@@ -11,13 +13,15 @@ interface PaymentTableProps {
  * Payment method info table component for MDX content
  * Displays structured data about a payment method
  */
-export function PaymentTable({ slug, fields }: PaymentTableProps) {
-  const payment = getPaymentMethod(slug);
+export function PaymentTable({ slug, paymentSlug, fields }: PaymentTableProps) {
+  // Support both slug and paymentSlug prop names
+  const paymentKey = slug || paymentSlug;
+  const payment = paymentKey ? getPayment(paymentKey) : undefined;
 
   if (!payment) {
     return (
       <div className="p-4 bg-red-50 text-red-700 rounded-lg">
-        Payment method not found: {slug}
+        Payment method not found: {paymentKey || 'no slug provided'}
       </div>
     );
   }

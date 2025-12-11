@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { loadMDX } from '@/lib/mdx';
-import { getPaymentMethod } from '@/content/data/payments';
+import { getPayment } from '@/content/data/payments';
 
 export const metadata: Metadata = {
   title: "ペイズ（Payz）完全ガイド｜2025年最新版",
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default async function PayzPaymentPage() {
   const { content, frontmatter } = await loadMDX('payment', 'payz');
-  const paymentData = getPaymentMethod('payz');
+  const paymentData = getPayment('payz');
 
   return (
     <main className="min-h-screen bg-gray-50">

@@ -14,26 +14,26 @@ import { _1win } from './1win';
 import { _21Com } from './21-com';
 import { _2up } from './2up';
 import { _7spin } from './7spin';
-import { alohaShark } from './aloha-shark';
-import { bcGame } from './bc-game';
+import { aloha_shark } from './aloha-shark';
+import { bc_game } from './bc-game';
 import { betgoat } from './betgoat';
 import { betpanda } from './betpanda';
 import { betrebels } from './betrebels';
-import { betsIo } from './bets-io';
+import { bets_io } from './bets-io';
 import { betswap } from './betswap';
 import { bettilt } from './bettilt';
-import { bigWins } from './big-wins';
-import { bitcasinoIo } from './bitcasino-io';
+import { big_wins } from './big-wins';
+import { bitcasino_io } from './bitcasino-io';
 import { bitstarz } from './bitstarz';
 import { bitz } from './bitz';
 import { bombastic } from './bombastic';
 import { bons } from './bons';
 import { caibo } from './caibo';
-import { casinoGods } from './casino-gods';
-import { casinoMe } from './casino-me';
-import { casinoSecret } from './casino-secret';
-import { casinoSky } from './casino-sky';
-import { casinoX } from './casino-x';
+import { casino_gods } from './casino-gods';
+import { casino_me } from './casino-me';
+import { casino_secret } from './casino-secret';
+import { casino_sky } from './casino-sky';
+import { casino_x } from './casino-x';
 import { casinoin } from './casinoin';
 import { casinoleo } from './casinoleo';
 import { casitabi } from './casitabi';
@@ -45,32 +45,32 @@ import { cybet } from './cybet';
 import { dafabet } from './dafabet';
 import { duelbits } from './duelbits';
 import { eldoah } from './eldoah';
-import { energyCasino } from './energy-casino';
-import { freshCasino } from './fresh-casino';
+import { energy_casino } from './energy-casino';
+import { fresh_casino } from './fresh-casino';
 import { futocasi } from './futocasi';
-import { gambolaCasino } from './gambola-casino';
+import { gambola_casino } from './gambola-casino';
 import { gamdom } from './gamdom';
 import { gohog } from './gohog';
-import { goldenPanda } from './golden-panda';
-import { interCasino } from './inter-casino';
+import { golden_panda } from './golden-panda';
+import { inter_casino } from './inter-casino';
 import { joycasino } from './joycasino';
-import { justSpin } from './just-spin';
+import { just_spin } from './just-spin';
 import { k8 } from './k8';
 import { kakeyo } from './kakeyo';
 import { katsuwin } from './katsuwin';
-import { kingsOfSport } from './kings-of-sport';
+import { kings_of_sport } from './kings-of-sport';
 import { konibet } from './konibet';
 import { lilibet } from './lilibet';
-import { liveCasinoHouse } from './live-casino-house';
-import { livecasinoIo } from './livecasino-io';
-import { luckyBlock } from './lucky-block';
-import { luckyBull } from './lucky-bull';
-import { luckyCasino } from './lucky-casino';
+import { live_casino_house } from './live-casino-house';
+import { livecasino_io } from './livecasino-io';
+import { lucky_block } from './lucky-block';
+import { lucky_bull } from './lucky-bull';
+import { lucky_casino } from './lucky-casino';
 import { lynxbet } from './lynxbet';
-import { megaDice } from './mega-dice';
+import { mega_dice } from './mega-dice';
 import { miki } from './miki';
-import { mintIo } from './mint-io';
-import { miracleCasino } from './miracle-casino';
+import { mint_io } from './mint-io';
+import { miracle_casino } from './miracle-casino';
 import { mystino } from './mystino';
 import { netbet } from './netbet';
 import { ohmyspins } from './ohmyspins';
@@ -79,29 +79,29 @@ import { parimatch } from './parimatch';
 import { playamo } from './playamo';
 import { playojo } from './playojo';
 import { pokerstars } from './pokerstars';
-import { queenCasino } from './queen-casino';
+import { queen_casino } from './queen-casino';
 import { ramenbet } from './ramenbet';
 import { respin } from './respin';
 import { roobet } from './roobet';
-import { royalVegas } from './royal-vegas';
+import { royal_vegas } from './royal-vegas';
 import { shinobibet } from './shinobibet';
 import { shuffle } from './shuffle';
-import { snatchCasino } from './snatch-casino';
-import { sportsbetIo } from './sportsbet-io';
+import { snatch_casino } from './snatch-casino';
+import { sportsbet_io } from './sportsbet-io';
 import { stake } from './stake';
-import { sushiCasino } from './sushi-casino';
+import { sushi_casino } from './sushi-casino';
 import { tedbet } from './tedbet';
 import { trustdice } from './trustdice';
-import { veraJohn } from './vera-john';
-import { videoSlots } from './video-slots';
-import { vulkanVegas } from './vulkan-vegas';
+import { vera_john } from './vera-john';
+import { video_slots } from './video-slots';
+import { vulkan_vegas } from './vulkan-vegas';
 import { wazamba } from './wazamba';
-import { williamHill } from './william-hill';
+import { william_hill } from './william-hill';
 import { winunique } from './winunique';
-import { winzIo } from './winz-io';
-import { wonderCasino } from './wonder-casino';
-import { wsmCasino } from './wsm-casino';
-import { yousCasino } from './yous-casino';
+import { winz_io } from './winz-io';
+import { wonder_casino } from './wonder-casino';
+import { wsm_casino } from './wsm-casino';
+import { yous_casino } from './yous-casino';
 import { yuugado } from './yuugado';
 
 // Re-export types
@@ -116,26 +116,26 @@ export const casinosRegistry: CasinoRegistry = {
   '21-com': _21Com,
   '2up': _2up,
   '7spin': _7spin,
-  'aloha-shark': alohaShark,
-  'bc-game': bcGame,
+  'aloha-shark': aloha_shark,
+  'bc-game': bc_game,
   betgoat: betgoat,
   betpanda: betpanda,
   betrebels: betrebels,
-  'bets-io': betsIo,
+  'bets-io': bets_io,
   betswap: betswap,
   bettilt: bettilt,
-  'big-wins': bigWins,
-  'bitcasino-io': bitcasinoIo,
+  'big-wins': big_wins,
+  'bitcasino-io': bitcasino_io,
   bitstarz: bitstarz,
   bitz: bitz,
   bombastic: bombastic,
   bons: bons,
   caibo: caibo,
-  'casino-gods': casinoGods,
-  'casino-me': casinoMe,
-  'casino-secret': casinoSecret,
-  'casino-sky': casinoSky,
-  'casino-x': casinoX,
+  'casino-gods': casino_gods,
+  'casino-me': casino_me,
+  'casino-secret': casino_secret,
+  'casino-sky': casino_sky,
+  'casino-x': casino_x,
   casinoin: casinoin,
   casinoleo: casinoleo,
   casitabi: casitabi,
@@ -147,32 +147,32 @@ export const casinosRegistry: CasinoRegistry = {
   dafabet: dafabet,
   duelbits: duelbits,
   eldoah: eldoah,
-  'energy-casino': energyCasino,
-  'fresh-casino': freshCasino,
+  'energy-casino': energy_casino,
+  'fresh-casino': fresh_casino,
   futocasi: futocasi,
-  'gambola-casino': gambolaCasino,
+  'gambola-casino': gambola_casino,
   gamdom: gamdom,
   gohog: gohog,
-  'golden-panda': goldenPanda,
-  'inter-casino': interCasino,
+  'golden-panda': golden_panda,
+  'inter-casino': inter_casino,
   joycasino: joycasino,
-  'just-spin': justSpin,
+  'just-spin': just_spin,
   k8: k8,
   kakeyo: kakeyo,
   katsuwin: katsuwin,
-  'kings-of-sport': kingsOfSport,
+  'kings-of-sport': kings_of_sport,
   konibet: konibet,
   lilibet: lilibet,
-  'live-casino-house': liveCasinoHouse,
-  'livecasino-io': livecasinoIo,
-  'lucky-block': luckyBlock,
-  'lucky-bull': luckyBull,
-  'lucky-casino': luckyCasino,
+  'live-casino-house': live_casino_house,
+  'livecasino-io': livecasino_io,
+  'lucky-block': lucky_block,
+  'lucky-bull': lucky_bull,
+  'lucky-casino': lucky_casino,
   lynxbet: lynxbet,
-  'mega-dice': megaDice,
+  'mega-dice': mega_dice,
   miki: miki,
-  'mint-io': mintIo,
-  'miracle-casino': miracleCasino,
+  'mint-io': mint_io,
+  'miracle-casino': miracle_casino,
   mystino: mystino,
   netbet: netbet,
   ohmyspins: ohmyspins,
@@ -181,29 +181,29 @@ export const casinosRegistry: CasinoRegistry = {
   playamo: playamo,
   playojo: playojo,
   pokerstars: pokerstars,
-  'queen-casino': queenCasino,
+  'queen-casino': queen_casino,
   ramenbet: ramenbet,
   respin: respin,
   roobet: roobet,
-  'royal-vegas': royalVegas,
+  'royal-vegas': royal_vegas,
   shinobibet: shinobibet,
   shuffle: shuffle,
-  'snatch-casino': snatchCasino,
-  'sportsbet-io': sportsbetIo,
+  'snatch-casino': snatch_casino,
+  'sportsbet-io': sportsbet_io,
   stake: stake,
-  'sushi-casino': sushiCasino,
+  'sushi-casino': sushi_casino,
   tedbet: tedbet,
   trustdice: trustdice,
-  'vera-john': veraJohn,
-  'video-slots': videoSlots,
-  'vulkan-vegas': vulkanVegas,
+  'vera-john': vera_john,
+  'video-slots': video_slots,
+  'vulkan-vegas': vulkan_vegas,
   wazamba: wazamba,
-  'william-hill': williamHill,
+  'william-hill': william_hill,
   winunique: winunique,
-  'winz-io': winzIo,
-  'wonder-casino': wonderCasino,
-  'wsm-casino': wsmCasino,
-  'yous-casino': yousCasino,
+  'winz-io': winz_io,
+  'wonder-casino': wonder_casino,
+  'wsm-casino': wsm_casino,
+  'yous-casino': yous_casino,
   yuugado: yuugado,
 };
 

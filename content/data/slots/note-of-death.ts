@@ -1,0 +1,176 @@
+import type { SlotData } from './types';
+
+export const note_of_death: SlotData = {
+  slug: 'note-of-death',
+  title: 'NOTE OF DEATH',
+  hero: {
+    title: 'ノート・オブ・デス',
+    subheading: 'YOLTED社から贈られる、ダークな雰囲気が魅力的な注目スロット『ノート・オブ・デス』',
+    description: '日本のアニメーションにインスパイアされた男女のキャラクターがゲームに登場し、プレイヤーはゲーム開始時にどちらかのキャラクターを選択可能です。選んだキャラクターによってボーナスゲームのフィーチャーが変化するという新感覚ゲームを、CasinoTsuが徹底レビューいたします！✨',
+    score: 3.3,
+    scoreMax: 5,
+    rtp: '96%',
+    maxMultiplier: 'x5,000',
+    provider: 'YOLTED',
+    releaseDate: '2020-10-23',
+    volatility: 'High',
+    reels: '5',
+    paylines: '10',
+    minBet: '$0.5',
+    maxBet: '$200',
+    slotImageSrc: '/slots/note-of-death.jpg',
+    highlights: [
+      'キャラクター選択によりボーナスフィーチャーが変化',
+      'マリア選択時：拡張シンボル',
+      'アキラ選択時：固定ワイルド',
+      '日本アニメ風ダークファンタジーテーマ',
+      'HTML5/JavaScript対応でモバイルプレイも快適',
+      'BLITZモード搭載で高速プレイ可能',
+    ],
+    watchouts: [
+      'ハイボラティリティのため、資金管理に注意が必要',
+      'RTPはカジノによって異なる場合がある',
+    ],
+  },
+  gameInfo: {
+    intro: '『ノート・オブ・デス』は、ダークで魅力的なテーマを持つ、YOLTED社が贈る注目のスロットゲームです。日本のアニメーションにインスパイアされたキャラクター、マリアとアキラが登場し、プレイヤーはゲーム開始時にどちらかを選択できます。選択したキャラクターによって、ボーナスゲームのフィーチャーが変化するというユニークなシステムが特徴です。',
+    basicInfo: {
+      rtp: '96%',
+      volatility: 'High',
+      reels: '5',
+      paylines: '10',
+      minBet: '$0.5',
+      maxBet: '$200',
+      provider: 'YOLTED',
+      releaseDate: '2020-10-23',
+    },
+  },
+  payoutTable: {
+    title: 'ペイアウト・配当表',
+    symbols: [
+      {
+        name: 'ボス',
+        description: '高配当シンボル',
+        payout5: 'x200',
+        payout4: 'x50',
+        payout3: 'x10',
+      },
+      {
+        name: '未亡人',
+        description: '高配当シンボル',
+        payout5: 'x150',
+        payout4: 'x40',
+        payout3: 'x8',
+      },
+      {
+        name: 'パンク',
+        description: '高配当シンボル',
+        payout5: 'x120',
+        payout4: 'x30',
+        payout3: 'x6',
+      },
+      {
+        name: '詐欺師',
+        description: '高配当シンボル',
+        payout5: 'x100',
+        payout4: 'x25',
+        payout3: 'x5',
+      },
+      {
+        name: 'A',
+        description: '低配当シンボル',
+        payout5: 'x40',
+        payout4: 'x15',
+        payout3: 'x3',
+      },
+      {
+        name: 'K',
+        description: '低配当シンボル',
+        payout5: 'x35',
+        payout4: 'x12',
+        payout3: 'x2.5',
+      },
+      {
+        name: 'Q',
+        description: '低配当シンボル',
+        payout5: 'x30',
+        payout4: 'x10',
+        payout3: 'x2',
+      },
+      {
+        name: 'J',
+        description: '低配当シンボル',
+        payout5: 'x25',
+        payout4: 'x8',
+        payout3: 'x1.5',
+      },
+    ],
+    maxPayout: 'x5,000',
+    notes: [
+      'ノートシンボルはスキャッター兼ワイルドシンボルとして機能します。',
+      '3つ以上のノートシンボルでフリースピンボーナスに突入します。',
+      'マリア選択時：拡張シンボルフィーチャー',
+      'アキラ選択時：固定ワイルドフィーチャー',
+    ],
+  },
+  features: {
+    title: 'ゲーム特徴・フィーチャー',
+    items: [
+      {
+        name: 'キャラクター選択',
+        description: 'ゲーム開始時にマリア（拡張シンボル）またはアキラ（固定ワイルド）を選択でき、ボーナスゲームのフィーチャーが変化します。',
+      },
+      {
+        name: '拡張シンボル (マリア選択時)',
+        description: 'ボーナスラウンド中にランダムに選ばれたシンボルが拡張し、ペイラインをカバーする可能性を高めます。',
+      },
+      {
+        name: '固定ワイルド (アキラ選択時)',
+        description: 'ノートシンボルが出現すると、その位置が固定され、残りのフリースピン中にワイルドシンボルとして機能します。',
+      },
+      {
+        name: 'フリースピンボーナス',
+        description: '3つ以上のノートシンボル（スキャッター兼ワイルド）で突入。マリア選択時は10回、アキラ選択時は8回から開始され、追加スピンやワイルドの増加が期待できます。',
+      },
+      {
+        name: 'BLITZモード',
+        description: '高速プレイ機能で、短時間で多くのスピンを楽しみたいプレイヤーに適しています。',
+      },
+    ],
+  },
+  similarGames: [
+    {
+      name: 'スロット彼女／Slot GF',
+      href: 'https://casinotsu.com/slots/swipe-gf',
+      provider: 'YOLTED',
+      description: '同じくYOLTED社が開発した、アニメ調のキャラクターが登場するスロットです。',
+    },
+    {
+      name: 'スワイピーシリーズ',
+      href: 'https://casinotsu.com/slots/swipe-gf',
+      provider: 'YOLTED',
+      description: '指一本で遊べることをコンセプトにした、手軽に楽しめるスロットシリーズです。',
+    },
+  ],
+  prosCons: {
+    pros: [
+      'キャラクター選択によりボーナスフィーチャーが変化するユニークなシステム',
+      '日本アニメ風のダークファンタジーデザインと魅力的なキャラクター',
+      'ハイボラティリティで高配当の可能性',
+      'フリースピンボーナスラウンドでの拡張シンボルまたは固定ワイルド',
+      'HTML5/JavaScript対応でモバイルプレイも快適',
+      'BLITZモード搭載で高速プレイ可能',
+      'YOLTED社による高品質なゲームプレイ',
+    ],
+    cons: [
+      'ハイボラティリティのため、勝利頻度は低めになる傾向がある',
+      'RTPはカジノによって異なる場合がある',
+      'ジャックポット機能は搭載されていない',
+      '一部のカジノ限定のゲームである',
+    ],
+  },
+  meta: {
+    title: 'NOTE OF DEATH',
+    description: '日本のアニメーションにインスパイアされた男女のキャラクターがゲームに登場し、プレイヤーはゲーム開始時にどちらかのキャラクターを選択可能です。選んだキャラクターによってボーナスゲームのフィーチャーが変化するという新感覚ゲームを、CasinoTsuが徹底レビューいたします！✨',
+  },
+};

@@ -1,0 +1,178 @@
+import type { SlotData } from './types';
+
+export const sweet_bonanza_1000: SlotData = {
+  slug: 'sweet-bonanza-1000',
+  title: 'スイートボナンザ 1000 (Sweet Bonanza 1000) のレビューと評価',
+  hero: {
+    title: 'スイートボナンザ 1000',
+    subheading: 'Pragmatic Play',
+    description: '人気のスイーツ系スロットがさらにパワーアップして登場！最大25,000倍の配当を狙える、甘く危険なスロット。',
+    score: 3.9,
+    scoreMax: 5,
+    rtp: '96.53%',
+    maxMultiplier: 'x25,000',
+    provider: 'Pragmatic Play',
+    releaseDate: '2024年6月3日',
+    volatility: 'High',
+    reels: '6',
+    paylines: 'クラスターペイ方式',
+    minBet: '$0.20',
+    maxBet: '$300',
+    slotImageSrc: '/slots/sweet-bonanza-1000.jpg',
+    highlights: [
+      '最大25,000倍の配当ポテンシャル',
+      '新搭載の1000xマルチプライヤー',
+      'スーパーフリースピン',
+      'ボーナス購入機能',
+      'アンティベット機能',
+    ],
+    watchouts: [
+      'ハイボラティリティのため、資金管理に注意が必要',
+      'ベースゲームでの勝利が少ない場合がある',
+    ],
+  },
+  gameInfo: {
+    intro: 'Pragmatic Play社（プラグマティックプレイ）の「1000」シリーズに、甘く楽しいスイーツがテーマのスロット、『スイートボナンザ 1000（Sweet Bonanza 1000）』が登場しました！前作『スイートボナンザ』の魅力を引き継ぎつつ、さらにパワーアップした機能と、新搭載のマルチプライヤーがプレイヤーの皆様を魅了します。',
+    basicInfo: {
+      rtp: '96.53%',
+      volatility: 'High',
+      reels: '6',
+      paylines: 'クラスターペイ方式',
+      minBet: '$0.20',
+      maxBet: '$300',
+      provider: 'Pragmatic Play',
+      releaseDate: '2024年6月3日',
+    },
+  },
+  payoutTable: {
+    title: 'シンボルとペイアウト',
+    symbols: [
+      {
+        name: 'ハート型キャンディ',
+        description: '最も高配当なシンボル',
+        payout5: '-',
+        payout4: '-',
+        payout3: '-',
+      },
+      {
+        name: '紫のキャンディ',
+        description: '高配当シンボル',
+        payout5: '-',
+        payout4: '-',
+        payout3: '-',
+      },
+      {
+        name: '緑のキャンディ',
+        description: '高配当シンボル',
+        payout5: '-',
+        payout4: '-',
+        payout3: '-',
+      },
+      {
+        name: '青いキャンディ',
+        description: '高配当シンボル',
+        payout5: '-',
+        payout4: '-',
+        payout3: '-',
+      },
+      {
+        name: 'リンゴ',
+        description: '低配当シンボル',
+        payout5: '-',
+        payout4: '-',
+        payout3: '-',
+      },
+      {
+        name: 'プラム',
+        description: '低配当シンボル',
+        payout5: '-',
+        payout4: '-',
+        payout3: '-',
+      },
+      {
+        name: 'スイカ',
+        description: '低配当シンボル',
+        payout5: '-',
+        payout4: '-',
+        payout3: '-',
+      },
+      {
+        name: 'ブドウ',
+        description: '低配当シンボル',
+        payout5: '-',
+        payout4: '-',
+        payout3: '-',
+      },
+      {
+        name: 'バナナ',
+        description: '低配当シンボル',
+        payout5: '-',
+        payout4: '-',
+        payout3: '-',
+      },
+      {
+        name: 'ペロペロキャンディー',
+        description: 'スキャッターシンボル',
+        payout5: '-',
+        payout4: '-',
+        payout3: '-',
+        isSpecial: true,
+      },
+    ],
+    maxPayout: 'x25,000',
+    notes: [
+      'クラスターペイ方式：画面上に同じシンボルが8個以上出現すると配当が発生します。',
+      'シンボルが揃うと消滅し、新しいシンボルが落下してくるカスケード（タンブル）機能があります。',
+      'スキャッターシンボルが4個以上出現すると、10回のフリースピンが付与されます。',
+    ],
+  },
+  features: {
+    title: 'ゲーム機能と特別なフィーチャー',
+    items: [
+      {
+        name: 'マルチプライヤーボム',
+        description: 'フリースピン中に現れる爆弾シンボルで、勝利にランダムな倍率（2x〜1000x）を掛け合わせます。複数のマルチプライヤーは合算されます。',
+      },
+      {
+        name: 'カスケード（タンブル）機能',
+        description: '勝利シンボルが消滅し、新しいシンボルが落下してくることで、1回のスピンで連続勝利の可能性があります。',
+      },
+      {
+        name: 'フリースピン',
+        description: 'スキャッターシンボル4個以上で10回のフリースピンが付与されます。ラウンド中にスキャッター3個以上で追加5回のフリースピンを獲得できます。',
+      },
+      {
+        name: 'スーパーフリースピン',
+        description: 'ベット額の500倍で購入可能。20x〜1000xのマルチプライヤーシンボルのみが出現し、より高額な配当が期待できます。',
+      },
+      {
+        name: 'ボーナス購入機能',
+        description: '通常のフリースピンまたはスーパーフリースピンを直接購入してプレイを開始できます。',
+      },
+      {
+        name: 'アンティベット機能',
+        description: 'ベット額が1.25倍になりますが、フリースピンへの突入確率が約2倍に増加します。',
+      },
+    ],
+  },
+  prosCons: {
+    pros: [
+      '最大25,000倍の配当ポテンシャル',
+      '新搭載の1000xマルチプライヤー',
+      'スーパーフリースピンで更なる高配当を狙える',
+      'ボーナス購入機能とアンティベット機能で戦略的なプレイが可能',
+      'クラスターペイ方式とカスケード機能による連続勝利の可能性',
+      '甘いスイーツをテーマにしたビジュアルとサウンド',
+    ],
+    cons: [
+      'ハイボラティリティのため、資金管理に注意が必要',
+      'ベースゲームでの勝利が少ない場合がある',
+      'シンボルの種類が比較的少ない',
+      'フリースピン中もベースゲームとグラフィックがあまり変わらない',
+    ],
+  },
+  meta: {
+    title: 'スイートボナンザ 1000 (Sweet Bonanza 1000) のレビューと評価',
+    description: '人気のスイーツ系スロットがさらにパワーアップして登場！最大25,000倍の配当を狙える、甘く危険なスロット。',
+  },
+};

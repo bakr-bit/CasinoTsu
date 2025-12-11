@@ -1,6 +1,6 @@
 import type { CasinoData } from './types';
 
-export const 21_com: CasinoData = {
+export const _21Com: CasinoData = {
   slug: '21-com',
   name: '21.com',
   nameJa: '21.com（21ドットコム）',

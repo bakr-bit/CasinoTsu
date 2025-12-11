@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { loadMDX } from '@/lib/mdx';
-import { getPaymentMethod } from '@/content/data/payments';
+import { getPayment } from '@/content/data/payments';
 
 export const metadata: Metadata = {
   title: "AstroPay（アストロペイ）完全ガイド：日本のオンラインカジノでの現状と代替決済手段",
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default async function AstropayPaymentPage() {
   const { content, frontmatter } = await loadMDX('payment', 'astropay');
-  const paymentData = getPaymentMethod('astropay');
+  const paymentData = getPayment('astropay');
 
   return (
     <main className="min-h-screen bg-gray-50">

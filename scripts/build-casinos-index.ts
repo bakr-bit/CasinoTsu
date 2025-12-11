@@ -11,18 +11,12 @@ import path from 'path';
 const CASINO_DATA_DIR = path.join(process.cwd(), 'content', 'data', 'casinos');
 
 /**
- * Convert a slug to a valid JavaScript variable name
- * e.g., "mega-dice" -> "megaDice", "21-com" -> "_21Com"
+ * Extract the actual export name from a casino data file
  */
-function slugToVarName(slug: string): string {
-  // Handle slugs that start with numbers
-  let name = slug;
-  if (/^\d/.test(name)) {
-    name = '_' + name;
-  }
-
-  // Convert kebab-case to camelCase
-  return name.replace(/-([a-z0-9])/gi, (_, char) => char.toUpperCase());
+async function getExportName(filePath: string): Promise<string | null> {
+  const content = await fs.readFile(filePath, 'utf-8');
+  const match = content.match(/export const ([a-zA-Z_][a-zA-Z0-9_]*): CasinoData/);
+  return match ? match[1] : null;
 }
 
 async function buildCasinosIndex(): Promise<void> {
@@ -42,7 +36,13 @@ async function buildCasinosIndex(): Promise<void> {
 
   for (const file of casinoFiles.sort()) {
     const slug = file.replace('.ts', '');
-    const varName = slugToVarName(slug);
+    const filePath = path.join(CASINO_DATA_DIR, file);
+    const varName = await getExportName(filePath);
+
+    if (!varName) {
+      console.warn(`⚠️ Could not find export in ${file}, skipping`);
+      continue;
+    }
 
     imports.push(`import { ${varName} } from './${slug}';`);
 

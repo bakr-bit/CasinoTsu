@@ -1,0 +1,218 @@
+import type { SlotData } from './types';
+
+export const dragon_hero: SlotData = {
+  slug: 'dragon-hero',
+  title: 'Dragon Hero',
+  hero: {
+    title: 'Dragon Hero',
+    subheading: 'ドラゴン・ヒーロー',
+    description: 'Pragmatic Play社より、絢爛豪華な中国をテーマにしたスロット「Dragon Hero（ドラゴン・ヒーロー）」が登場いたしました。神秘的な雰囲気と華やかさが融合した本作を、CasinoTsuが詳しくレビューいたします。🐲',
+    score: 4.3,
+    scoreMax: 5,
+    rtp: '96%',
+    maxMultiplier: 'x5,000',
+    provider: 'Pragmatic Play',
+    releaseDate: '2023年1月5日',
+    volatility: 'High',
+    reels: '5',
+    paylines: '20',
+    minBet: '$0.10',
+    maxBet: '$100',
+    slotImageSrc: '/slots/dragon-hero.png',
+    highlights: [
+      'スーパーワイルドシンボル',
+      'フリースピン',
+      'ボーナス購入機能',
+      '上品なグラフィック',
+      'ハイボラティリティ',
+    ],
+    watchouts: [
+      'ハイボラティリティのため、資金管理に注意が必要',
+      'RTPはカジノによって異なる場合があるため、確認が必要',
+    ],
+  },
+  gameInfo: {
+    intro: 'Pragmatic Play社より、絢爛豪華な中国をテーマにしたスロット「Dragon Hero（ドラゴン・ヒーロー）」が登場いたしました。神秘的な雰囲気と華やかさが融合した本作を、CasinoTsuが詳しくレビューいたします。🐲',
+    basicInfo: {
+      rtp: '96.00% (または94.94%)',
+      volatility: 'High',
+      reels: '5',
+      paylines: '20',
+      minBet: '$0.10',
+      maxBet: '$100',
+      provider: 'Pragmatic Play',
+      releaseDate: '2023年1月5日',
+    },
+  },
+  payoutTable: {
+    title: 'Dragon Heroのシンボルや配当',
+    symbols: [
+      {
+        name: '金の鯉',
+        description: '高配当シンボル',
+        payout5: '$1,000',
+        payout4: '$200',
+        payout3: '$40',
+      },
+      {
+        name: 'カエル',
+        description: '高配当シンボル',
+        payout5: '$800',
+        payout4: '$160',
+        payout3: '$32',
+      },
+      {
+        name: '壺',
+        description: '高配当シンボル',
+        payout5: '$600',
+        payout4: '$120',
+        payout3: '$24',
+      },
+      {
+        name: '巻物',
+        description: '高配当シンボル',
+        payout5: '$400',
+        payout4: '$80',
+        payout3: '$16',
+      },
+      {
+        name: 'A',
+        description: '低配当シンボル',
+        payout5: '$200',
+        payout4: '$40',
+        payout3: '$8',
+      },
+      {
+        name: 'K',
+        description: '低配当シンボル',
+        payout5: '$200',
+        payout4: '$40',
+        payout3: '$8',
+      },
+      {
+        name: 'Q',
+        description: '低配当シンボル',
+        payout5: '$160',
+        payout4: '$32',
+        payout3: '$6',
+      },
+      {
+        name: 'J',
+        description: '低配当シンボル',
+        payout5: '$160',
+        payout4: '$32',
+        payout3: '$6',
+      },
+      {
+        name: '10',
+        description: '低配当シンボル',
+        payout5: '$120',
+        payout4: '$24',
+        payout3: '$4',
+      },
+      {
+        name: 'スーパーワイルド (金色のドラゴンの顔)',
+        description: 'ワイルドシンボル、陰陽マークの数に応じて通常シンボルをワイルドに変換',
+        payout5: '該当なし',
+        payout4: '該当なし',
+        payout3: '該当なし',
+        isSpecial: true,
+      },
+      {
+        name: 'ワイルド (陰陽マーク)',
+        description: '配当成立をサポート',
+        payout5: '該当なし',
+        payout4: '該当なし',
+        payout3: '該当なし',
+        isSpecial: true,
+      },
+      {
+        name: 'スキャッター (黄金ドラゴンのドラゴン)',
+        description: '3つ以上でフリースピン獲得',
+        payout5: '該当なし',
+        payout4: '該当なし',
+        payout3: '該当なし',
+        isSpecial: true,
+      },
+    ],
+    maxPayout: '$5,000',
+    notes: [
+      '配当はベット額 $2 の場合。',
+      'ペイラインは左端から成立。',
+      'UKプレイヤーの場合、年齢によって最大ベット額に制限あり (£2 / £5)。',
+    ],
+  },
+  features: {
+    title: 'Dragon Heroのゲーム機能',
+    items: [
+      {
+        name: 'ワイルドシンボル',
+        description: '2種類のワイルドシンボルが登場。スーパーワイルドは、その下の陰陽マークの数に応じて、最大3つの通常シンボルをワイルドに変換します。',
+      },
+      {
+        name: 'フリースピン',
+        description: 'スキャッターシンボルが3つ以上出現すると獲得。ボーナスホイールで6回から30回までランダムに決定。フリースピン中はスーパーワイルドシンボルがリール上に固定されます。',
+      },
+      {
+        name: 'ボーナス購入',
+        description: 'ベット額の100倍でフリースピンラウンドを直接購入できます。',
+      },
+    ],
+  },
+  similarGames: [
+    {
+      name: 'Mahjong Ways 2',
+      href: '/slots/mahjong-ways-2',
+      provider: 'PG SOFT',
+      description: '中国の麻雀をテーマにしたスロットで、シンボルも麻雀牌で構成されています。',
+    },
+    {
+      name: 'Dreams of Gold',
+      href: '/slots/dreams-of-gold',
+      provider: 'Golden Hero Games',
+      description: '人気のパチスロ風スロット「ハワイアンドリーム」で知られるGolden Hero Games社のスロット。金色のカエルがテーマです。',
+    },
+    {
+      name: 'Gates of Olympus',
+      href: '/slots/gates-of-olympus',
+      provider: 'Pragmatic Play',
+      description: 'ギリシャ神話をテーマにした高ボラティリティスロットで、マルチプライヤー機能が特徴です。',
+    },
+  ],
+  prosCons: {
+    pros: [
+      '洗練された中国風のデザイン',
+      'スーパーワイルドシンボルによるユニークな機能',
+      'フリースピン中の固定ワイルドによる高配当の可能性',
+      'ボーナス購入機能搭載',
+      'ハイボラティリティで大きな勝利を狙える',
+    ],
+    cons: [
+      'ハイボラティリティのため、資金管理に注意が必要',
+      'RTPはカジノによって異なる場合がある',
+      'ベースゲーム中は勝利に繋がらないスピンが多い可能性',
+    ],
+  },
+  faq: [
+    {
+      q: 'ドラゴン・ヒーローのボラティリティは？',
+      a: 'Dragon Heroのボラティリティは **高い（High）** です。これは、勝利の頻度は低いものの、一度の勝利で得られる配当が大きくなる可能性があることを意味します。CasinoTsuは、プレイヤーの皆様がリスクを理解した上でプレイできるよう、正確な情報を提供いたします。',
+    },
+    {
+      q: 'ドラゴン・ヒーローにマルチプライヤー機能はある？',
+      a: 'いいえ、**マルチプライヤー機能は搭載されていません**。しかし、スーパーワイルドシンボルが他のシンボルをワイルドに変換することで、複数の勝利ラインが同時に成立し、結果的に大きな配当に繋がる可能性があります。CasinoTsuは、ゲームの特性を正確にお伝えします。',
+    },
+    {
+      q: 'ドラゴン・ヒーローの特徴は？',
+      a: 'Dragon Heroの主な特徴は以下の通りです：\n*   **スーパーワイルドシンボル:** 通常のワイルドシンボルの他に、他のシンボルをワイルドに変換する強力なスーパーワイルドシンボルが存在します。\n*   **フリースピン:** スキャッターシンボルから獲得でき、フリースピン中はスーパーワイルドが固定されるため、高配当が期待できます。\n*   **ボーナス購入機能:** ベット額の100倍でフリースピンラウンドを直接購入できます。\n*   **上品なグラフィック:** 中国風のデザインでありながら、派手すぎず洗練されたビジュアルです。\n*   **ハイボラティリティ:** 大きな勝利の可能性を秘めていますが、その分リスクも伴います。\nCasinoTsuは、これらの特徴を皆様に分かりやすく、正確にお伝えすることをお約束します。',
+    },
+    {
+      q: 'ドラゴン・ヒーローは、どのプロバイダーのゲーム？',
+      a: 'Pragmatic Play（プラグマティック・プレイ）です。CasinoTsuは、信頼できるプロバイダーのゲームのみを取り扱っております。',
+    },
+  ],
+  meta: {
+    title: 'Dragon Hero',
+    description: 'Pragmatic Play社より、絢爛豪華な中国をテーマにしたスロット「Dragon Hero（ドラゴン・ヒーロー）」が登場いたしました。神秘的な雰囲気と華やかさが融合した本作を、CasinoTsuが詳しくレビューいたします。🐲',
+  },
+};

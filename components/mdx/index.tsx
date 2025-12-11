@@ -3,12 +3,18 @@ import { AffiliateButton } from './AffiliateButton';
 import { PaymentTable } from './PaymentTable';
 import { CasinoList } from './CasinoList';
 import { InfoBox } from './InfoBox';
+import { SlotPayoutTable } from './SlotPayoutTable';
+import { SlotFeatures } from './SlotFeatures';
+import { SlotCasinoList } from './SlotCasinoList';
 
 // Export individual components
 export { AffiliateButton } from './AffiliateButton';
 export { PaymentTable } from './PaymentTable';
 export { CasinoList } from './CasinoList';
 export { InfoBox } from './InfoBox';
+export { SlotPayoutTable } from './SlotPayoutTable';
+export { SlotFeatures } from './SlotFeatures';
+export { SlotCasinoList } from './SlotCasinoList';
 
 /**
  * MDX components registry
@@ -20,6 +26,11 @@ export const mdxComponents: MDXComponents = {
   PaymentTable,
   CasinoList,
   InfoBox,
+  // Slot components (with aliases for MDX usage)
+  SlotPayoutTable,
+  PayoutTable: SlotPayoutTable, // Alias for <PayoutTable slotId="..."> in slot MDX
+  SlotFeatures,
+  SlotCasinoList,
 
   // HTML element overrides for consistent styling
   h1: (props) => (

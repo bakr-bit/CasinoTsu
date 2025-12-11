@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { loadMDX } from '@/lib/mdx';
-import { getPaymentMethod } from '@/content/data/payments';
+import { getPayment } from '@/content/data/payments';
 
 export const metadata: Metadata = {
   title: "イーサリアム（Ethereum）｜日本のオンラインカジノで使う完全ガイド",
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default async function EthereumPaymentPage() {
   const { content, frontmatter } = await loadMDX('payment', 'ethereum');
-  const paymentData = getPaymentMethod('ethereum');
+  const paymentData = getPayment('ethereum');
 
   return (
     <main className="min-h-screen bg-gray-50">

@@ -1,6 +1,6 @@
 import type { CasinoData } from './types';
 
-export const 7spin: CasinoData = {
+export const _7spin: CasinoData = {
   slug: '7spin',
   name: '7SPIN',
   nameJa: '7スピンカジノ',

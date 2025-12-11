@@ -1,0 +1,190 @@
+import type { SlotData } from './types';
+
+export const gates_of_olympus_super_scatter: SlotData = {
+  slug: 'gates-of-olympus-super-scatter',
+  title: 'Gates of Olympus Super Scatterを攻略！',
+  hero: {
+    title: 'Gates of Olympus Super Scatter',
+    subheading: 'Pragmatic Play社がお届けする『Gates of Olympus Super Scatter』は、長年愛される人気スロットシリーズの最新作です。この度、「スーパー・スキャッター」という画期的な新機能が搭載され、最大50,000倍という驚異的な勝利倍率が期待できる、非常に高いボラティリティを持つゲームとして登場いたしました。 CasinoTsuでは、このエキサイティングなゲームのすべてを、皆様にお届けいたします。',
+    score: 4.7,
+    scoreMax: 5,
+    rtp: '96.5% (通常時) / 96.55% (アンティベット時)',
+    maxMultiplier: 'x50,000',
+    provider: 'Pragmatic Play',
+    releaseDate: '2025-04-25',
+    volatility: 'Very High',
+    reels: '6',
+    paylines: 'Pay Anywhere/All Ways Pay',
+    minBet: '$0.2',
+    maxBet: '$360 (通常ベット時) / $540 (アンティベット時)',
+    slotImageSrc: '/slots/gates-of-olympus-super-scatter.jpg',
+    highlights: [
+      '最大50,000倍の勝利倍率',
+      '新機能「スーパースキャッター」搭載',
+      '非常に高いボラティリティ',
+      'ペイ・エニウェア・システム',
+      'タンブリングリール機能',
+    ],
+    watchouts: [
+      'ボラティリティが非常に高いため、当たりが重い場合がある',
+      '高額ベット設定のため、資金管理に注意が必要',
+    ],
+  },
+  gameInfo: {
+    intro: '『Gates of Olympus Super Scatter』は、ギリシャ神話をテーマにした、Pragmatic Play社の人気スロット『Gates of Olympus』シリーズの最新作でございます。前作の魅力的なゲーム性を踏襲しながらも、新たに「スーパースキャッター」機能と、さらに強化された配当倍率が追加され、プレイヤーを未曾有の興奮へと誘います。 ペイ・エニウェアという配当システムとタンブリングリール機能の組み合わせにより、シンボルがクラスターを形成することで配当が発生し、連続勝利のチャンスが大きく広がります。 CasinoTsuは、このゲームの正確な情報をお届けすることを最優先いたします。',
+    basicInfo: {
+      rtp: '96.50%',
+      volatility: 'Very High',
+      reels: '6',
+      paylines: 'Pay Anywhere / All Ways Pay (8個以上のシンボルがどこかに表示されれば配当成立)',
+      minBet: '$0.2',
+      maxBet: '$360 (通常ベット時) / $540 (アンティベット時)',
+      provider: 'Pragmatic Play',
+      releaseDate: '2025-04-25',
+    },
+  },
+  payoutTable: {
+    title: 'ペイアウト・配当表',
+    symbols: [
+      {
+        name: '王冠',
+        description: '高配当シンボル',
+        payout5: '50',
+        payout4: '30',
+        payout3: '20',
+      },
+      {
+        name: 'ゴブレット',
+        description: '高配当シンボル',
+        payout5: '40',
+        payout4: '25',
+        payout3: '15',
+      },
+      {
+        name: '砂時計',
+        description: '高配当シンボル',
+        payout5: '30',
+        payout4: '20',
+        payout3: '10',
+      },
+      {
+        name: '指輪',
+        description: '高配当シンボル',
+        payout5: '25',
+        payout4: '15',
+        payout3: '8',
+      },
+      {
+        name: '赤い宝石',
+        description: '低配当シンボル',
+        payout5: '15',
+        payout4: '10',
+        payout3: '5',
+      },
+      {
+        name: '青い宝石',
+        description: '低配当シンボル',
+        payout5: '15',
+        payout4: '10',
+        payout3: '5',
+      },
+      {
+        name: '緑の宝石',
+        description: '低配当シンボル',
+        payout5: '10',
+        payout4: '6',
+        payout3: '4',
+      },
+      {
+        name: '紫の宝石',
+        description: '低配当シンボル',
+        payout5: '10',
+        payout4: '6',
+        payout3: '4',
+      },
+      {
+        name: 'スキャッター (ゼウス)',
+        description: '4つ以上でフリースピン突入',
+        payout5: '20',
+        payout4: '15',
+        payout3: '10',
+      },
+    ],
+    maxPayout: 'x50,000',
+    notes: [
+      'シンボルは8個以上揃うと配当が発生します。',
+      'マルチプライヤーシンボルは2倍から500倍までの倍率を持ち、勝利配当成立時に合算されて適用されます。',
+      'スーパースキャッターは、通常ゲーム時限定で出現し、フリースピン突入やインスタントウィンに繋がります。',
+      'スーパースキャッターと通常スキャッターの組み合わせで、最大50,000倍の配当を獲得できます。',
+    ],
+  },
+  features: {
+    title: 'ゲーム特徴・フィーチャー',
+    items: [
+      {
+        name: 'タンブリングリール',
+        description: '配当成立後、勝利に貢献したシンボルは消滅し、上から新しいシンボルが落ちてきます。これにより、1回のスピンで連続して勝利が発生する可能性があります。',
+      },
+      {
+        name: 'マルチプライヤー',
+        description: 'ベースゲーム中およびフリースピン中にランダムに出現し、2倍から500倍までの倍率を持ちます。勝利配当成立時に、画面上のすべてのマルチプライヤーシンボルの倍率が合算され、最終配当に適用されます。',
+      },
+      {
+        name: 'フリースピン',
+        description: '通常のスキャッターシンボルまたはスーパースキャッターシンボルが4つ以上揃うと、15回のフリースピンに突入します。フリースピン中は、マルチプライヤーシンボルの倍率が合計マルチプライヤーとして蓄積され、リセットされません。追加でスキャッターシンボルが3つ以上揃うと、さらに15回のフリースピンが再付与されます。',
+      },
+      {
+        name: 'ボーナス購入',
+        description: 'フリースピン（ベット額の100倍）またはスーパーフリースピン（ベット額の500倍）を直接購入できます。スーパーフリースピンでは、最低10倍以上のマルチプライヤーが保証されます。',
+      },
+      {
+        name: 'スーパースキャッター機能',
+        description: '通常ゲーム時限定で出現する特別スキャッター。フリースピン突入や、1個から4個の出現で最大50,000倍のインスタントウィンを獲得できます。',
+      },
+      {
+        name: 'アンティベット (ダブルチャンス)',
+        description: 'ベット額を50%増加させることで、フリースピン突入のチャンスが2倍になります（リールに追加されるスキャッターとスーパースキャッターが増加）。',
+      },
+    ],
+  },
+  similarGames: [
+    {
+      name: 'Sweet Bonanza 1000',
+      href: 'https://casinotsu.com/slots/sweet-bonanza-1000',
+      provider: 'Pragmatic Play',
+      description: '可愛らしい見た目とは裏腹に、最大配当倍率25,000倍の爆発力を秘めた大人気ハイボラスロット🍬💥。',
+    },
+    {
+      name: 'Book of Dead',
+      href: 'https://casinotsu.com/slots/book-of-dead',
+      provider: 'Play\'n GO',
+      description: '配当を倍増させるか、0にするかはプレイヤー次第！？スリル満点のギャンブル機能が魅力のスロット💣。',
+    },
+    {
+      name: 'Money Train 2',
+      href: 'https://casinotsu.com/slots/money-train-2',
+      provider: 'Relax Gaming',
+      description: '最大配当倍率（ボーナスゲーム時）は50,000倍⚡。スチームパンク風西部劇がテーマの大人気シリーズスロット！',
+    },
+  ],
+  prosCons: {
+    pros: [
+      '最大50,000倍の驚異的な最大配当倍率',
+      '新機能「スーパースキャッター」による爆発力の向上',
+      '非常に高いボラティリティで高額賞金のチャンス',
+      '人気の「Gates of Olympus」シリーズの正統進化',
+      'タンブリングリールとマルチプライヤー機能による連続勝利の可能性',
+      'ボーナス購入機能で直接フリースピンへアクセス可能',
+      'アンティベット機能でフリースピン突入率アップ',
+    ],
+    cons: [
+      'ボラティリティが非常に高いため、当たりが重く、資金管理が重要',
+      'グラフィックやゲーム性はオリジナル版と類似しており、新鮮味に欠けると感じるプレイヤーもいる可能性',
+      'スーパースキャッターの出現確率が低い',
+    ],
+  },
+  meta: {
+    title: 'Gates of Olympus Super Scatterを攻略！',
+    description: '',
+  },
+};

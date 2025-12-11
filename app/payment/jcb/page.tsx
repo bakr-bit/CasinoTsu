@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { loadMDX } from '@/lib/mdx';
-import { getPaymentMethod } from '@/content/data/payments';
+import { getPayment } from '@/content/data/payments';
 
 export const metadata: Metadata = {
   title: "JCBカード対応！オンラインカジノの入金方法と手数料ガイド",
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default async function JcbPaymentPage() {
   const { content, frontmatter } = await loadMDX('payment', 'jcb');
-  const paymentData = getPaymentMethod('jcb');
+  const paymentData = getPayment('jcb');
 
   return (
     <main className="min-h-screen bg-gray-50">
