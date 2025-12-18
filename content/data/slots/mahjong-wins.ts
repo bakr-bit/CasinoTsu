@@ -184,6 +184,12 @@ export const mahjong_wins: SlotData = {
       a: 'Mahjong Wins Super Scatterは、「Mahjong Wins」の派生バージョンと考えられます。このバージョンでは、ボーナス購入機能（ベット額の100倍）が追加され、Super Scatterシンボルからの高額配当（最大100,000倍）が期待できる場合があります。ただし、このバージョンは全てのカジノで提供されているわけではありません。',
     },
   ],
+  categoryTags: {
+    mechanics: ['bonus-buy', 'tumble'],
+    volatilityLevel: 'high',
+    themes: ['asian'],
+    features: ['free-spins', 'multiplier'],
+  },
   meta: {
     title: 'Mahjong Wins スロットレビュー | Pragmatic Play | CasinoTsu',
     description: 'アジアで絶大な人気を誇る麻雀をテーマにしたスロットゲーム「Mahjong Wins」。配当獲得ごとにマルチプライヤーが増加していくのが魅力。',

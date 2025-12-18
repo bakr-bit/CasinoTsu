@@ -178,6 +178,12 @@ export const shinobi_spirit: SlotData = {
       a: 'シノビ・スピリットはRelax Gaming社のプラットフォームでも提供されています。Print Studios社で見つからない場合は、Relax Gamingのプラットフォームで提供しているカジノを探してみてください。CasinoTsuは、この情報が皆様のお役に立てることを願っています。',
     },
   ],
+  categoryTags: {
+    mechanics: ['bonus-buy'],
+    volatilityLevel: 'medium',
+    themes: ['japanese'],
+    features: ['free-spins', 'multiplier'],
+  },
   meta: {
     title: 'Shinobi Spirit (シノビ・スピリット)',
     description: 'Print Studios社が開発した「シノビ・スピリット」は、忍者をテーマにしたオンラインスロットです。ユニークな「ホールド＆ウィン」機能と、まるでビデオゲームのようなゲームプレイが特徴で、高い評価を得ています。',

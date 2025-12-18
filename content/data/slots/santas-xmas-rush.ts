@@ -165,6 +165,13 @@ export const santas_xmas_rush: SlotData = {
       'RTPがカジノによって変動する可能性がある',
     ],
   },
+  categoryTags: {
+    mechanics: ['cluster', 'bonus-buy'],
+    volatilityLevel: 'high',
+    themes: ['xmas'],
+    features: ['free-spins', 'multiplier', 're-spins'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'サンタズ・クリスマス・ラッシュ（Santa\'s Xmas Rush）レビュー',
     description: '',

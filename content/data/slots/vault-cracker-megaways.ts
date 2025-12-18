@@ -181,6 +181,11 @@ export const vault_cracker_megaways: SlotData = {
       a: 'ゲームが中断された場合、ラウンドの再開時には結果が通知され、ゲーム履歴にも記録されます。通常、中断されたゲームは再開時にその状態からプレイを続けることができます。',
     },
   ],
+  categoryTags: {
+    mechanics: ['megaways', 'bonus-buy'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'progressive-jackpot', 'multiplier', 'bonus-round'],
+  },
   meta: {
     title: 'Vault Cracker Megaways (ヴォルト・クラッカー・メガウェイズ)｜ CasinoTsu 推薦最新スロットレビュー',
     description: 'Red Tiger社から登場した『Vault Cracker Megaways』は、メガウェイズシステムとユニークなボーナスフィーチャーが融合した、スリル満点のオンラインスロットです。アメコミ風のグラフィックと映画のようなサウンドが、プレイヤーを大胆な金庫破りの世界へ引き込みます。',

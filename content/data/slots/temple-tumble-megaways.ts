@@ -201,6 +201,11 @@ export const temple_tumble_megaways: SlotData = {
       a: 'フリースピン開始前に、「マルチプライヤー」、「エクストラスピン」、「マルチプライヤー＆エクストラスピン」の3つのモードから選択できます。それぞれのモードで、ゲームのボラティリティや獲得できるボーナス（マルチプライヤーシンボル、追加スピン）が異なります。 CasinoTsu は、プレイヤーが自身の好みに合わせて選択できるこの自由度を評価しています。',
     },
   ],
+  categoryTags: {
+    mechanics: ['megaways', 'tumble'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'multiplier'],
+  },
   meta: {
     title: 'Temple Tumble Megaways／テンプルタンブル・メガウェイズ',
     description: 'CasinoTsu は、マヤ文明の秘境を舞台にした魅力的な Megaways スロット、「Temple Tumble Megaways／テンプルタンブル・メガウェイズ」を皆様にご紹介いたします。その革新的なフィーチャーから、実際のプレイ方法まで、CasinoTsu が詳細に解説いたします。正確さが第一。興奮はその次。',

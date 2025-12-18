@@ -176,6 +176,12 @@ export const book_of_dead: SlotData = {
       a: '「Book of Dead」は非常に人気が高いため、多くのオンラインカジノで提供されています。例えば、当サイトで CasinoTsu が紹介している [2アップカジノ](https://casinotsu.com/) や [ミキカジノ](https://casinotsu.com/) といったカジノでもプレイ可能です。他にも多数のカジノで遊べますので、皆様のお好みに合ったカジノを見つけてみてください。',
     },
   ],
+  categoryTags: {
+    mechanics: ['bonus-buy'],
+    volatilityLevel: 'high',
+    themes: ['halloween', 'egyptian'],
+    features: ['free-spins', 'multiplier'],
+  },
   meta: {
     title: 'ブックオブデッド｜レビュー、基本情報、攻略法',
     description: 'CasinoTsuより、人気スロット「Book of Dead」に関する徹底レビューをお届けします。長年にわたりスロットランキングの常連であるこのゲームの人気の秘密を、CasinoTsuが深く掘り下げて解説いたします。✨',

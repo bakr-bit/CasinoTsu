@@ -171,6 +171,12 @@ export const sweet_bonanza_1000: SlotData = {
       'フリースピン中もベースゲームとグラフィックがあまり変わらない',
     ],
   },
+  categoryTags: {
+    mechanics: ['cluster', 'bonus-buy', 'tumble'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'multiplier'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'スイートボナンザ 1000 (Sweet Bonanza 1000) のレビューと評価',
     description: '人気のスイーツ系スロットがさらにパワーアップして登場！最大25,000倍の配当を狙える、甘く危険なスロット。',

@@ -203,6 +203,10 @@ export const mexomax_multimax: SlotData = {
       a: 'ギャンブル機能は、獲得したフリースピン回数をさらに増やすチャンスがありますが、失敗するとすべてのフリースピンを失うという大きなリスクがあります。フリースピン後半の爆発力を期待できるため、リスクを冒さずにフリースピンを保持する方が賢明な場合もあります。',
     },
   ],
+  categoryTags: {
+    mechanics: ['cluster', 'bonus-buy', 'tumble'],
+    features: ['free-spins', 'multiplier', 're-spins'],
+  },
   meta: {
     title: 'メクソマックス・マルチマックス｜最新スロットレビュー！✨',
     description: '',

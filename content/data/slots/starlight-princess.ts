@@ -199,6 +199,11 @@ export const starlight_princess: SlotData = {
       a: 'ベット額に25%を追加することで、スキャッターシンボルの出現確率とマルチプライヤーの出現率が向上する機能です。これにより、フリースピン（ボーナスラウンド）への突入チャンスが実質的に2倍になります。',
     },
   ],
+  categoryTags: {
+    mechanics: ['cluster', 'bonus-buy', 'tumble'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'progressive-jackpot', 'multiplier', 'bonus-round'],
+  },
   meta: {
     title: 'Starlight Princess',
     description: '破壊力は抜群！君は高ボラの底力を引き出せるか？！ムンプリならぬスタプリで、マルチプライヤー×フリースピンの生み出すビッグ勝利を手に入れよう！ CasinoTsu は、このエキサイティングなゲームを皆様に自信を持って推薦いたします。',

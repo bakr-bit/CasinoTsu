@@ -195,6 +195,11 @@ export const sweet_cat_cafe_resort: SlotData = {
       a: 'はい、SlotCatalogなどのプラットフォームで無料デモ版が提供されている場合があります。CasinoTsu は、実際のお金でプレイする前に、ゲームの感触を試すのに最適な方法であると認識しております。',
     },
   ],
+  categoryTags: {
+    mechanics: ['cluster', 'bonus-buy'],
+    features: ['free-spins', 'progressive-jackpot', 'multiplier', 're-spins'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'Sweet Cat Cafe Resort 遊び方・攻略法解説',
     description: '前作「スイート・キャット・カフェ」の続編。ビキニ姿のキャラクターや、フリースピン、マルチプライヤーといった豊富なフィーチャーが満載で、爆益を狙える可能性を秘めたスロットです。日本のゲームプロバイダーであるラクジン社が開発し、Golden Hero社からリリースされています。',

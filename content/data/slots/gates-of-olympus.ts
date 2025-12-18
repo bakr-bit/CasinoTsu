@@ -165,6 +165,13 @@ export const gates_of_olympus: SlotData = {
       a: 'はい、モバイルデバイスに対応しており、スマートフォンやタブレットで快適にプレイできます。',
     },
   ],
+  categoryTags: {
+    mechanics: ['bonus-buy', 'tumble'],
+    volatilityLevel: 'high',
+    themes: ['mythology'],
+    features: ['free-spins', 'progressive-jackpot', 'multiplier', 'bonus-round'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'ゲーツ・オブ・オリンパス (Gates of Olympus) スロットレビュー！',
     description: '「ゼウス様、我にマルチプライヤーを！」 CasinoTsu 推薦、神々しいスロット「ゲーツ・オブ・オリンパス（Gates of Olympus）」を徹底解説いたします！',

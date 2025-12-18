@@ -203,6 +203,10 @@ export const jungle_spirit_call_of_the_wild: SlotData = {
       a: 'スキャッターシンボルが3つ以上揃うと、5つの異なるフリースピンオプション（トラ、象、熊、ワニ、コブラ）が表示され、プレイヤーが自由に1つを選択できます。それぞれスピン数とボラティリティが異なります。 CasinoTsu では、プレイヤーの皆様の戦略的な選択を応援しております。',
     },
   ],
+  categoryTags: {
+    volatilityLevel: 'high',
+    features: ['free-spins', 'progressive-jackpot', 'multiplier'],
+  },
   meta: {
     title: 'ジャングルスピリット - ゲームレビュー by CasinoTsu',
     description: 'CasinoTsu による「Jungle Spirit: Call of the Wild（ジャングルスピリット: コール・オブ・ザ・ワイルド）」オンラインスロットゲームレビュー！',

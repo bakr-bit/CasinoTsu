@@ -171,6 +171,11 @@ export const emojiplanet: SlotData = {
       a: '5つの特別なフィーチャー（爆弾、ピザ、キスマーク、ロケット、ダブルハート）が搭載されており、これらは特定の絵文字シンボルを12個以上集める（アバランチ機能で消滅させる）ことで発動します。また、クラスターペイシステムとアバランチ機能（連鎖落下）が特徴的です。',
     },
   ],
+  categoryTags: {
+    mechanics: ['cluster', 'tumble'],
+    volatilityLevel: 'medium',
+    features: ['multiplier'],
+  },
   meta: {
     title: 'Emojiplanet',
     description: '私たちが日頃から親しんでいるお馴染みの絵文字がシンボルとして登場し、ポップで楽しい雰囲気を演出しています。 CasinoTsu では、この魅力的なスロットの基本情報からゲームの特徴、さらにはプレイ可能なカジノまで、詳細にご紹介いたします。',

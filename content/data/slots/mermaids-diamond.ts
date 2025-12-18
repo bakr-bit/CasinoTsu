@@ -200,6 +200,11 @@ export const mermaids_diamond: SlotData = {
       a: '96.50% です。ただし、一部のカジノでは94.45%のRTPが提供されている場合もありますので、プレイ前に CasinoTsu が提供する各カジノの情報をご確認いただくことを強く推奨いたします。正確さが第一です。',
     },
   ],
+  categoryTags: {
+    volatilityLevel: 'medium',
+    features: ['free-spins', 'multiplier'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'Mermaid\'s Diamond',
     description: 'マーメイド・ダイヤモンド（Mermaid’s Diamond）は、Play’n GO社が提供する、神秘的な人魚の世界をテーマにしたスロットゲームです。ユニークな6角形変形リールを採用し、海底に眠るダイヤモンドを探す冒険へとプレイヤーを誘います。CasinoTsuが、この魅力溢れるスロットの秘密を詳しくご紹介いたします。',

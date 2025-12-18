@@ -167,6 +167,12 @@ export const gemix: SlotData = {
       a: 'はい、GEMIXはモバイルデバイス（スマートフォン、タブレット）に完全対応しています。特別なアプリのダウンロードは不要で、お使いのブラウザから快適にプレイできます。CasinoTsuは、いつでもどこでもプレイできる環境を重視しています。',
     },
   ],
+  categoryTags: {
+    mechanics: ['cluster'],
+    volatilityLevel: 'medium',
+    features: ['free-spins', 'multiplier', 'bonus-round', 're-spins'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'Gemix',
     description: 'Play’n GO社よりリリースされた、パズル型落下式スロットの元祖とも言えるGEMIX（ジェミックス）！その中毒性の高さから多くのプレイヤーを魅了する理由を、CasinoTsuが徹底分析いたします！',

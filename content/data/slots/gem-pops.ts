@@ -220,6 +220,11 @@ export const gem_pops: SlotData = {
       a: 'Relax Gaming（リラックスゲーミング）社のスロットリストで見つからない場合は、開発元である AvatarUX Studios のゲームとして探してみてください。両方のプロバイダー名で検索すると、見つけやすくなることがあります。 CasinoTsuは、皆様がスムーズにゲームを見つけられるよう、情報を提供いたします。',
     },
   ],
+  categoryTags: {
+    mechanics: ['bonus-buy'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'multiplier'],
+  },
   meta: {
     title: 'Gem Pops (ジェムポップス)',
     description: '',

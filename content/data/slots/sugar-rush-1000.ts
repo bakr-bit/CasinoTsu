@@ -177,6 +177,12 @@ export const sugar_rush_1000: SlotData = {
       a: 'ハイボラティリティ（High）です。',
     },
   ],
+  categoryTags: {
+    mechanics: ['cluster', 'bonus-buy'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'multiplier', 're-spins'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'Sugar Rush 1000',
     description: 'Pragmatic Play社の『シュガーラッシュ1000』を、CasinoTsuが徹底解説いたします。最大配当25,000倍、最大マルチプライヤー1,024倍という、まさに破格のポテンシャルを秘めたハイボラティリティ機種です。',

@@ -108,6 +108,10 @@ export const devourer: SlotData = {
       },
     ],
   },
+  categoryTags: {
+    volatilityLevel: 'high',
+    features: ['free-spins', 'multiplier'],
+  },
   meta: {
     title: 'Devourer (デバウアー) スロットレビュー | CasinoTsu',
     description: '',

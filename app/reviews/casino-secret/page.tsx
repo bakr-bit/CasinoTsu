@@ -24,10 +24,10 @@ export default async function CasinoSecretReviewPage() {
   };
 
   return (
-    <main className="min-h-screen bg-gray-50">
+    <div className="min-h-screen">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-purple-600 to-purple-800 text-white">
-        <div className="max-w-5xl mx-auto px-4 py-12">
+      <section className="bg-purple-700 text-white">
+        <div className="container mx-auto px-4 py-16 md:py-24">
           <div className="flex flex-col md:flex-row gap-8 items-start">
             {/* Casino Logo */}
             {casinoData?.logo && (
@@ -54,17 +54,17 @@ export default async function CasinoSecretReviewPage() {
                   </span>
                 )}
               </div>
-              <h1 className="text-3xl md:text-4xl font-bold mb-4">{frontmatter.title}</h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-4">{frontmatter.title}</h1>
               {frontmatter.description && (
-                <p className="text-lg text-purple-100">{frontmatter.description}</p>
+                <p className="text-lg md:text-xl text-white/90 max-w-2xl">{frontmatter.description}</p>
               )}
               {casinoData?.features?.bonusHeadline && (
-                <div className="mt-4 p-3 bg-white/10 rounded-lg">
+                <div className="mt-4 p-3 bg-white/10 rounded-lg inline-block">
                   <span className="text-amber-300 font-medium">ボーナス: </span>
                   <span>{casinoData.features.bonusHeadline}</span>
                 </div>
               )}
-              <div className="flex flex-wrap items-center gap-4 mt-6 text-sm text-purple-200">
+              <div className="flex flex-wrap items-center gap-4 mt-6 text-sm text-white/70">
                 <span>著者: {frontmatter.author}</span>
                 <span>•</span>
                 <span>更新日: {frontmatter.lastUpdated}</span>
@@ -84,16 +84,16 @@ export default async function CasinoSecretReviewPage() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Main Content */}
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <article className="bg-white rounded-xl shadow-sm p-6 md:p-10">
-          <div className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-purple-600 hover:prose-a:text-purple-700">
+      <section className="bg-white">
+        <div className="container mx-auto px-4 py-12 md:py-16">
+          <div className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-purple-600 prose-strong:text-gray-900">
             {content}
           </div>
-        </article>
-      </div>
-    </main>
+        </div>
+      </section>
+    </div>
   );
 }

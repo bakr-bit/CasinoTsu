@@ -176,6 +176,11 @@ export const goblins_cave: SlotData = {
       a: 'はい、「GOBLIN\'S CAVE」は、VegasSlotsOnlineやSlotozillaなどのウェブサイトで、デモモード（無料プレイ）として提供されています。実際の資金を使わずにゲームの雰囲気を掴むことができます。 CasinoTsuは、プレイ前に無料モードで試すことをお勧めします。',
     },
   ],
+  categoryTags: {
+    volatilityLevel: 'low',
+    features: ['free-spins', 'progressive-jackpot', 'multiplier'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'Goblins Cave / ゴブリンズ・ケーブ ゲームレビュー',
     description: '',

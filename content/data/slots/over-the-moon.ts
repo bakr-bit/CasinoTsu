@@ -242,6 +242,12 @@ export const over_the_moon: SlotData = {
       a: 'ロケットには最大3つの燃料タンクが搭載されており、勝利が発生するたびに燃料が1つ消費されます。燃料が尽きるとロケットは画面から消え、メテオ賞を獲得できなくなります。フリースピン中は、バッテリーシンボルが出現すると燃料を補給することができます。',
     },
   ],
+  categoryTags: {
+    mechanics: ['bonus-buy'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'multiplier', 'bonus-round'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'Over The Moon',
     description: 'BTG社のメガウェイズスロットは最大配当13,570倍。ヒット連発のオーバー・ザ・ムーン最新レビュー！',

@@ -177,6 +177,11 @@ export const moon_princess_100: SlotData = {
       a: 'プレイヤーからの評価は、**平均7.0/10** となっています。多くのプレイヤーが、その「アウト・オブ・ディス・ワールド」なプロダクションバリューと、完成度の高さを評価しています。 CasinoTsu も、この評価に同意いたします。',
     },
   ],
+  categoryTags: {
+    mechanics: ['cluster', 'bonus-buy'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'multiplier'],
+  },
   meta: {
     title: 'Moon Princess 100',
     description: 'パワーアップした超ヒット作の続編、月に代わってカスケードよ♡ Playn’ GOから2022年4月7日にリリースされた、あの大ヒット作「ムンプリ」ことムーンプリンセスの続編が、賞金ポテンシャルをアップさせて堂々の再登場！このスロットは、アニメ、魔法、ファンタジーといったテーマが融合し、プレイヤーを魅惑的な世界へと誘います。✨',

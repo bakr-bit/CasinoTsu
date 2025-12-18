@@ -189,6 +189,12 @@ export const halloween_bonanza: SlotData = {
       a: 'はい、多くのオンラインカジノでデモプレイ（無料プレイ）が提供されています。CasinoTsuは、責任あるプレイを第一に考えております。',
     },
   ],
+  categoryTags: {
+    mechanics: ['cluster', 'bonus-buy', 'tumble'],
+    volatilityLevel: 'high',
+    themes: ['halloween'],
+    features: ['free-spins', 'multiplier', 're-spins'],
+  },
   meta: {
     title: 'ハロウィン・ボナンザ',
     description: 'BGaming社より、ハロウィンシーズンにぴったりのスロット「ハロウィン・ボナンザ（Halloween Bonanza）」が登場いたしました！可愛らしいオバケたちが、ゲーム画面を華やかに彩ります。',

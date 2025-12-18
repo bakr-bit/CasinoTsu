@@ -37,16 +37,19 @@ export default async function ProvidersPillarPage() {
     };
   });
 
-  const { content } = await loadMDX('pillars', 'providers');
+  const { content, frontmatter, headings } = await loadMDX('pillars', 'providers');
 
   return (
     <PillarPageTemplate
       category="providers"
       categoryNameJa="プロバイダー"
       description="オンラインカジノゲームを開発する主要プロバイダーを紹介。"
-      heroGradient="from-blue-600 to-indigo-700"
+      heroColor="bg-blue-700"
+      heroImage="/headers/providers.webp"
       content={content}
       articles={enrichedArticles}
+      lastUpdated={frontmatter.lastUpdated}
+      headings={headings}
     />
   );
 }

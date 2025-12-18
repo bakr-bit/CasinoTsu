@@ -87,6 +87,11 @@ export const candy_jar_cluster: SlotData = {
     cons: [
     ],
   },
+  categoryTags: {
+    mechanics: ['cluster'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'multiplier', 're-spins'],
+  },
   meta: {
     title: 'キャンディ・ジャー・クラスターズ｜最新スロットレビュー by CasinoTsu',
     description: 'Pragmatic Play社より、甘いお菓子をテーマにしたオンラインスロット『キャンディ・ジャー・クラスターズ（Candy Jar Clusters）』が登場いたしました🎉。Pragmatic Play社は、スイート・ボナンザやシュガー・ラッシュといった人気スイーツ系スロットで広く知られておりますが、この『キャンディ・ジャー・クラスターズ』にも大きな期待が寄せられております🤤。',

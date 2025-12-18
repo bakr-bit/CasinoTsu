@@ -194,6 +194,12 @@ export const green_chilli: SlotData = {
       a: 'プレイヤーからは、「ホールドボーナスと勝利が素晴らしい」と高く評価する声がある一方で、「繰り返しが多く、期待外れだった」という意見も見られます。このように、プレイヤーによって評価が分かれる点も、高ボラティリティスロットの特性と言えるでしょう。',
     },
   ],
+  categoryTags: {
+    mechanics: ['hold-and-win'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'progressive-jackpot', 'multiplier'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'グリーン・チリ｜レビュー',
     description: '鮮やかなグラフィックと陽気なサウンドが特徴。「ホールド＆ウィン」機能と最大2,000倍のGRANDジャックポットで熱くなろう！',

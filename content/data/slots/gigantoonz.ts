@@ -179,6 +179,11 @@ export const gigantoonz: SlotData = {
       a: 'A5: Gigantoonzには、従来の「フリースピンボーナスラウンド」は搭載されていません。その代わりに、勝利によってチャージされる「クアンタムメーター」が、ゲームを盛り上げる特別なフィーチャーを提供します。 CasinoTsu は、この独自性がゲームの魅力を高めていると評価しております。',
     },
   ],
+  categoryTags: {
+    mechanics: ['cluster'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'multiplier', 'bonus-round'],
+  },
   meta: {
     title: 'ギガントゥーンズ／Gigantoonz｜オンカジスロット最新レビュー',
     description: '人気シリーズ最新作！巨大シンボルとクアンタムメーターで勝利を掴め！',

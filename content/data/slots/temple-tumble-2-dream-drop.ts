@@ -171,6 +171,11 @@ export const temple_tumble_2_dream_drop: SlotData = {
       a: 'ドリームドロップジャックポットを除いた場合の最大配当倍率は **x20,000** です。ジャックポットを含めると、さらに大きな勝利の可能性があります。 CasinoTsu では、このポテンシャルを最大限に理解していただけるよう、詳細な情報を提供しています。',
     },
   ],
+  categoryTags: {
+    mechanics: ['bonus-buy', 'tumble'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'progressive-jackpot', 'multiplier', 'bonus-round'],
+  },
   meta: {
     title: 'Temple Tumble 2 Dream Drop カジノスロット攻略【2024最新】',
     description: '話題のアドベンチャースロット第2弾、Temple Tumble 2 Dream Drop（テンプルタンブル2・ドリームドロップ）！ドリームドロップ＆フリースピンで高額賞金待ったナシ！ CasinoTsu は、このエキサイティングなスロットの魅力を余すところなくお伝えいたします。',

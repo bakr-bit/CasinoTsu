@@ -169,6 +169,10 @@ export const swipe_gf: SlotData = {
       a: '従来のオンライン [スロット](https://www.casinotsu.com/slots) とは異なり、「Fixed Odds（固定オッズ）」を採用したスワイピングゲームです。リールを回転させるのではなく、画面上のアイコンをスワイプして結果を確認するインタラクティブなゲームプレイが特徴です。',
     },
   ],
+  categoryTags: {
+    volatilityLevel: 'high',
+    features: ['free-spins', 'multiplier', 'bonus-round'],
+  },
   meta: {
     title: 'Swipe GF／スワイプ彼女｜オンラインスロットレビュー',
     description: '',

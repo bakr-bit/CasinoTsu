@@ -197,6 +197,11 @@ export const orient_express: SlotData = {
       a: 'フリースピンの獲得頻度は、他のスロットと比較してやや低い傾向にあるかもしれません。これは、ゲームのバランスを保ち、高配当の可能性を高めるためと考えられます。しかし、獲得したフリースピン中は各都市のフィーチャーが強化されるため、大きな勝利のチャンスとなります。',
     },
   ],
+  categoryTags: {
+    mechanics: ['bonus-buy', 'tumble'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'multiplier'],
+  },
   meta: {
     title: 'Orient Express スロットレビュー | CasinoTsu',
     description: 'Yggdrasil社が贈る、クラシックなテーマと革新的なゲームシステムが融合したスロットゲーム「Orient Express」。パリ、ベネチア、ベオグラード、イスタンブールを巡りながら、各都市固有のフィーチャーを体験しましょう。',

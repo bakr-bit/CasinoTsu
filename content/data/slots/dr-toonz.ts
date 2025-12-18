@@ -166,6 +166,10 @@ export const dr_toonz: SlotData = {
       'ベースゲームの単調さを感じる場合がある',
     ],
   },
+  categoryTags: {
+    mechanics: ['cluster'],
+    features: ['free-spins', 'multiplier', 'bonus-round'],
+  },
   meta: {
     title: 'ドクター・トゥーンズ（Dr.Toonz）最新スロットレビュー！ 🧪',
     description: 'あのリアクトゥーンズはこうして生まれた！？ 高ボラティリティでもヘビーな当たりが満載のDr.Toonz(ドクター・トゥーンズ) ☆ マックス22,000倍の特大勝利金をつかみとれ！ CasinoTsu 推薦！',

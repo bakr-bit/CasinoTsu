@@ -205,6 +205,11 @@ export const the_wild_chase: SlotData = {
       a: '元記事では最大配当倍率がx423と記載されていますが、リサーチによると、フリースピンのトリガーで最大4,230倍の配当、または最大6,250コインの勝利の可能性もあるとされています。これは、ベット額によってはかなりの高額勝利につながる可能性があります。 CasinoTsu は、皆様が夢を追いかけるお手伝いをいたします。',
     },
   ],
+  categoryTags: {
+    volatilityLevel: 'medium',
+    features: ['free-spins', 'multiplier', 're-spins'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'The Wild Chase / ワイルド・チェイス レビュー',
     description: '映画のような世界観で、リスピン機能とマルチプライヤーが熱い！',

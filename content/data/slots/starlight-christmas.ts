@@ -205,6 +205,13 @@ export const starlight_christmas: SlotData = {
       a: 'ゲーム中のエラーにより、すべてのプレイと払い戻しが無効になる場合があります。もしゲームが正常にプレイできないなどの不具合が発生した場合は、プレイしているオンラインカジノのカスタマーサポートに連絡してください。エラーメッセージのスクリーンショットなどを提示すると、スムーズな対応につながることがあります。CasinoTsuは、皆様の安全なプレイ環境をサポートいたします。',
     },
   ],
+  categoryTags: {
+    mechanics: ['bonus-buy', 'tumble'],
+    volatilityLevel: 'high',
+    themes: ['xmas'],
+    features: ['free-spins', 'multiplier'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'Starlight Christmas',
     description: '',

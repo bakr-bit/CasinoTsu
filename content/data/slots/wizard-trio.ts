@@ -186,6 +186,10 @@ export const wizard_trio: SlotData = {
       a: '魔法やファンタジーのテーマが好きな方、ユニークなワイルドフィーチャーを楽しみたい方、そして爆発力よりも安定したゲームプレイを好む方におすすめです。また、初心者から経験豊富なプレイヤーまで、そのユーザーフレンドリーなインターフェースで楽しむことができます。',
     },
   ],
+  categoryTags: {
+    volatilityLevel: 'high',
+    features: ['free-spins', 'multiplier', 'bonus-round'],
+  },
   meta: {
     title: 'Wizard Trio',
     description: 'Edict（Merkur Gaming）から、新たなスロットゲーム『Wizard Trio（ウィザード・トリオ）』が登場しました。3人の魔法使いが特別なフリースピンを発動させ、それぞれユニークなワイルドシンボルを出現させる、魔法のような体験をお楽しみいただけます🧙‍♂️✨',

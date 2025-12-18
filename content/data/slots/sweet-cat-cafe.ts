@@ -155,6 +155,12 @@ export const sweet_cat_cafe: SlotData = {
       '一部の地域ではプレイできない場合がある',
     ],
   },
+  categoryTags: {
+    mechanics: ['bonus-buy'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'multiplier', 'bonus-round', 're-spins'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'Sweet Cat Cafe',
     description: '',

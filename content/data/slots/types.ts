@@ -1,5 +1,21 @@
 // Slot data types for the new content architecture
 
+// Slot category tags for filtering
+export type SlotMechanic = 'megaways' | 'cluster' | 'hold-and-win' | 'bonus-buy' | 'classic' | 'tumble' | 'expanding-wilds';
+export type SlotVolatilityLevel = 'low' | 'medium' | 'high';
+export type SlotTheme = 'japanese' | 'geisha' | 'egyptian' | 'fantasy' | 'fruit' | 'adventure' | 'halloween' | 'xmas' | 'valentine' | 'asian' | 'mythology';
+export type SlotFeatureTag = 'free-spins' | 'progressive-jackpot' | 'multiplier' | 'bonus-round' | 're-spins';
+
+export interface SlotCategoryTags {
+  mechanics?: SlotMechanic[];
+  volatilityLevel?: SlotVolatilityLevel;
+  themes?: SlotTheme[];
+  features?: SlotFeatureTag[];
+  isNew?: boolean;
+  isHighRtp?: boolean; // RTP >= 96.5%
+  rtpValue?: number; // numeric RTP for sorting, e.g., 96.49
+}
+
 export interface SlotSymbol {
   name: string;
   description?: string;
@@ -93,6 +109,9 @@ export interface SlotData {
     title: string;
     description: string;
   };
+
+  // Category tags for filtering (used by category pages)
+  categoryTags?: SlotCategoryTags;
 }
 
 export type SlotRegistry = Record<string, SlotData>;

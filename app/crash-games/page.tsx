@@ -37,16 +37,19 @@ export default async function CrashGamesPillarPage() {
     };
   });
 
-  const { content } = await loadMDX('pillars', 'crash-games');
+  const { content, frontmatter, headings } = await loadMDX('pillars', 'crash-games');
 
   return (
     <PillarPageTemplate
       category="crash-games"
       categoryNameJa="クラッシュゲーム"
       description="Aviator、Spaceman、JetXなど人気クラッシュゲームのルールと攻略法。"
-      heroGradient="from-cyan-600 to-sky-700"
+      heroColor="bg-cyan-700"
+      heroImage="/headers/crash-games.webp"
       content={content}
       articles={enrichedArticles}
+      lastUpdated={frontmatter.lastUpdated}
+      headings={headings}
     />
   );
 }

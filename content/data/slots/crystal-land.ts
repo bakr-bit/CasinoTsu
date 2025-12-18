@@ -148,6 +148,11 @@ export const crystal_land: SlotData = {
       a: 'ReSpin、Golden Panda、Betgoat、1win、Miki、WSM Casino、Bitz、Katsuwin、Sushi Casino、Betpanda、Parimatch、Bets.io、Duelbits、Sportsbet.io、Winz、Lucky Block、Flush Casino、Roobet、Casino Sky、Mega Dice、Fresh Casino、Cosmoswin、BC.Game、Stake、K8、OhMySpins、Tedbet、BetRebels、Conquestador、Cloudbet、Livecasino.io、Lucky Bull、Gamdom、Energy Casino、Casino Me、Bons.com、Mystino、Empire777、Pinnacle、Casinoin、WinUnique、BitStarz、Joy Casino、Casino Secret、Bitcasino.io、Casino-X、Casitabi、Eldoah Casinoなど、多くのオンラインカジノでプレイ可能です。CasinoTsuが推薦するカジノで、ぜひお楽しみください。',
     },
   ],
+  categoryTags: {
+    mechanics: ['cluster'],
+    volatilityLevel: 'high',
+    features: ['multiplier', 'bonus-round', 're-spins'],
+  },
   meta: {
     title: 'Crystal Land',
     description: 'Playson社がリリースした、フィーチャー満載のスロット「クリスタルランド（Crystal Land）」をご紹介いたします。ボーナスを集めて新レベルに到達し、賞金を獲得していく、やりがいのあるゲームです。',

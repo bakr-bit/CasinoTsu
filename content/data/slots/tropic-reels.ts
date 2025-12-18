@@ -168,6 +168,10 @@ export const tropic_reels: SlotData = {
       a: 'ホールド機能は、スピン中に特定のシンボルが出た際に、そのリールを固定して他のリールだけを再スピンさせる機能です。これにより、配当成立の可能性を高める戦略的なプレイが可能になります。',
     },
   ],
+  categoryTags: {
+    volatilityLevel: 'medium',
+    features: ['free-spins', 'progressive-jackpot', 'multiplier', 'bonus-round'],
+  },
   meta: {
     title: 'Tropic Reels',
     description: '驚異のRTP！？ CasinoTsu は、そのRTPが 94.9% であることを確認いたしました。これは2009年当時としては高めの数値でありました。この熱帯魚をテーマにしたクラシックスロットは、ユニークなマルチスピン機能とホールド機能により、シンプルながらも戦略的なゲームプレイを提供いたします。',

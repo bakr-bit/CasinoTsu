@@ -175,6 +175,11 @@ export const ozwins_jackpots: SlotData = {
       a: 'ベースゲームでの最高獲得コイン数は12,000枚、最大配当倍率はx600です。ただし、これはプログレッシブ・ジャックポットによる配当は含まれていません。ジャックポット額は、プレイヤー数やベット額によって常に変動します。一部の情報源では、最大で24,000ユーロ（約390万円 ※1ユーロ=160円換算）といった記載も見られますが、これはあくまで過去の事例や推定値であり、保証されるものではありません。',
     },
   ],
+  categoryTags: {
+    volatilityLevel: 'high',
+    features: ['free-spins', 'progressive-jackpot', 'multiplier'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'オズウィンズ・ジャックポット｜スロットレビュー＆完全攻略',
     description: '',

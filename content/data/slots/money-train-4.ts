@@ -267,6 +267,12 @@ export const money_train_4: SlotData = {
       a: 'はい、通常のフリースピン（ベット額の100倍）または、Persistentシンボルが保証される「Persistent Feature」（ベット額の500倍）を直接購入できます。',
     },
   ],
+  categoryTags: {
+    mechanics: ['hold-and-win', 'bonus-buy'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'multiplier', 'bonus-round', 're-spins'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'マネー・トレイン4',
     description: '',

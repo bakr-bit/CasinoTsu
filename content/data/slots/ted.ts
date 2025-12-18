@@ -146,6 +146,10 @@ export const ted: SlotData = {
       a: 'はい、テッドはHTML5技術で開発されているため、スマートフォンやタブレットなどのモバイルデバイスからでも、快適にプレイできます。多くのオンラインカジノのモバイルアプリやウェブサイトで、いつでもどこでも楽しむことが可能です。',
     },
   ],
+  categoryTags: {
+    volatilityLevel: 'medium',
+    features: ['free-spins', 'multiplier'],
+  },
   meta: {
     title: 'Ted（テッド）｜ CasinoTsu 推薦 オンラインスロットレビュー',
     description: '',

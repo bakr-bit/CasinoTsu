@@ -194,6 +194,12 @@ export const gates_of_hades: SlotData = {
       a: 'はい、購入可能です。ベット額の100倍から通常フリースピンを、500倍でスーパーフリースピンを購入できます。',
     },
   ],
+  categoryTags: {
+    mechanics: ['cluster', 'bonus-buy'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'multiplier', 're-spins'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'ゲーツ・オブ・ハデス (Gates of Hades)',
     description: 'Pragmatic Play社が2025年5月22日にリリースした最新スロット「ゲーツ・オブ・ハデス（Gates of Hades）」は、神々の世界を描いた「ゲーツ・オブ・オリンパス」シリーズとは対照的に、冥界を舞台としたスリリングな世界観を提供します。',

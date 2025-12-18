@@ -142,6 +142,11 @@ export const ali_babas_luck_megaways: SlotData = {
       '前作からのグラフィック的な大きな進化はない',
     ],
   },
+  categoryTags: {
+    mechanics: ['megaways'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'multiplier'],
+  },
   meta: {
     title: 'Ali Baba’s Luck Megaways',
     description: '前作の拡張シンボル機能がメガウェイズ機構と融合し、さらにエキサイティングな体験をお楽しみいただけるようになりました。アラビアの神秘的な世界を舞台に、隠された宝物を探し求める壮大な冒険へ、皆様もぜひご出発ください。',

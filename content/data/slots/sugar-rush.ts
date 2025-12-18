@@ -110,6 +110,11 @@ export const sugar_rush: SlotData = {
       },
     ],
   },
+  categoryTags: {
+    mechanics: ['cluster', 'bonus-buy', 'tumble'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'multiplier'],
+  },
   meta: {
     title: 'シュガーラッシュ（Sugar Rush）オンカジ・スロットレビュー',
     description: '',

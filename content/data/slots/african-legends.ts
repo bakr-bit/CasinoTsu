@@ -121,6 +121,9 @@ export const african_legends: SlotData = {
       },
     ],
   },
+  categoryTags: {
+    features: ['free-spins', 'progressive-jackpot', 'multiplier'],
+  },
   meta: {
     title: 'AFRICAN LEGENDS／アフリカン・レジェンド スロットレビュー',
     description: 'Microgaming（マイクロゲーミング）とSlingshot Studios（スリングショット・スタジオ）が提携し、期待のジャックポット機能を搭載したスロット、AFRICAN LEGENDS（アフリカン・レジェンド）が登場しました。',

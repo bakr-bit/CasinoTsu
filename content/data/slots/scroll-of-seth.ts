@@ -170,6 +170,11 @@ export const scroll_of_seth: SlotData = {
       a: 'モバイル版でも快適にプレイできますが、ボーナス購入機能がないため、フリースピン突入までに時間がかかる場合があります。また、画面サイズによっては、PC版の方が操作しやすいと感じるかもしれません。 CasinoTsu は、皆様のプレイ体験を最優先に考えております。',
     },
   ],
+  categoryTags: {
+    mechanics: ['bonus-buy', 'expanding-wilds'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'progressive-jackpot', 'multiplier'],
+  },
   meta: {
     title: 'Scroll of Seth（スクロール・オブ・セス）',
     description: '古代エジプトをテーマにしたPlay’n GO社のスロットゲーム。拡大ワイルドや追加スピンが魅力で、最大5,000倍の配当を狙えます。',

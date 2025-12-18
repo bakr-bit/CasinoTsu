@@ -173,6 +173,12 @@ export const jammin_jars: SlotData = {
       'ボーナス購入機能は一部地域で利用不可',
     ],
   },
+  categoryTags: {
+    mechanics: ['cluster', 'bonus-buy'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'progressive-jackpot', 'multiplier'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'Jammin Jars／ジャミン・ジャーズ ゲームレビュー',
     description: 'フルーツとディスコをテーマにした、クラスターペイとウォーキングワイルドが特徴の人気スロット。',

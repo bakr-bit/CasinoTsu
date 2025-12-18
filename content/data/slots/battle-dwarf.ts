@@ -177,6 +177,10 @@ export const battle_dwarf: SlotData = {
       a: '一部のプレイヤーからは、特にモバイルデバイスでプレイする際に、グラフィックが「ごちゃごちゃしていて視覚的に圧倒される」との意見があります。デザインの好みは分かれる可能性があります。 CasinoTsu は、皆様の率直なご意見を大切にしています。',
     },
   ],
+  categoryTags: {
+    volatilityLevel: 'high',
+    features: ['free-spins', 'multiplier', 're-spins'],
+  },
   meta: {
     title: 'Battle Dwarf／バトルドワーフ ゲームレビュー | CasinoTsu',
     description: 'プレイヤーは勇敢なるドワーフとなり、モンスターとの激しいバトルに挑むか、あるいは、そのバトルを巧みにかわしてフリースピンを目指すか、戦略次第で勝利への扉が開かれます。シンプルながらも豪快なゲーム展開が魅力であり、多くのプレイヤーの皆様を惹きつけております。✨',

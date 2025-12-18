@@ -167,6 +167,11 @@ export const ark_of_mystery: SlotData = {
       a: '古代エジプトがテーマです。物語のヒロインである探検家アンナを助け、古代エジプト伝説のファラオの呪いを解き放ち、王国の財宝を見つけ出すというストーリーになっています。',
     },
   ],
+  categoryTags: {
+    volatilityLevel: 'high',
+    features: ['free-spins', 'multiplier', 're-spins'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'Ark Of Mystery（アーク・オブ・ミステリー）',
     description: 'Ark Of Mystery（アーク・オブ・ミステリー）は、Quickspin社が開発した、古代エジプトの神秘をテーマにしたビデオスロットゲームです。革新的なリスピン機能とマルチプライヤーシンボルが特徴で、スリリングなゲーム体験を提供します。',

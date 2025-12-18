@@ -187,6 +187,10 @@ export const firework_master: SlotData = {
       a: 'いいえ、「Fireworks Master」にはプログレッシブジャックポット機能は搭載されていません。ただし、最大でベット額の6,206倍の配当が得られる可能性があります。',
     },
   ],
+  categoryTags: {
+    volatilityLevel: 'high',
+    features: ['free-spins', 'progressive-jackpot', 'multiplier'],
+  },
   meta: {
     title: 'Fireworks Master（ファイアーワークス・マスター） | Playson | CasinoTsu',
     description: 'Playson（プレイソン）社が提供する「Fireworks Master」は、麻雀とオンラインスロットの要素を融合させた斬新なゲーム性、そして花火のように華やかなボーナスフィーチャーが特徴のスロットゲームです。最大で6,206倍の配当が期待でき、特別なボーナスゲームを体験できます。',

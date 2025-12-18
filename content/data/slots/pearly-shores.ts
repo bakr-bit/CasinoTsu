@@ -205,6 +205,11 @@ export const pearly_shores: SlotData = {
       a: '[Casino-X](https://casinotsu.com/reviews/casino-x)、[Bitcasino.io](https://casinotsu.com/reviews/bitcasino-io)、[Konibet](https://casinotsu.com/reviews/konibet)などのオンラインカジノでプレイ可能です。詳細は「パーリー・ショーズで遊べるオンラインカジノ＆ボーナス」のセクションをご確認ください。 CasinoTsu 推薦のカジノで、安全にお楽しみいただけます。',
     },
   ],
+  categoryTags: {
+    mechanics: ['cluster', 'bonus-buy'],
+    volatilityLevel: 'medium',
+    features: ['free-spins', 'progressive-jackpot', 'multiplier', 're-spins'],
+  },
   meta: {
     title: 'Pearly Shores',
     description: '最大配当11,000倍＆追加スピンで爆益チャンスも！オリジナルフィーチャー満載のビーチスロットを徹底レビュー！',

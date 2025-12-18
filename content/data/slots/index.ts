@@ -435,5 +435,34 @@ export function searchSlots(query: string): SlotData[] {
   );
 }
 
+// Get slots by category using filter from categories config
+export function getSlotsByCategory(categorySlug: string): SlotData[] {
+  // Import dynamically to avoid circular dependency
+  const { getSlotCategory } = require('./categories');
+  const category = getSlotCategory(categorySlug);
+  if (!category) return [];
+
+  return getAllSlots().filter(slot => {
+    // Parse RTP value from string
+    const rtpMatch = slot.hero.rtp?.match(/(\d+\.?\d*)/);
+    const rtpValue = rtpMatch ? parseFloat(rtpMatch[1]) : 0;
+
+    return category.filter({
+      slug: slot.slug,
+      name: slot.hero.title,
+      volatility: slot.hero.volatility,
+      rtp: slot.hero.rtp,
+      categoryTags: {
+        ...slot.categoryTags,
+        rtpValue,
+        isHighRtp: rtpValue >= 96.5,
+      },
+    });
+  });
+}
+
 // Re-export types
 export type { SlotData, SlotRegistry } from './types';
+
+// Re-export categories
+export { SLOT_CATEGORIES, getSlotCategory, getAllCategorySlugs } from './categories';

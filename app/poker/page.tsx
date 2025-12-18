@@ -37,16 +37,19 @@ export default async function PokerPillarPage() {
     };
   });
 
-  const { content } = await loadMDX('pillars', 'poker');
+  const { content, frontmatter, headings } = await loadMDX('pillars', 'poker');
 
   return (
     <PillarPageTemplate
       category="poker"
       categoryNameJa="ポーカー"
       description="テキサスホールデム、オマハなど各種ポーカーのルールと戦略を解説。"
-      heroGradient="from-green-600 to-teal-700"
+      heroColor="bg-teal-700"
+      heroImage="/headers/poker-header.webp"
       content={content}
       articles={enrichedArticles}
+      lastUpdated={frontmatter.lastUpdated}
+      headings={headings}
     />
   );
 }

@@ -148,6 +148,13 @@ export const multifruit_81: SlotData = {
       a: '「Ways to Win」は、従来のペイラインのように特定のライン上にシンボルが揃う必要がなく、隣接するリールに同じシンボルが出現すれば配当が発生する仕組みです。マルチフルーツ81では81通りのWays to Winがあります。',
     },
   ],
+  categoryTags: {
+    mechanics: ['expanding-wilds'],
+    volatilityLevel: 'high',
+    themes: ['fruit'],
+    features: ['free-spins', 'progressive-jackpot', 'multiplier', 'bonus-round'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'Multifruit 81（マルチフルーツ81）｜ CasinoTsu スロットレビュー',
     description: 'レトロな感覚に浸れる「マルチフルーツ81」が登場しました！新しさがありながらも、どこか懐かしさを感じさせるクラシックスロットが、Play’n GO 社からリリースされました。複雑な機能は苦手で、本来のクラシックスロットがお好きな方には、テンポよくプレイできるこの機種を CasinoTsu は推薦いたします。ボラティリティは非常に高いのが特徴です。今すぐチェック、ダブルチェック、そして CasinoTsu チェック！',

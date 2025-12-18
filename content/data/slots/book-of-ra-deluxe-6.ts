@@ -186,6 +186,12 @@ export const book_of_ra_deluxe_6: SlotData = {
       'ギャンブル機能はリスクを伴う',
     ],
   },
+  categoryTags: {
+    mechanics: ['tumble'],
+    volatilityLevel: 'high',
+    themes: ['egyptian'],
+    features: ['free-spins', 'multiplier'],
+  },
   meta: {
     title: 'Book of Ra deluxe 6 (ブック・オブ・ラー・デラックス6)レビュー | CasinoTsu',
     description: '',

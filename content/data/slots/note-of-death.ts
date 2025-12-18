@@ -169,6 +169,10 @@ export const note_of_death: SlotData = {
       '一部のカジノ限定のゲームである',
     ],
   },
+  categoryTags: {
+    volatilityLevel: 'high',
+    features: ['free-spins', 'progressive-jackpot', 'multiplier', 'bonus-round'],
+  },
   meta: {
     title: 'NOTE OF DEATH',
     description: '日本のアニメーションにインスパイアされた男女のキャラクターがゲームに登場し、プレイヤーはゲーム開始時にどちらかのキャラクターを選択可能です。選んだキャラクターによってボーナスゲームのフィーチャーが変化するという新感覚ゲームを、CasinoTsuが徹底レビューいたします！✨',

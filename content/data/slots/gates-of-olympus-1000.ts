@@ -183,6 +183,13 @@ export const gates_of_olympus_1000: SlotData = {
       a: 'フリースピン中は、マルチプライヤーはリセットされず、スピンごとに累積していきます（合計マルチプライヤー）。これにより、フリースピン終了時には非常に高い倍率に達する可能性があります。',
     },
   ],
+  categoryTags: {
+    mechanics: ['bonus-buy', 'tumble'],
+    volatilityLevel: 'high',
+    themes: ['mythology'],
+    features: ['free-spins', 'multiplier', 'bonus-round'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'Gates of Olympus 1000｜人気スロットの最新レビュー',
     description: 'Pragmatic Play社が贈る人気スロット「ゲーツ・オブ・オリンパス」が、さらなる進化を遂げて登場いたしました。ボラティリティと最大配当が大幅に向上し、プレイヤーの皆様を熱狂させる新たな体験をご提供いたします。⚡',

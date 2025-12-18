@@ -40,16 +40,19 @@ export default async function SlotsPillarPage() {
     };
   });
 
-  const { content } = await loadMDX('pillars', 'slots');
+  const { content, frontmatter, headings } = await loadMDX('pillars', 'slots');
 
   return (
     <PillarPageTemplate
       category="slots"
       categoryNameJa="スロット"
       description="オンラインスロットの完全ガイド。RTP、ボラティリティ、プロバイダー情報など。"
-      heroGradient="from-blue-600 to-indigo-800"
+      heroColor="bg-indigo-700"
+      heroImage="/headers/slots-header.webp"
       content={content}
       articles={enrichedArticles}
+      lastUpdated={frontmatter.lastUpdated}
+      headings={headings}
     />
   );
 }

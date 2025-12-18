@@ -166,6 +166,12 @@ export const spooky_carnival: SlotData = {
       a: 'コニベットにて独占先行配信されていました。2023年10月26日より一般配信され、多くのオンラインカジノでプレイ可能です。CasinoTsu がご紹介するカジノリストもぜひご参照ください。',
     },
   ],
+  categoryTags: {
+    mechanics: ['bonus-buy'],
+    volatilityLevel: 'low',
+    themes: ['halloween'],
+    features: ['free-spins', 'multiplier'],
+  },
   meta: {
     title: 'スプーキー・カーニバル（Spooky Carnival）スロットレビュー',
     description: 'このスロットでは、5枚集めると通常シンボルをワイルドシンボルに変化させる「スプーキーコイン」機能が特徴です。',

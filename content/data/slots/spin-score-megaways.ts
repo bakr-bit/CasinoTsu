@@ -175,6 +175,12 @@ export const spin_score_megaways: SlotData = {
       '一部レビューではビジュアルデザインが汎用的との指摘も',
     ],
   },
+  categoryTags: {
+    mechanics: ['megaways', 'bonus-buy'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'multiplier'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'スピン・アンド・スコア・メガウェイズ (Spin & Score Megaways) スロットレビュー | CasinoTsu',
     description: 'サッカーをテーマにしたメガウェイズスロットで、スタジアムの熱気を体感しよう！',

@@ -120,6 +120,11 @@ export const section_viii_rise_of_the_damned: SlotData = {
       'ボーナス購入額がやや高めに設定されている',
     ],
   },
+  categoryTags: {
+    mechanics: ['bonus-buy'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'multiplier', 'bonus-round'],
+  },
   meta: {
     title: 'Section VIII: Rise of the Damned (セクション・エイト｜地獄の亡者・ライジング)',
     description: 'インフェクト・フリースピンでビッグウィンを狙えるこのゲームの魅力を、CasinoTsuが詳しくご紹介します。',

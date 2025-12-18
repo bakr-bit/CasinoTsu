@@ -207,6 +207,12 @@ export const sakura_fortune_ii: SlotData = {
       a: '高ボラティリティのスロットで大きな勝利の可能性を求めるプレイヤーや、じっくりとゲームを楽しめる根気強いプレイヤーにおすすめです。',
     },
   ],
+  categoryTags: {
+    mechanics: ['bonus-buy'],
+    volatilityLevel: 'high',
+    themes: ['japanese', 'asian'],
+    features: ['free-spins', 'multiplier', 're-spins'],
+  },
   meta: {
     title: 'Sakura Fortune II',
     description: 'ベースゲームでもワイルドナッジやリスピンが楽しめる、アクション満載のスロットです。刀工の名匠ムラマサが作り出したとされる魔力を秘めた剣を、主人公サクラがその力の全てを解き放つために奮闘します。サクラと共に、刀を操り、特大賞金の獲得を目指しましょう！ ✨',

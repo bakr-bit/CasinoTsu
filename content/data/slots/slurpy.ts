@@ -165,6 +165,11 @@ export const slurpy: SlotData = {
       a: 'はい。 Elk Studios の特徴であるX-iter（エクスイター）機能を搭載しており、5種類のボーナス購入オプションから選択できます。これにより、ボーナスゲームやスーパーボーナスゲームなどを直接購入することが可能です。',
     },
   ],
+  categoryTags: {
+    mechanics: ['cluster', 'bonus-buy'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'multiplier'],
+  },
   meta: {
     title: 'スラーピーの遊び方解説 | CasinoTsu 推薦オンラインカジノスロット',
     description: 'キャラクターがシンボルを吸い込んでいくユニークなゲーム性、ポップでキュートな見た目、そして最大5,000倍という爆発力を秘めたこのスロットを、CasinoTsu が徹底レビューいたします！',

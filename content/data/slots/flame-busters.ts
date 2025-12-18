@@ -143,6 +143,9 @@ export const flame_busters: SlotData = {
       'グラフィックやサウンドが苦手なプレイヤーには合わない可能性',
     ],
   },
+  categoryTags: {
+    features: ['free-spins', 'multiplier', 'bonus-round'],
+  },
   meta: {
     title: 'Flame Busters (フレーム・バスターズ) スロット｜基本情報・解析・攻略',
     description: 'その名の通り、消防士さんが大活躍するゲームとなっております。今回は、このゲームの特徴やシンボルなどについて詳しく解説いたします。',

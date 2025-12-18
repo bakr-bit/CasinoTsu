@@ -217,6 +217,11 @@ export const gravity_bonanza: SlotData = {
       a: 'はい、Pragmatic Play社によって開発されたこのゲームは、同社の人気シリーズ「Bonanza」に連なるタイトルとして位置づけられています。',
     },
   ],
+  categoryTags: {
+    mechanics: ['cluster', 'bonus-buy'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'progressive-jackpot', 'multiplier'],
+  },
   meta: {
     title: 'Gravity Bonanza',
     description: '宇宙が舞台。ハンバーガーや寿司の惑星も登場！？ 最大配当1万倍のハイボラスロットを徹底レビュー！',

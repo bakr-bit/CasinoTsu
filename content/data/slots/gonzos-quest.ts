@@ -148,6 +148,10 @@ export const gonzos_quest: SlotData = {
       'ベースゲームのRTPが平均的',
     ],
   },
+  categoryTags: {
+    volatilityLevel: 'high',
+    features: ['free-spins', 'multiplier'],
+  },
   meta: {
     title: 'Gonzo’s Quest',
     description: 'NetEnt社が2010年にリリースした革新的なオンラインスロット。ユニークな「アバランチ」機能とインカ帝国の失われた都市エル・ドラードを舞台にした冒険的なテーマで、世界中のプレイヤーを魅了し続けています。連鎖する勝利と上昇するマルチプライヤーで、高額配当の可能性を追求しましょう。',

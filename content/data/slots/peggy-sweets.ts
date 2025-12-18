@@ -210,6 +210,11 @@ export const peggy_sweets: SlotData = {
       a: 'いいえ、「Peggy Sweets」にはプログレッシブジャックポット機能は搭載されておりません。最大配当は5,173倍です。',
     },
   ],
+  categoryTags: {
+    mechanics: ['cluster', 'bonus-buy'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'progressive-jackpot', 'multiplier'],
+  },
   meta: {
     title: 'Peggy Sweets（ペギー・スイーツ）オンラインスロット徹底レビュー',
     description: 'CasinoTsu が自信を持ってお届けする「Peggy Sweets（ペギー・スイーツ）」は、レトロなアメリカンダイナーをテーマにした、ポップでカラフルなオンラインスロットです。キラキラ輝く50年代の世界観で、可愛い3人の女の子たちがプレイヤーの皆様を魅了します。最大配当5,173倍という高いポテンシャルを持ち、シンボル変換、シンボル分割、マルチプライヤーといった多彩なフィーチャーが次々と炸裂する、ハイスペックなゲーム体験を提供いたします。',

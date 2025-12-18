@@ -213,6 +213,13 @@ export const verajohns_christmas_carol_megaways: SlotData = {
       a: 'ボラティリティは「高（High）」です。これは、勝利頻度は低いものの、一回の勝利で高額な配当が得られる可能性があることを示しています。CasinoTsuは、この点も考慮してプレイヤーの皆様に情報提供しています。',
     },
   ],
+  categoryTags: {
+    mechanics: ['megaways', 'cluster', 'bonus-buy', 'tumble'],
+    volatilityLevel: 'high',
+    themes: ['xmas'],
+    features: ['free-spins', 'multiplier'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'VeraJohn’s Christmas Carol Megaways (ベラジョン・クリスマスキャロル・メガウェイ) 徹底レビュー 🎄',
     description: 'チャールズ・ディケンズの名作「クリスマス・キャロル」をテーマにした、ベラジョンカジノ限定のメガウェイスロット。最大200,704通りのペイラインと、マルチプライヤー付きフリースピンで、クリスマス気分を盛り上げます。',

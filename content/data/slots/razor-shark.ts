@@ -162,6 +162,11 @@ export const razor_shark: SlotData = {
       a: 'Razor Sharkの最大配当倍率は、ベット額のx85,475倍と非常に高いです。',
     },
   ],
+  categoryTags: {
+    volatilityLevel: 'high',
+    features: ['free-spins', 'multiplier'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'Razor Shark／レイザーシャークのスロットレビュー＆攻略法',
     description: 'Push Gaming社によって2019年9月13日にリリースされた、非常に人気のあるオンラインスロットゲームです。そのユニークな深海テーマと、驚異的な勝利の可能性で、多くのプレイヤーを魅了してきました。',

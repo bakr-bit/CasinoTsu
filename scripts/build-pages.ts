@@ -20,7 +20,7 @@ interface CategoryConfig {
   /** Category name (matches MDX folder name) */
   name: string;
   /** Template to use for this category */
-  template: 'payment' | 'review' | 'bonus' | 'game-show' | 'provider' | 'poker' | 'roulette' | 'live-casino' | 'crash-games' | 'slot';
+  template: 'payment' | 'review' | 'bonus' | 'game-show' | 'provider' | 'poker' | 'roulette' | 'live-casino' | 'crash-games' | 'slot' | 'craps' | 'offers' | 'info' | 'guides';
   /** Data import statement */
   dataImport?: string;
   /** Data getter function call */
@@ -37,8 +37,10 @@ interface PillarConfig {
   nameJa: string;
   /** Category description */
   description: string;
-  /** Hero gradient colors (Tailwind classes) */
-  gradient: string;
+  /** Hero background color (Tailwind class, e.g., 'bg-blue-700') */
+  color: string;
+  /** Optional hero background image URL */
+  heroImage?: string;
   /** Data getter function name */
   dataGetter: string;
   /** Data import statement */
@@ -52,7 +54,8 @@ const PILLAR_CATEGORIES: PillarConfig[] = [
     name: 'slots',
     nameJa: 'スロット',
     description: 'オンラインスロットの完全ガイド。RTP、ボラティリティ、プロバイダー情報など。',
-    gradient: 'from-blue-600 to-indigo-800',
+    color: 'bg-indigo-700',
+    heroImage: '/headers/slots-header.webp',
     dataGetter: 'getAllSlots',
     dataImport: "import { getAllSlots } from '@/content/data/slots';",
     metaExtractor: `(d) => ({
@@ -67,7 +70,8 @@ const PILLAR_CATEGORIES: PillarConfig[] = [
     name: 'payment',
     nameJa: '決済方法',
     description: 'オンラインカジノの入出金方法を徹底解説。手数料、処理時間、対応カジノなど。',
-    gradient: 'from-emerald-600 to-teal-800',
+    color: 'bg-emerald-700',
+    heroImage: '/headers/payments.webp',
     dataGetter: 'getAllPayments',
     dataImport: "import { getAllPayments } from '@/content/data/payments';",
     metaExtractor: `(d) => ({
@@ -79,7 +83,8 @@ const PILLAR_CATEGORIES: PillarConfig[] = [
     name: 'reviews',
     nameJa: 'カジノレビュー',
     description: '信頼できるオンラインカジノを徹底レビュー。ライセンス、ボーナス、決済方法など。',
-    gradient: 'from-purple-600 to-purple-800',
+    color: 'bg-purple-700',
+    heroImage: '/headers/reviews.webp',
     dataGetter: 'getAllCasinos',
     dataImport: "import { getAllCasinos } from '@/content/data/casinos';",
     metaExtractor: `(d) => ({
@@ -92,7 +97,8 @@ const PILLAR_CATEGORIES: PillarConfig[] = [
     name: 'providers',
     nameJa: 'プロバイダー',
     description: 'オンラインカジノゲームを開発する主要プロバイダーを紹介。',
-    gradient: 'from-blue-600 to-indigo-700',
+    color: 'bg-blue-700',
+    heroImage: '/headers/providers.webp',
     dataGetter: 'getAllProviders',
     dataImport: "import { getAllProviders } from '@/content/data/providers';",
     metaExtractor: `(d) => ({
@@ -104,7 +110,8 @@ const PILLAR_CATEGORIES: PillarConfig[] = [
     name: 'bonuses',
     nameJa: 'ボーナス',
     description: '入金不要ボーナス、ウェルカムボーナス、キャッシュバックなど各種ボーナスを解説。',
-    gradient: 'from-amber-500 to-orange-600',
+    color: 'bg-amber-600',
+    heroImage: '/headers/bonus-header.webp',
     dataGetter: 'getAllBonusTypes',
     dataImport: "import { getAllBonusTypes } from '@/content/data/bonus-types';",
     metaExtractor: `(d) => ({
@@ -115,7 +122,8 @@ const PILLAR_CATEGORIES: PillarConfig[] = [
     name: 'poker',
     nameJa: 'ポーカー',
     description: 'テキサスホールデム、オマハなど各種ポーカーのルールと戦略を解説。',
-    gradient: 'from-green-600 to-teal-700',
+    color: 'bg-teal-700',
+    heroImage: '/headers/poker-header.webp',
     dataGetter: 'getAllPoker',
     dataImport: "import { getAllPoker } from '@/content/data/poker';",
     metaExtractor: `(d) => ({
@@ -127,7 +135,8 @@ const PILLAR_CATEGORIES: PillarConfig[] = [
     name: 'roulette',
     nameJa: 'ルーレット',
     description: 'ヨーロピアン、アメリカン、フレンチルーレットのルールと攻略法を解説。',
-    gradient: 'from-red-600 to-rose-700',
+    color: 'bg-red-700',
+    heroImage: '/headers/roulette-header.webp',
     dataGetter: 'getAllRoulette',
     dataImport: "import { getAllRoulette } from '@/content/data/roulette';",
     metaExtractor: `(d) => ({
@@ -140,7 +149,8 @@ const PILLAR_CATEGORIES: PillarConfig[] = [
     name: 'live-casino',
     nameJa: 'ライブカジノ',
     description: 'ライブバカラ、ライブブラックジャック、ライブルーレットなどを徹底解説。',
-    gradient: 'from-amber-600 to-yellow-700',
+    color: 'bg-amber-700',
+    heroImage: '/headers/live-casino.webp',
     dataGetter: 'getAllLiveCasino',
     dataImport: "import { getAllLiveCasino } from '@/content/data/live-casino';",
     metaExtractor: `(d) => ({
@@ -152,7 +162,8 @@ const PILLAR_CATEGORIES: PillarConfig[] = [
     name: 'crash-games',
     nameJa: 'クラッシュゲーム',
     description: 'Aviator、Spaceman、JetXなど人気クラッシュゲームのルールと攻略法。',
-    gradient: 'from-cyan-600 to-sky-700',
+    color: 'bg-cyan-700',
+    heroImage: '/headers/crash-games.webp',
     dataGetter: 'getAllCrashGames',
     dataImport: "import { getAllCrashGames } from '@/content/data/crash-games';",
     metaExtractor: `(d) => ({
@@ -164,12 +175,61 @@ const PILLAR_CATEGORIES: PillarConfig[] = [
     name: 'game-shows',
     nameJa: 'ゲームショー',
     description: 'Crazy Time、Monopoly Live、Lightning Rouletteなど人気ゲームショーを解説。',
-    gradient: 'from-pink-500 to-rose-600',
+    color: 'bg-rose-600',
+    heroImage: '/headers/game-shows.webp',
     dataGetter: 'getAllGameShows',
     dataImport: "import { getAllGameShows } from '@/content/data/game-shows';",
     metaExtractor: `(d) => ({
       category: d.category,
       providerName: d.providerJa || d.provider,
+    })`,
+  },
+  {
+    name: 'craps',
+    nameJa: 'クラップス',
+    description: 'クラップスのルール、戦略、ベッティングオプションを徹底解説。',
+    color: 'bg-orange-700',
+    dataGetter: 'getAllCraps',
+    dataImport: "import { getAllCraps } from '@/content/data/craps';",
+    metaExtractor: `(d) => ({
+      category: d.category,
+      difficulty: d.difficulty,
+    })`,
+  },
+  {
+    name: 'offers',
+    nameJa: 'カジノオファー',
+    description: '各カジノの限定ボーナス、プロモーション、特別オファーを紹介。',
+    color: 'bg-pink-600',
+    dataGetter: 'getAllOffers',
+    dataImport: "import { getAllOffers } from '@/content/data/offers';",
+    metaExtractor: `(d) => ({
+      offerType: d.offerType,
+      casinoSlug: d.casinoSlug,
+      bonusAmount: d.bonusAmount,
+    })`,
+  },
+  {
+    name: 'info',
+    nameJa: 'カジノ情報',
+    description: 'カジノライセンス、歴史、業界ニュース、トリビアなど幅広い情報。',
+    color: 'bg-slate-700',
+    dataGetter: 'getAllInfo',
+    dataImport: "import { getAllInfo } from '@/content/data/info';",
+    metaExtractor: `(d) => ({
+      category: d.category,
+    })`,
+  },
+  {
+    name: 'guides',
+    nameJa: 'ガイド',
+    description: '初心者向けガイド、攻略法、ゲーム戦略など実践的なガイド集。',
+    color: 'bg-green-700',
+    dataGetter: 'getAllGuides',
+    dataImport: "import { getAllGuides } from '@/content/data/guides';",
+    metaExtractor: `(d) => ({
+      category: d.category,
+      targetAudience: d.targetAudience,
     })`,
   },
 ];
@@ -231,6 +291,30 @@ const CATEGORIES: CategoryConfig[] = [
     dataImport: "import { getSlot } from '@/content/data/slots';",
     dataGetter: "getSlot('{slug}')",
   },
+  {
+    name: 'craps',
+    template: 'craps',
+    dataImport: "import { getCraps } from '@/content/data/craps';",
+    dataGetter: "getCraps('{slug}')",
+  },
+  {
+    name: 'offers',
+    template: 'offers',
+    dataImport: "import { getOffer } from '@/content/data/offers';",
+    dataGetter: "getOffer('{slug}')",
+  },
+  {
+    name: 'info',
+    template: 'info',
+    dataImport: "import { getInfo } from '@/content/data/info';",
+    dataGetter: "getInfo('{slug}')",
+  },
+  {
+    name: 'guides',
+    template: 'guides',
+    dataImport: "import { getGuide } from '@/content/data/guides';",
+    dataGetter: "getGuide('{slug}')",
+  },
 ];
 
 /**
@@ -254,10 +338,10 @@ export default async function ${toPascalCase(slug)}PaymentPage() {
   const paymentData = getPayment('${slug}');
 
   return (
-    <main className="min-h-screen bg-gray-50">
+    <div className="min-h-screen">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-emerald-600 to-emerald-800 text-white">
-        <div className="max-w-4xl mx-auto px-4 py-12">
+      <section className="bg-emerald-700 text-white">
+        <div className="container mx-auto px-4 py-16 md:py-24">
           <div className="flex items-center gap-3 mb-4">
             <span className="px-3 py-1 bg-white/20 rounded-full text-sm font-medium">
               決済方法ガイド
@@ -268,27 +352,27 @@ export default async function ${toPascalCase(slug)}PaymentPage() {
               </span>
             )}
           </div>
-          <h1 className="text-3xl md:text-4xl font-bold mb-4">{frontmatter.title}</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">{frontmatter.title}</h1>
           {frontmatter.description && (
-            <p className="text-lg text-emerald-100">{frontmatter.description}</p>
+            <p className="text-lg md:text-xl text-white/90 max-w-2xl">{frontmatter.description}</p>
           )}
-          <div className="flex items-center gap-4 mt-6 text-sm text-emerald-200">
+          <div className="flex items-center gap-4 mt-6 text-sm text-white/70">
             <span>著者: {frontmatter.author}</span>
             <span>•</span>
             <span>更新日: {frontmatter.lastUpdated}</span>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Main Content */}
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <article className="bg-white rounded-xl shadow-sm p-6 md:p-10">
-          <div className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-emerald-600 hover:prose-a:text-emerald-700">
+      <section className="bg-white">
+        <div className="container mx-auto px-4 py-12 md:py-16">
+          <div className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-emerald-600 prose-strong:text-gray-900">
             {content}
           </div>
-        </article>
-      </div>
-    </main>
+        </div>
+      </section>
+    </div>
   );
 }
 `;
@@ -327,10 +411,10 @@ export default async function ${toPascalCase(slug)}ReviewPage() {
   };
 
   return (
-    <main className="min-h-screen bg-gray-50">
+    <div className="min-h-screen">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-purple-600 to-purple-800 text-white">
-        <div className="max-w-5xl mx-auto px-4 py-12">
+      <section className="bg-purple-700 text-white">
+        <div className="container mx-auto px-4 py-16 md:py-24">
           <div className="flex flex-col md:flex-row gap-8 items-start">
             {/* Casino Logo */}
             {casinoData?.logo && (
@@ -357,17 +441,17 @@ export default async function ${toPascalCase(slug)}ReviewPage() {
                   </span>
                 )}
               </div>
-              <h1 className="text-3xl md:text-4xl font-bold mb-4">{frontmatter.title}</h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-4">{frontmatter.title}</h1>
               {frontmatter.description && (
-                <p className="text-lg text-purple-100">{frontmatter.description}</p>
+                <p className="text-lg md:text-xl text-white/90 max-w-2xl">{frontmatter.description}</p>
               )}
               {casinoData?.features?.bonusHeadline && (
-                <div className="mt-4 p-3 bg-white/10 rounded-lg">
+                <div className="mt-4 p-3 bg-white/10 rounded-lg inline-block">
                   <span className="text-amber-300 font-medium">ボーナス: </span>
                   <span>{casinoData.features.bonusHeadline}</span>
                 </div>
               )}
-              <div className="flex flex-wrap items-center gap-4 mt-6 text-sm text-purple-200">
+              <div className="flex flex-wrap items-center gap-4 mt-6 text-sm text-white/70">
                 <span>著者: {frontmatter.author}</span>
                 <span>•</span>
                 <span>更新日: {frontmatter.lastUpdated}</span>
@@ -387,17 +471,17 @@ export default async function ${toPascalCase(slug)}ReviewPage() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Main Content */}
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <article className="bg-white rounded-xl shadow-sm p-6 md:p-10">
-          <div className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-purple-600 hover:prose-a:text-purple-700">
+      <section className="bg-white">
+        <div className="container mx-auto px-4 py-12 md:py-16">
+          <div className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-purple-600 prose-strong:text-gray-900">
             {content}
           </div>
-        </article>
-      </div>
-    </main>
+        </div>
+      </section>
+    </div>
   );
 }
 `;
@@ -422,36 +506,36 @@ export default async function ${toPascalCase(slug)}BonusPage() {
   const { content, frontmatter } = await loadMDX('bonuses', '${slug}');
 
   return (
-    <main className="min-h-screen bg-gray-50">
+    <div className="min-h-screen">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-amber-500 to-orange-600 text-white">
-        <div className="max-w-4xl mx-auto px-4 py-12">
+      <section className="bg-amber-600 text-white">
+        <div className="container mx-auto px-4 py-16 md:py-24">
           <div className="flex items-center gap-3 mb-4">
             <span className="px-3 py-1 bg-white/20 rounded-full text-sm font-medium">
               ボーナスガイド
             </span>
           </div>
-          <h1 className="text-3xl md:text-4xl font-bold mb-4">{frontmatter.title}</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">{frontmatter.title}</h1>
           {frontmatter.description && (
-            <p className="text-lg text-amber-100">{frontmatter.description}</p>
+            <p className="text-lg md:text-xl text-white/90 max-w-2xl">{frontmatter.description}</p>
           )}
-          <div className="flex items-center gap-4 mt-6 text-sm text-amber-200">
+          <div className="flex items-center gap-4 mt-6 text-sm text-white/70">
             <span>著者: {frontmatter.author}</span>
             <span>•</span>
             <span>更新日: {frontmatter.lastUpdated}</span>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Main Content */}
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <article className="bg-white rounded-xl shadow-sm p-6 md:p-10">
-          <div className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-amber-600 hover:prose-a:text-amber-700">
+      <section className="bg-white">
+        <div className="container mx-auto px-4 py-12 md:py-16">
+          <div className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-amber-600 prose-strong:text-gray-900">
             {content}
           </div>
-        </article>
-      </div>
-    </main>
+        </div>
+      </section>
+    </div>
   );
 }
 `;
@@ -476,36 +560,36 @@ export default async function ${toPascalCase(slug)}GameShowPage() {
   const { content, frontmatter } = await loadMDX('game-shows', '${slug}');
 
   return (
-    <main className="min-h-screen bg-gray-50">
+    <div className="min-h-screen">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-pink-500 to-rose-600 text-white">
-        <div className="max-w-4xl mx-auto px-4 py-12">
+      <section className="bg-rose-600 text-white">
+        <div className="container mx-auto px-4 py-16 md:py-24">
           <div className="flex items-center gap-3 mb-4">
             <span className="px-3 py-1 bg-white/20 rounded-full text-sm font-medium">
               ゲームショー
             </span>
           </div>
-          <h1 className="text-3xl md:text-4xl font-bold mb-4">{frontmatter.title}</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">{frontmatter.title}</h1>
           {frontmatter.description && (
-            <p className="text-lg text-pink-100">{frontmatter.description}</p>
+            <p className="text-lg md:text-xl text-white/90 max-w-2xl">{frontmatter.description}</p>
           )}
-          <div className="flex items-center gap-4 mt-6 text-sm text-pink-200">
+          <div className="flex items-center gap-4 mt-6 text-sm text-white/70">
             <span>著者: {frontmatter.author}</span>
             <span>•</span>
             <span>更新日: {frontmatter.lastUpdated}</span>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Main Content */}
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <article className="bg-white rounded-xl shadow-sm p-6 md:p-10">
-          <div className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-pink-600 hover:prose-a:text-pink-700">
+      <section className="bg-white">
+        <div className="container mx-auto px-4 py-12 md:py-16">
+          <div className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-rose-600 prose-strong:text-gray-900">
             {content}
           </div>
-        </article>
-      </div>
-    </main>
+        </div>
+      </section>
+    </div>
   );
 }
 `;
@@ -532,10 +616,10 @@ export default async function ${toPascalCase(slug)}ProviderPage() {
   const providerData = getProvider('${slug}');
 
   return (
-    <main className="min-h-screen bg-gray-50">
+    <div className="min-h-screen">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
-        <div className="max-w-4xl mx-auto px-4 py-12">
+      <section className="bg-blue-700 text-white">
+        <div className="container mx-auto px-4 py-16 md:py-24">
           <div className="flex items-center gap-3 mb-4">
             <span className="px-3 py-1 bg-white/20 rounded-full text-sm font-medium">
               プロバイダーガイド
@@ -546,9 +630,9 @@ export default async function ${toPascalCase(slug)}ProviderPage() {
               </span>
             )}
           </div>
-          <h1 className="text-3xl md:text-4xl font-bold mb-4">{frontmatter.title}</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">{frontmatter.title}</h1>
           {frontmatter.description && (
-            <p className="text-lg text-blue-100">{frontmatter.description}</p>
+            <p className="text-lg md:text-xl text-white/90 max-w-2xl">{frontmatter.description}</p>
           )}
           {providerData && (
             <div className="flex flex-wrap gap-2 mt-4">
@@ -559,7 +643,7 @@ export default async function ${toPascalCase(slug)}ProviderPage() {
               ))}
             </div>
           )}
-          <div className="flex items-center gap-4 mt-6 text-sm text-blue-200">
+          <div className="flex items-center gap-4 mt-6 text-sm text-white/70">
             <span>著者: {frontmatter.author}</span>
             <span>•</span>
             <span>更新日: {frontmatter.lastUpdated}</span>
@@ -571,17 +655,17 @@ export default async function ${toPascalCase(slug)}ProviderPage() {
             )}
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Main Content */}
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <article className="bg-white rounded-xl shadow-sm p-6 md:p-10">
-          <div className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-blue-600 hover:prose-a:text-blue-700">
+      <section className="bg-white">
+        <div className="container mx-auto px-4 py-12 md:py-16">
+          <div className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-blue-600 prose-strong:text-gray-900">
             {content}
           </div>
-        </article>
-      </div>
-    </main>
+        </div>
+      </section>
+    </div>
   );
 }
 `;
@@ -608,10 +692,10 @@ export default async function ${toPascalCase(slug)}PokerPage() {
   const pokerData = getPoker('${slug}');
 
   return (
-    <main className="min-h-screen bg-gray-50">
+    <div className="min-h-screen">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-green-600 to-teal-700 text-white">
-        <div className="max-w-4xl mx-auto px-4 py-12">
+      <section className="bg-teal-700 text-white">
+        <div className="container mx-auto px-4 py-16 md:py-24">
           <div className="flex items-center gap-3 mb-4">
             <span className="px-3 py-1 bg-white/20 rounded-full text-sm font-medium">
               ポーカーガイド
@@ -630,27 +714,27 @@ export default async function ${toPascalCase(slug)}PokerPage() {
               </span>
             )}
           </div>
-          <h1 className="text-3xl md:text-4xl font-bold mb-4">{frontmatter.title}</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">{frontmatter.title}</h1>
           {frontmatter.description && (
-            <p className="text-lg text-green-100">{frontmatter.description}</p>
+            <p className="text-lg md:text-xl text-white/90 max-w-2xl">{frontmatter.description}</p>
           )}
-          <div className="flex items-center gap-4 mt-6 text-sm text-green-200">
+          <div className="flex items-center gap-4 mt-6 text-sm text-white/70">
             <span>著者: {frontmatter.author}</span>
             <span>•</span>
             <span>更新日: {frontmatter.lastUpdated}</span>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Main Content */}
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <article className="bg-white rounded-xl shadow-sm p-6 md:p-10">
-          <div className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-green-600 hover:prose-a:text-green-700">
+      <section className="bg-white">
+        <div className="container mx-auto px-4 py-12 md:py-16">
+          <div className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-teal-600 prose-strong:text-gray-900">
             {content}
           </div>
-        </article>
-      </div>
-    </main>
+        </div>
+      </section>
+    </div>
   );
 }
 `;
@@ -677,10 +761,10 @@ export default async function ${toPascalCase(slug)}RoulettePage() {
   const rouletteData = getRoulette('${slug}');
 
   return (
-    <main className="min-h-screen bg-gray-50">
+    <div className="min-h-screen">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-red-600 to-rose-700 text-white">
-        <div className="max-w-4xl mx-auto px-4 py-12">
+      <section className="bg-red-700 text-white">
+        <div className="container mx-auto px-4 py-16 md:py-24">
           <div className="flex items-center gap-3 mb-4">
             <span className="px-3 py-1 bg-white/20 rounded-full text-sm font-medium">
               ルーレットガイド
@@ -700,9 +784,9 @@ export default async function ${toPascalCase(slug)}RoulettePage() {
               </span>
             )}
           </div>
-          <h1 className="text-3xl md:text-4xl font-bold mb-4">{frontmatter.title}</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">{frontmatter.title}</h1>
           {frontmatter.description && (
-            <p className="text-lg text-red-100">{frontmatter.description}</p>
+            <p className="text-lg md:text-xl text-white/90 max-w-2xl">{frontmatter.description}</p>
           )}
           {rouletteData?.houseEdge && (
             <div className="mt-4 flex items-center gap-4">
@@ -716,23 +800,23 @@ export default async function ${toPascalCase(slug)}RoulettePage() {
               )}
             </div>
           )}
-          <div className="flex items-center gap-4 mt-6 text-sm text-red-200">
+          <div className="flex items-center gap-4 mt-6 text-sm text-white/70">
             <span>著者: {frontmatter.author}</span>
             <span>•</span>
             <span>更新日: {frontmatter.lastUpdated}</span>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Main Content */}
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <article className="bg-white rounded-xl shadow-sm p-6 md:p-10">
-          <div className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-red-600 hover:prose-a:text-red-700">
+      <section className="bg-white">
+        <div className="container mx-auto px-4 py-12 md:py-16">
+          <div className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-red-600 prose-strong:text-gray-900">
             {content}
           </div>
-        </article>
-      </div>
-    </main>
+        </div>
+      </section>
+    </div>
   );
 }
 `;
@@ -759,10 +843,10 @@ export default async function ${toPascalCase(slug)}LiveCasinoPage() {
   const liveCasinoData = getLiveCasino('${slug}');
 
   return (
-    <main className="min-h-screen bg-gray-50">
+    <div className="min-h-screen">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-amber-600 to-yellow-700 text-white">
-        <div className="max-w-4xl mx-auto px-4 py-12">
+      <section className="bg-amber-700 text-white">
+        <div className="container mx-auto px-4 py-16 md:py-24">
           <div className="flex items-center gap-3 mb-4">
             <span className="px-3 py-1 bg-white/20 rounded-full text-sm font-medium">
               ライブカジノガイド
@@ -782,12 +866,12 @@ export default async function ${toPascalCase(slug)}LiveCasinoPage() {
               </span>
             )}
           </div>
-          <h1 className="text-3xl md:text-4xl font-bold mb-4">{frontmatter.title}</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">{frontmatter.title}</h1>
           {frontmatter.description && (
-            <p className="text-lg text-amber-100">{frontmatter.description}</p>
+            <p className="text-lg md:text-xl text-white/90 max-w-2xl">{frontmatter.description}</p>
           )}
           {liveCasinoData?.provider && (
-            <div className="mt-4 flex items-center gap-4">
+            <div className="mt-4 flex flex-wrap items-center gap-4">
               <span className="px-3 py-1 bg-white/10 rounded text-sm">
                 プロバイダー: {liveCasinoData.providerJa || liveCasinoData.provider}
               </span>
@@ -803,23 +887,23 @@ export default async function ${toPascalCase(slug)}LiveCasinoPage() {
               )}
             </div>
           )}
-          <div className="flex items-center gap-4 mt-6 text-sm text-amber-200">
+          <div className="flex items-center gap-4 mt-6 text-sm text-white/70">
             <span>著者: {frontmatter.author}</span>
             <span>•</span>
             <span>更新日: {frontmatter.lastUpdated}</span>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Main Content */}
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <article className="bg-white rounded-xl shadow-sm p-6 md:p-10">
-          <div className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-amber-600 hover:prose-a:text-amber-700">
+      <section className="bg-white">
+        <div className="container mx-auto px-4 py-12 md:py-16">
+          <div className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-amber-600 prose-strong:text-gray-900">
             {content}
           </div>
-        </article>
-      </div>
-    </main>
+        </div>
+      </section>
+    </div>
   );
 }
 `;
@@ -846,10 +930,10 @@ export default async function ${toPascalCase(slug)}CrashGamesPage() {
   const crashGameData = getCrashGame('${slug}');
 
   return (
-    <main className="min-h-screen bg-gray-50">
+    <div className="min-h-screen">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-cyan-600 to-sky-700 text-white">
-        <div className="max-w-4xl mx-auto px-4 py-12">
+      <section className="bg-cyan-700 text-white">
+        <div className="container mx-auto px-4 py-16 md:py-24">
           <div className="flex items-center gap-3 mb-4">
             <span className="px-3 py-1 bg-white/20 rounded-full text-sm font-medium">
               クラッシュゲームガイド
@@ -867,12 +951,12 @@ export default async function ${toPascalCase(slug)}CrashGamesPage() {
               </span>
             )}
           </div>
-          <h1 className="text-3xl md:text-4xl font-bold mb-4">{frontmatter.title}</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">{frontmatter.title}</h1>
           {frontmatter.description && (
-            <p className="text-lg text-cyan-100">{frontmatter.description}</p>
+            <p className="text-lg md:text-xl text-white/90 max-w-2xl">{frontmatter.description}</p>
           )}
           {crashGameData?.provider && (
-            <div className="mt-4 flex items-center gap-4">
+            <div className="mt-4 flex flex-wrap items-center gap-4">
               <span className="px-3 py-1 bg-white/10 rounded text-sm">
                 プロバイダー: {crashGameData.providerJa || crashGameData.provider}
               </span>
@@ -895,23 +979,23 @@ export default async function ${toPascalCase(slug)}CrashGamesPage() {
               )}
             </div>
           )}
-          <div className="flex items-center gap-4 mt-6 text-sm text-cyan-200">
+          <div className="flex items-center gap-4 mt-6 text-sm text-white/70">
             <span>著者: {frontmatter.author}</span>
             <span>•</span>
             <span>更新日: {frontmatter.lastUpdated}</span>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Main Content */}
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <article className="bg-white rounded-xl shadow-sm p-6 md:p-10">
-          <div className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-cyan-600 hover:prose-a:text-cyan-700">
+      <section className="bg-white">
+        <div className="container mx-auto px-4 py-12 md:py-16">
+          <div className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-cyan-600 prose-strong:text-gray-900">
             {content}
           </div>
-        </article>
-      </div>
-    </main>
+        </div>
+      </section>
+    </div>
   );
 }
 `;
@@ -950,10 +1034,10 @@ export default async function ${toPascalCase(slug)}SlotPage() {
   };
 
   return (
-    <main className="min-h-screen bg-gray-50">
+    <div className="min-h-screen">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-blue-600 to-indigo-800 text-white">
-        <div className="max-w-5xl mx-auto px-4 py-12">
+      <section className="bg-indigo-700 text-white">
+        <div className="container mx-auto px-4 py-16 md:py-24">
           <div className="flex flex-col md:flex-row gap-8 items-start">
             {/* Slot Image */}
             {slotData?.hero?.slotImageSrc && (
@@ -985,9 +1069,9 @@ export default async function ${toPascalCase(slug)}SlotPage() {
                   </span>
                 )}
               </div>
-              <h1 className="text-3xl md:text-4xl font-bold mb-4">{frontmatter.title}</h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-4">{frontmatter.title}</h1>
               {frontmatter.description && (
-                <p className="text-lg text-blue-100">{frontmatter.description}</p>
+                <p className="text-lg md:text-xl text-white/90 max-w-2xl">{frontmatter.description}</p>
               )}
               {slotData?.hero && (
                 <div className="mt-4 flex flex-wrap items-center gap-4">
@@ -1013,7 +1097,7 @@ export default async function ${toPascalCase(slug)}SlotPage() {
                   )}
                 </div>
               )}
-              <div className="flex items-center gap-4 mt-6 text-sm text-blue-200">
+              <div className="flex flex-wrap items-center gap-4 mt-6 text-sm text-white/70">
                 <span>著者: {frontmatter.author}</span>
                 <span>•</span>
                 <span>更新日: {frontmatter.lastUpdated}</span>
@@ -1027,17 +1111,307 @@ export default async function ${toPascalCase(slug)}SlotPage() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Main Content */}
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <article className="bg-white rounded-xl shadow-sm p-6 md:p-10">
-          <div className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-blue-600 hover:prose-a:text-blue-700">
+      <section className="bg-white">
+        <div className="container mx-auto px-4 py-12 md:py-16">
+          <div className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-indigo-600 prose-strong:text-gray-900">
             {content}
           </div>
-        </article>
-      </div>
-    </main>
+        </div>
+      </section>
+    </div>
+  );
+}
+`;
+}
+
+/**
+ * Generate page.tsx content for craps category
+ */
+function generateCrapsPage(slug: string, frontmatter: Record<string, unknown>): string {
+  const title = frontmatter.title || `${slug} Craps Guide`;
+  const description = frontmatter.description || '';
+
+  return `import type { Metadata } from 'next';
+import { loadMDX } from '@/lib/mdx';
+import { getCraps } from '@/content/data/craps';
+
+export const metadata: Metadata = {
+  title: ${JSON.stringify(title)},
+  description: ${JSON.stringify(description)},
+};
+
+export default async function ${toPascalCase(slug)}CrapsPage() {
+  const { content, frontmatter } = await loadMDX('craps', '${slug}');
+  const crapsData = getCraps('${slug}');
+
+  return (
+    <div className="min-h-screen">
+      {/* Hero Section */}
+      <section className="bg-orange-700 text-white">
+        <div className="container mx-auto px-4 py-16 md:py-24">
+          <div className="flex items-center gap-3 mb-4">
+            <span className="px-3 py-1 bg-white/20 rounded-full text-sm font-medium">
+              クラップスガイド
+            </span>
+            {crapsData?.category && (
+              <span className="px-3 py-1 bg-amber-500 rounded-full text-sm font-medium">
+                {crapsData.category === 'overview' ? '概要' :
+                 crapsData.category === 'rules' ? 'ルール' :
+                 crapsData.category === 'strategy' ? '戦略' : 'バリアント'}
+              </span>
+            )}
+            {crapsData?.difficulty && (
+              <span className="px-3 py-1 bg-white/10 rounded-full text-sm font-medium">
+                {crapsData.difficulty === 'beginner' ? '初心者向け' :
+                 crapsData.difficulty === 'intermediate' ? '中級者向け' : '上級者向け'}
+              </span>
+            )}
+          </div>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">{frontmatter.title}</h1>
+          {frontmatter.description && (
+            <p className="text-lg md:text-xl text-white/90 max-w-2xl">{frontmatter.description}</p>
+          )}
+          <div className="flex items-center gap-4 mt-6 text-sm text-white/70">
+            <span>著者: {frontmatter.author}</span>
+            <span>•</span>
+            <span>更新日: {frontmatter.lastUpdated}</span>
+          </div>
+        </div>
+      </section>
+
+      {/* Main Content */}
+      <section className="bg-white">
+        <div className="container mx-auto px-4 py-12 md:py-16">
+          <div className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-orange-600 prose-strong:text-gray-900">
+            {content}
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
+`;
+}
+
+/**
+ * Generate page.tsx content for offers category
+ */
+function generateOffersPage(slug: string, frontmatter: Record<string, unknown>): string {
+  const title = frontmatter.title || `${slug} Casino Offer`;
+  const description = frontmatter.description || '';
+
+  return `import type { Metadata } from 'next';
+import { loadMDX } from '@/lib/mdx';
+import { getOffer } from '@/content/data/offers';
+
+export const metadata: Metadata = {
+  title: ${JSON.stringify(title)},
+  description: ${JSON.stringify(description)},
+};
+
+export default async function ${toPascalCase(slug)}OffersPage() {
+  const { content, frontmatter } = await loadMDX('offers', '${slug}');
+  const offerData = getOffer('${slug}');
+
+  return (
+    <div className="min-h-screen">
+      {/* Hero Section */}
+      <section className="bg-pink-600 text-white">
+        <div className="container mx-auto px-4 py-16 md:py-24">
+          <div className="flex items-center gap-3 mb-4">
+            <span className="px-3 py-1 bg-white/20 rounded-full text-sm font-medium">
+              カジノオファー
+            </span>
+            {offerData?.offerType && (
+              <span className="px-3 py-1 bg-amber-500 rounded-full text-sm font-medium">
+                {offerData.offerType === 'no-deposit' ? '入金不要' :
+                 offerData.offerType === 'welcome' ? 'ウェルカム' :
+                 offerData.offerType === 'exclusive' ? '限定' :
+                 offerData.offerType === 'seasonal' ? '期間限定' : 'リロード'}
+              </span>
+            )}
+          </div>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">{frontmatter.title}</h1>
+          {frontmatter.description && (
+            <p className="text-lg md:text-xl text-white/90 max-w-2xl">{frontmatter.description}</p>
+          )}
+          {offerData && (
+            <div className="mt-4 flex flex-wrap items-center gap-4">
+              {offerData.bonusAmount && (
+                <span className="px-3 py-1 bg-white/10 rounded text-sm">
+                  ボーナス: {offerData.bonusAmount}
+                </span>
+              )}
+              {offerData.wagering && (
+                <span className="px-3 py-1 bg-white/10 rounded text-sm">
+                  賭け条件: {offerData.wagering}
+                </span>
+              )}
+              {offerData.bonusCode && (
+                <span className="px-3 py-1 bg-amber-500 rounded text-sm font-bold">
+                  コード: {offerData.bonusCode}
+                </span>
+              )}
+            </div>
+          )}
+          <div className="flex items-center gap-4 mt-6 text-sm text-white/70">
+            <span>著者: {frontmatter.author}</span>
+            <span>•</span>
+            <span>更新日: {frontmatter.lastUpdated}</span>
+          </div>
+        </div>
+      </section>
+
+      {/* Main Content */}
+      <section className="bg-white">
+        <div className="container mx-auto px-4 py-12 md:py-16">
+          <div className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-pink-600 prose-strong:text-gray-900">
+            {content}
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
+`;
+}
+
+/**
+ * Generate page.tsx content for info category
+ */
+function generateInfoPage(slug: string, frontmatter: Record<string, unknown>): string {
+  const title = frontmatter.title || `${slug} Casino Info`;
+  const description = frontmatter.description || '';
+
+  return `import type { Metadata } from 'next';
+import { loadMDX } from '@/lib/mdx';
+import { getInfo } from '@/content/data/info';
+
+export const metadata: Metadata = {
+  title: ${JSON.stringify(title)},
+  description: ${JSON.stringify(description)},
+};
+
+export default async function ${toPascalCase(slug)}InfoPage() {
+  const { content, frontmatter } = await loadMDX('info', '${slug}');
+  const infoData = getInfo('${slug}');
+
+  return (
+    <div className="min-h-screen">
+      {/* Hero Section */}
+      <section className="bg-slate-700 text-white">
+        <div className="container mx-auto px-4 py-16 md:py-24">
+          <div className="flex items-center gap-3 mb-4">
+            <span className="px-3 py-1 bg-white/20 rounded-full text-sm font-medium">
+              カジノ情報
+            </span>
+            {infoData?.category && (
+              <span className="px-3 py-1 bg-amber-500 rounded-full text-sm font-medium">
+                {infoData.category === 'license' ? 'ライセンス' :
+                 infoData.category === 'history' ? '歴史' :
+                 infoData.category === 'people' ? '人物' :
+                 infoData.category === 'legal' ? '法律' :
+                 infoData.category === 'industry' ? '業界' : 'トリビア'}
+              </span>
+            )}
+          </div>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">{frontmatter.title}</h1>
+          {frontmatter.description && (
+            <p className="text-lg md:text-xl text-white/90 max-w-2xl">{frontmatter.description}</p>
+          )}
+          <div className="flex items-center gap-4 mt-6 text-sm text-white/70">
+            <span>著者: {frontmatter.author}</span>
+            <span>•</span>
+            <span>更新日: {frontmatter.lastUpdated}</span>
+          </div>
+        </div>
+      </section>
+
+      {/* Main Content */}
+      <section className="bg-white">
+        <div className="container mx-auto px-4 py-12 md:py-16">
+          <div className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-slate-600 prose-strong:text-gray-900">
+            {content}
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
+`;
+}
+
+/**
+ * Generate page.tsx content for guides category
+ */
+function generateGuidesPage(slug: string, frontmatter: Record<string, unknown>): string {
+  const title = frontmatter.title || `${slug} Casino Guide`;
+  const description = frontmatter.description || '';
+
+  return `import type { Metadata } from 'next';
+import { loadMDX } from '@/lib/mdx';
+import { getGuide } from '@/content/data/guides';
+
+export const metadata: Metadata = {
+  title: ${JSON.stringify(title)},
+  description: ${JSON.stringify(description)},
+};
+
+export default async function ${toPascalCase(slug)}GuidesPage() {
+  const { content, frontmatter } = await loadMDX('guides', '${slug}');
+  const guideData = getGuide('${slug}');
+
+  return (
+    <div className="min-h-screen">
+      {/* Hero Section */}
+      <section className="bg-green-700 text-white">
+        <div className="container mx-auto px-4 py-16 md:py-24">
+          <div className="flex items-center gap-3 mb-4">
+            <span className="px-3 py-1 bg-white/20 rounded-full text-sm font-medium">
+              ガイド
+            </span>
+            {guideData?.category && (
+              <span className="px-3 py-1 bg-amber-500 rounded-full text-sm font-medium">
+                {guideData.category === 'beginner' ? '初心者' :
+                 guideData.category === 'strategy' ? '戦略' :
+                 guideData.category === 'poker' ? 'ポーカー' :
+                 guideData.category === 'casino' ? 'カジノ' :
+                 guideData.category === 'bonus' ? 'ボーナス' :
+                 guideData.category === 'safety' ? '安全性' : 'ゲーム'}
+              </span>
+            )}
+            {guideData?.targetAudience && (
+              <span className="px-3 py-1 bg-white/10 rounded-full text-sm font-medium">
+                {guideData.targetAudience === 'beginner' ? '初心者向け' :
+                 guideData.targetAudience === 'intermediate' ? '中級者向け' :
+                 guideData.targetAudience === 'advanced' ? '上級者向け' : '全レベル'}
+              </span>
+            )}
+          </div>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">{frontmatter.title}</h1>
+          {frontmatter.description && (
+            <p className="text-lg md:text-xl text-white/90 max-w-2xl">{frontmatter.description}</p>
+          )}
+          <div className="flex items-center gap-4 mt-6 text-sm text-white/70">
+            <span>著者: {frontmatter.author}</span>
+            <span>•</span>
+            <span>更新日: {frontmatter.lastUpdated}</span>
+          </div>
+        </div>
+      </section>
+
+      {/* Main Content */}
+      <section className="bg-white">
+        <div className="container mx-auto px-4 py-12 md:py-16">
+          <div className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-green-600 prose-strong:text-gray-900">
+            {content}
+          </div>
+        </div>
+      </section>
+    </div>
   );
 }
 `;
@@ -1097,7 +1471,8 @@ export default async function ${toPascalCase(config.name)}PillarPage() {
       category="${config.name}"
       categoryNameJa="${config.nameJa}"
       description="${config.description}"
-      heroGradient="${config.gradient}"
+      heroColor="${config.color}"${config.heroImage ? `
+      heroImage="${config.heroImage}"` : ''}
       content={content}
       articles={enrichedArticles}
     />
@@ -1210,6 +1585,18 @@ async function generatePage(category: string, slug: string): Promise<void> {
       break;
     case 'slots':
       pageContent = generateSlotPage(slug, frontmatter);
+      break;
+    case 'craps':
+      pageContent = generateCrapsPage(slug, frontmatter);
+      break;
+    case 'offers':
+      pageContent = generateOffersPage(slug, frontmatter);
+      break;
+    case 'info':
+      pageContent = generateInfoPage(slug, frontmatter);
+      break;
+    case 'guides':
+      pageContent = generateGuidesPage(slug, frontmatter);
       break;
     default:
       console.warn(`Unknown category: ${category}`);

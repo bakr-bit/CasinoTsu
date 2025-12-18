@@ -149,6 +149,10 @@ export const mimi_and_the_magic_staff: SlotData = {
       a: 'はい、多くのオンラインカジノでデモプレイが提供されており、無料で試すことができます。 CasinoTsuは、皆様のエンジョイメントをサポートいたします。',
     },
   ],
+  categoryTags: {
+    volatilityLevel: 'medium',
+    features: ['multiplier'],
+  },
   meta: {
     title: 'ミミと魔法の杖（Mimi and the Magic Staff）',
     description: 'Golden Hero社よりリリースされた、魅力的なグラフィックとサウンドが特徴のオンラインスロット。日本人プレイヤーの嗜好を考慮したデザインで、多くのカジノファンから支持を得ています。',

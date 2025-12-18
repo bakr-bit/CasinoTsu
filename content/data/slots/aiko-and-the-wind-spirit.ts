@@ -212,6 +212,11 @@ export const aiko_and_the_wind_spirit: SlotData = {
       a: '基本RTPは96.29%ですが、Feature Buy機能使用時は96.33%、その他94.31%、92.36%、88.25%といった設定も存在します。プレイするカジノのスロット画面で、もしくはカスタマーサポートに確認するのがおすすめです。 CasinoTsuでは、正確な情報提供を心がけております。',
     },
   ],
+  categoryTags: {
+    mechanics: ['bonus-buy'],
+    volatilityLevel: 'medium',
+    features: ['free-spins', 'multiplier', 're-spins'],
+  },
   meta: {
     title: 'アイコ・アンド・ザ・ウィンドスピリット／Aiko & the Wind Spirit の特徴を徹底解説',
     description: '',

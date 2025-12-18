@@ -173,6 +173,11 @@ export const ugga_bugga: SlotData = {
       a: 'Playtech社製ゲームを提供しているオンラインカジノでプレイできます。例えば、ワンダーカジノなどがおすすめです。',
     },
   ],
+  categoryTags: {
+    volatilityLevel: 'low',
+    features: ['free-spins', 'progressive-jackpot', 'multiplier'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'Ugga Bugga（ウッガ・ブッガ）スロット｜高RTP99.07%！ユニークなホールド機能で戦略的に遊ぼう',
     description: 'CasinoTsu は、スロットゲーム「Ugga Bugga（ウッガ・ブッガ）」をご紹介いたします。このゲームは、非常に高いRTP（還元率）とシンプルなゲーム性ながら、プレイヤーの参加を促すユニークな機能が特徴のクラシックスロットです。',

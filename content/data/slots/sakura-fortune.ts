@@ -200,6 +200,13 @@ export const sakura_fortune: SlotData = {
       a: 'プリンセスワイルドは、スキャッター以外のシンボルの代わりとなり、リール全体に拡大する「ナッジ」機能があります。また、フリースピン中は拡大したワイルドが固定されます。',
     },
   ],
+  categoryTags: {
+    mechanics: ['expanding-wilds'],
+    volatilityLevel: 'high',
+    themes: ['japanese', 'asian'],
+    features: ['free-spins', 'multiplier', 're-spins'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'サクラフォーチューン（Sakura Fortune）スロットレビュー｜最新情報をお届け',
     description: 'Quickspin社が2017年にリリースした「サクラフォーチューン」は、美しいグラフィックと魅力的なフィーチャーで多くのプレイヤーを魅了し続けています。初めて「Achievement Engine」が搭載された記念すべき作品でもあります。',

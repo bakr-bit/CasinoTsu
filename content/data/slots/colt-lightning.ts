@@ -221,6 +221,10 @@ export const colt_lightning: SlotData = {
       a: '「Very High」のボラティリティを持つため、頻繁な勝利よりも、一度の大きな勝利で高額賞金を狙いたい、リスクを恐れないプレイヤーにおすすめです。ワイルドウエストのテーマや、ダイナミックな演出がお好きな方にも楽しんでいただけるでしょう。',
     },
   ],
+  categoryTags: {
+    mechanics: ['bonus-buy'],
+    features: ['free-spins', 'multiplier', 're-spins'],
+  },
   meta: {
     title: 'コルト・ライトニング（Colt Lightning）オンラインスロット攻略',
     description: '',

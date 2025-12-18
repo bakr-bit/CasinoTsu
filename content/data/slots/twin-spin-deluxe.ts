@@ -171,6 +171,12 @@ export const twin_spin_deluxe: SlotData = {
       '最大配当倍率100,000倍は理論値であり、達成は稀',
     ],
   },
+  categoryTags: {
+    mechanics: ['cluster'],
+    volatilityLevel: 'medium',
+    features: ['free-spins', 'multiplier', 'bonus-round'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'Twin Spin Deluxe / ツインスピン・デラックス - スロットレビュー',
     description: 'ネットエント社の大人気クラッシックスロット、「Twin Spin」のデラックス版が登場しました！Twin Spin Deluxeの特長や、初期版との違いについて、CasinoTsuが徹底レビューいたします。👀✨',

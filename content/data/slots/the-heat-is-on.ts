@@ -183,6 +183,9 @@ export const the_heat_is_on: SlotData = {
       a: 'はい、CasinoTsu が確認したところ、PCだけでなく、スマートフォンやタブレットのブラウザから快適にプレイできます。',
     },
   ],
+  categoryTags: {
+    features: ['free-spins', 'progressive-jackpot', 'multiplier'],
+  },
   meta: {
     title: 'The Heat Is On（ザ・ヒート・イズ・オン）- CasinoTsu スロットレビュー',
     description: '「The Heat Is On」は、Apricot社が開発し、マイクロゲーミング社（現Games Global）がディストリビューターを務めるオンラインスロットです。2017年にリリースされ、セクシーな女性警察官が猫泥棒を追うという、ユニークでスリリングなテーマが特徴です。5リール45ラインの構成で、最大80回のフリースピンを獲得できるチャンスがあり、「熱い」展開が期待できるスロットと言えるでしょう。🔥',

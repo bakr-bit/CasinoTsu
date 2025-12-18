@@ -177,6 +177,11 @@ export const _1429_uncharted_seas: SlotData = {
       a: 'はい、3つ以上のボーナスシンボル（星）が出現するとフリースピンラウンドが開始されます。最大30回のフリースピンを獲得できます。',
     },
   ],
+  categoryTags: {
+    volatilityLevel: 'low',
+    features: ['free-spins', 'multiplier', 're-spins'],
+    isHighRtp: true,
+  },
   meta: {
     title: '1429 Uncharted Seas',
     description: '',

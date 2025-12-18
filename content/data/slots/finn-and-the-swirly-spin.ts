@@ -185,6 +185,12 @@ export const finn_and_the_swirly_spin: SlotData = {
       a: '最大配当倍率は1,000倍とされていますが、状況によっては最大5,000倍の勝利の可能性も示唆されています。ランダム機能による最大配当は賭け金の840倍です。',
     },
   ],
+  categoryTags: {
+    mechanics: ['cluster'],
+    volatilityLevel: 'low',
+    features: ['free-spins', 'multiplier'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'Finn and the Swirly Spin',
     description: 'Finn and the Swirly Spin（フィン・アンド・スウァリー・スピン）は、[NetEnt（ネットエント）社](https://casinotsu.com/providers)によって開発された、革新的なスロットゲームです。✨ 5x5のグリッド上でシンボルが揃うと消滅し、右回りの渦を巻くように移動していくユニークな仕組みが最大の特徴です。4つのランダム機能と、4種類から選択可能なフリースピン機能が搭載されており、プレイヤーを飽きさせない魅力的なゲーム体験を提供します。アイルランドの妖精「フィン」が主人公となり、エメラルド島を舞台にしたファンタジーの世界観も、このスロットの大きな魅力の一つと言えるでしょう。',

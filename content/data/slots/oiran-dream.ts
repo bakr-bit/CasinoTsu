@@ -168,6 +168,11 @@ export const oiran_dream: SlotData = {
       'RTPは標準的（96.34%）だが、爆発力に依存する部分が大きい',
     ],
   },
+  categoryTags: {
+    mechanics: ['bonus-buy'],
+    themes: ['japanese', 'geisha'],
+    features: ['free-spins', 'multiplier', 're-spins'],
+  },
   meta: {
     title: 'Oiran Dream／花魁ドリーム ｜ スロットレビュー＆完全攻略',
     description: '',

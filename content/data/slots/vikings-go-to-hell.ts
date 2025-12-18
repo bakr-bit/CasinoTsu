@@ -205,6 +205,11 @@ export const vikings_go_to_hell: SlotData = {
       a: '北欧神話のバイキングたちが地獄へ行き、悪魔と戦う **ダークファンタジーアドベンチャー** がテーマです。',
     },
   ],
+  categoryTags: {
+    volatilityLevel: 'high',
+    themes: ['mythology'],
+    features: ['free-spins', 'progressive-jackpot', 'multiplier', 're-spins'],
+  },
   meta: {
     title: 'Vikings go to Hell',
     description: 'ユグドラシルのバイキングシリーズに第3作目が登場いたしました！✨ グラフィックとゲーム性において、ピカイチの人気を誇るこのスロットを、CasinoTsuが徹底レビューいたします。',

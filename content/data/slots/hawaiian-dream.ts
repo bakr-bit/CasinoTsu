@@ -197,6 +197,12 @@ export const hawaiian_dream: SlotData = {
       a: 'はい、多くのオンラインカジノが日本からのプレイヤーを受け入れています。ただし、お住まいの国や地域の法律を確認し、合法的にオンラインカジノを利用できるかご確認ください。CasinoTsuは、プレイヤーの皆様が安全かつ合法的に楽しめる環境を第一に考えています。※アメリカ合衆国ニュージャージー州ではプレイできません。',
     },
   ],
+  categoryTags: {
+    mechanics: ['cluster'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'progressive-jackpot', 'multiplier', 're-spins'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'ハワイアンドリーム｜人気のパチスロ風スロットをレビュー！',
     description: '',

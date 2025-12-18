@@ -162,6 +162,13 @@ export const sugar_rush_xmas: SlotData = {
       a: '公表されている標準的なRTPは96.50%ですが、95.50%や94.50%といった異なるバージョンのRTPが存在します。実際の還元率は、プレイするオンラインカジノによって異なる場合があるため、ゲーム内で確認することをおすすめします。',
     },
   ],
+  categoryTags: {
+    mechanics: ['cluster', 'tumble'],
+    volatilityLevel: 'high',
+    themes: ['xmas'],
+    features: ['free-spins', 'multiplier'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'シュガー・ラッシュ・クリスマス｜最新スロットレビュー 2025年',
     description: '',

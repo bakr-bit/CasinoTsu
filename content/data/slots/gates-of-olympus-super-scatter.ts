@@ -183,6 +183,12 @@ export const gates_of_olympus_super_scatter: SlotData = {
       'スーパースキャッターの出現確率が低い',
     ],
   },
+  categoryTags: {
+    mechanics: ['cluster', 'bonus-buy'],
+    themes: ['mythology'],
+    features: ['free-spins', 'multiplier'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'Gates of Olympus Super Scatterを攻略！',
     description: '',

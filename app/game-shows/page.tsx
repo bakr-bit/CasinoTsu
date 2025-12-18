@@ -37,16 +37,19 @@ export default async function GameShowsPillarPage() {
     };
   });
 
-  const { content } = await loadMDX('pillars', 'game-shows');
+  const { content, frontmatter, headings } = await loadMDX('pillars', 'game-shows');
 
   return (
     <PillarPageTemplate
       category="game-shows"
       categoryNameJa="ゲームショー"
       description="Crazy Time、Monopoly Live、Lightning Rouletteなど人気ゲームショーを解説。"
-      heroGradient="from-pink-500 to-rose-600"
+      heroColor="bg-rose-600"
+      heroImage="/headers/game-shows.webp"
       content={content}
       articles={enrichedArticles}
+      lastUpdated={frontmatter.lastUpdated}
+      headings={headings}
     />
   );
 }

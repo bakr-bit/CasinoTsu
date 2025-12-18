@@ -187,6 +187,11 @@ export const starlight_princess_pachi: SlotData = {
       a: 'はい、多くのオンラインカジノやスロット情報サイトで無料デモ版が提供されています。',
     },
   ],
+  categoryTags: {
+    mechanics: ['bonus-buy'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'multiplier', 're-spins'],
+  },
   meta: {
     title: 'スターライト・プリンセス・パチ｜配当やゲーム攻略法を解説',
     description: '3リールという王道のスタイルながら、一発逆転のチャンスが豊富に盛り込まれており、初心者からベテランまで幅広く楽しめる一台です。',

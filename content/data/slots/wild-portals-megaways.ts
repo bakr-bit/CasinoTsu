@@ -197,6 +197,12 @@ export const wild_portals_megaways: SlotData = {
       a: 'スキャッター3つで8回のフリースピンが付与されます。4つ以上のスキャッターが出現した場合、3つ揃った際の8回に加えて、追加でスキャッター1つにつき2回のフリースピンが付与されます。',
     },
   ],
+  categoryTags: {
+    mechanics: ['megaways', 'bonus-buy'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'multiplier', 're-spins'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'Wild Portals Megaways',
     description: 'ウィンエクスチェンジとメガウェイズが融合した、斬新なスロット「ワイルドポータル・メガウェイズ（Wild Portals Megways）」が登場いたしました。近未来をイメージした、楽しさ満載のフィーチャーをお楽しみいただけます。',

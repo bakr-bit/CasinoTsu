@@ -196,6 +196,10 @@ export const hood_vs_wolf: SlotData = {
       a: 'SlotCatalogのユーザー評価は、1票に基づき8.0/10となっています。 CasinoTsu は、多様な情報源を参考に、信頼性の高い評価を提供いたします。',
     },
   ],
+  categoryTags: {
+    volatilityLevel: 'medium',
+    features: ['free-spins', 'multiplier'],
+  },
   meta: {
     title: '『リトルレッド vs ビッグウルフ』スロットレビュー！',
     description: 'PG SOFT社が贈る、日本の童話「赤ずきん」をモチーフにしたユニークなスロットゲーム。ダイナミックなバトルフィーチャーと魅力的なアニメーションで、プレイヤーを飽きさせません。',

@@ -12,10 +12,10 @@ export default async function NovomaticProviderPage() {
   const providerData = getProvider('novomatic');
 
   return (
-    <main className="min-h-screen bg-gray-50">
+    <div className="min-h-screen">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
-        <div className="max-w-4xl mx-auto px-4 py-12">
+      <section className="bg-blue-700 text-white">
+        <div className="container mx-auto px-4 py-16 md:py-24">
           <div className="flex items-center gap-3 mb-4">
             <span className="px-3 py-1 bg-white/20 rounded-full text-sm font-medium">
               プロバイダーガイド
@@ -26,9 +26,9 @@ export default async function NovomaticProviderPage() {
               </span>
             )}
           </div>
-          <h1 className="text-3xl md:text-4xl font-bold mb-4">{frontmatter.title}</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">{frontmatter.title}</h1>
           {frontmatter.description && (
-            <p className="text-lg text-blue-100">{frontmatter.description}</p>
+            <p className="text-lg md:text-xl text-white/90 max-w-2xl">{frontmatter.description}</p>
           )}
           {providerData && (
             <div className="flex flex-wrap gap-2 mt-4">
@@ -39,7 +39,7 @@ export default async function NovomaticProviderPage() {
               ))}
             </div>
           )}
-          <div className="flex items-center gap-4 mt-6 text-sm text-blue-200">
+          <div className="flex items-center gap-4 mt-6 text-sm text-white/70">
             <span>著者: {frontmatter.author}</span>
             <span>•</span>
             <span>更新日: {frontmatter.lastUpdated}</span>
@@ -51,16 +51,16 @@ export default async function NovomaticProviderPage() {
             )}
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Main Content */}
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <article className="bg-white rounded-xl shadow-sm p-6 md:p-10">
-          <div className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-blue-600 hover:prose-a:text-blue-700">
+      <section className="bg-white">
+        <div className="container mx-auto px-4 py-12 md:py-16">
+          <div className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-blue-600 prose-strong:text-gray-900">
             {content}
           </div>
-        </article>
-      </div>
-    </main>
+        </div>
+      </section>
+    </div>
   );
 }

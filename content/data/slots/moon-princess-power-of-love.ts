@@ -204,6 +204,11 @@ export const moon_princess_power_of_love: SlotData = {
       a: 'リール上の（ワイルドシンボルを除く）シンボルを全て消去する「ラブ・トライアングル」中に、さらにシンボルを全消しすることでフリースピンに突入します。',
     },
   ],
+  categoryTags: {
+    mechanics: ['cluster', 'bonus-buy', 'tumble'],
+    themes: ['valentine'],
+    features: ['free-spins', 'multiplier', 're-spins'],
+  },
   meta: {
     title: 'Moon Princess Power of Love',
     description: 'CasinoTsuから、Play’n GOの大人気タイトル「ムンプリ」の最新作が登場です🌙 基本的なゲーム機能はそのままに、今回はなんと男性キャラクターが初登場しました！',

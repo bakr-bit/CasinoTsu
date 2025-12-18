@@ -188,6 +188,10 @@ export const wild_swarm: SlotData = {
       a: 'Wild Swarm 2は、Wild Swarmの続編で、2024年2月にリリースされました。グラフィックが向上し、最大配当倍率がx10,000にアップ、さらにReel Multipliersなどの新機能が追加されています。',
     },
   ],
+  categoryTags: {
+    features: ['free-spins', 'multiplier'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'Wild Swarm',
     description: 'Push Gaming社によって開発された、ユニークなミツバチをテーマにした人気のオンラインスロットゲームです。2018年にリリースされて以来、その革新的なゲームプレイと高いポテンシャルで多くのプレイヤーを魅了してきました。可愛らしいミツバチやハチミツが描かれたポップなデザインとは裏腹に、秘められた爆発力を持つこのスロットは、一見の価値ありです。✨',

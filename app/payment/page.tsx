@@ -37,16 +37,19 @@ export default async function PaymentPillarPage() {
     };
   });
 
-  const { content } = await loadMDX('pillars', 'payment');
+  const { content, frontmatter, headings } = await loadMDX('pillars', 'payment');
 
   return (
     <PillarPageTemplate
       category="payment"
       categoryNameJa="決済方法"
       description="オンラインカジノの入出金方法を徹底解説。手数料、処理時間、対応カジノなど。"
-      heroGradient="from-emerald-600 to-teal-800"
+      heroColor="bg-emerald-700"
+      heroImage="/headers/payments.webp"
       content={content}
       articles={enrichedArticles}
+      lastUpdated={frontmatter.lastUpdated}
+      headings={headings}
     />
   );
 }

@@ -208,6 +208,12 @@ export const big_bass_splash: SlotData = {
       'ボーナス購入機能は一部地域で利用不可',
     ],
   },
+  categoryTags: {
+    mechanics: ['hold-and-win', 'bonus-buy'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'progressive-jackpot', 'multiplier'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'Big Bass Splash（ビッグ・バス・スプラッシュ）スロットゲームレビュー最新！',
     description: 'Pragmatic Play（Reel Kingdom開発）よりリリースされた、釣り adventure をテーマにした人気のビデオスロット「ビッグ・バス・スプラッシュ（Big Bass Splash）」をレビューいたします。Big Bassシリーズの第5弾として登場した本作は、フリースピン購入機能、追加スピン、キャッシュシンボルの収集、そしてそれらをプレイできるオンラインカジノなど、多岐にわたる魅力をご提供いたします。CasinoTsu 推薦の当スロットで、新たな興奮をお楽しみください。',

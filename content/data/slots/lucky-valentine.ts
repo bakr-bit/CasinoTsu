@@ -212,6 +212,11 @@ export const lucky_valentine: SlotData = {
       a: '当サイトで紹介している[インターカジノ](https://casinotsu.com/reviews/inter-casino)、[ビーシー・ゲーム](https://casinotsu.com/reviews/bc-game)、[コンクエスタドール](https://casinotsu.com/reviews/conquestador)、[ベラジョンカジノ](https://casinotsu.com/reviews/vera-john) などでプレイ可能です。その他、多くのオンラインカジノで提供されております。 CasinoTsu 推薦のカジノで、ぜひお試しください。',
     },
   ],
+  categoryTags: {
+    volatilityLevel: 'high',
+    themes: ['valentine', 'asian'],
+    features: ['free-spins', 'multiplier'],
+  },
   meta: {
     title: 'Lucky Valentine／ラッキーバレンタイン ゲームレビュー',
     description: 'バレンタインシーズンにぴったりのスロット、それがRed Tiger（レッドタイガー）社の「ラッキーバレンタイン」です。豊富なフィーチャーが満載で、キューピッドの力を借りながら、高配当を目指しましょう！',

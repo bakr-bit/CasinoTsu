@@ -193,6 +193,11 @@ export const brick_snake_2000: SlotData = {
       a: 'はい、多くのオンラインカジノで無料デモプレイが提供されております。実際の賭け金なしでゲームの仕組みやフィーチャーを試すことができます。 CasinoTsuは、デモプレイでの確認を推奨いたします。',
     },
   ],
+  categoryTags: {
+    mechanics: ['bonus-buy'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'multiplier', 'bonus-round'],
+  },
   meta: {
     title: 'Brick Snake 2000',
     description: 'Nolimit City社が贈る、ノスタルジックなピクセルアートと革新的なゲームメカニクスが融合した高ボラティリティスロット。最大16,220倍の配当を目指せ！',

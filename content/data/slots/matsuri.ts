@@ -140,6 +140,11 @@ export const matsuri: SlotData = {
       a: 'VegasSlotsOnline、Casino Hipster、Slots Temple、AskGamblersなどのスロットレビューサイトでも紹介されており、CasinoTsu（カジノツウ）の提携カジノである、[ゴールデンパンダ](https://casinotsu.com/reviews/golden-panda)、[2アップカジノ](https://casinotsu.com/reviews/2up)、[ミキ](https://casinotsu.com/reviews/miki)などのオンラインカジノで遊ぶことができます。CasinoTsu は、これらのカジノでのプレイを推薦いたします。',
     },
   ],
+  categoryTags: {
+    volatilityLevel: 'medium',
+    themes: ['japanese'],
+    features: ['free-spins', 'multiplier', 'bonus-round'],
+  },
   meta: {
     title: '祭（Matsuri）- オンラインスロットレビュー',
     description: 'ボーナスゲームは金魚すくい、シンボルにはかき氷と、夏祭り気分を存分に味わえる一作です。早速 CasinoTsu がレビューをお届けします！✨',

@@ -169,6 +169,10 @@ export const crystal_swipe: SlotData = {
       a: 'はい、SlotCatalogなどのサイトで無料デモ版が提供されております。実際の資金を使う前に、ゲームの雰囲気を体験することができます。',
     },
   ],
+  categoryTags: {
+    volatilityLevel: 'high',
+    features: ['multiplier'],
+  },
   meta: {
     title: 'Crystal Swipe／クリスタルスワイプ スロットレビュー',
     description: 'スマートフォンでのプレイに最適化された、ユニークなスワイプ操作が特徴のスロットゲーム。ミニマリストなデザインとポップな音楽で、クリスタルテーマの世界を楽しめます。',

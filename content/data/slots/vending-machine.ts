@@ -185,6 +185,11 @@ export const vending_machine: SlotData = {
       '最大配当倍率が他のハイボラティリティスロットより低い',
     ],
   },
+  categoryTags: {
+    mechanics: ['bonus-buy'],
+    volatilityLevel: 'medium',
+    features: ['free-spins', 'multiplier', 're-spins'],
+  },
   meta: {
     title: 'ベンディング・マシン（Vending Machine）スロットレビュー 🚀',
     description: '',

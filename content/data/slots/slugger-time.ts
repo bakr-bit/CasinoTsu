@@ -208,6 +208,11 @@ export const slugger_time: SlotData = {
       a: 'はい、フリースピンラウンド中は、出現したワイルドシンボルがリール上に固定される「スティッキーワイルド」となります。これにより、配当成立のチャンスが増加します。',
     },
   ],
+  categoryTags: {
+    mechanics: ['bonus-buy'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'progressive-jackpot', 'multiplier', 'bonus-round'],
+  },
   meta: {
     title: 'Slugger Time',
     description: 'スラッガー・タイム（Slugger Time）で配当爆上げ22,000倍！BIG WINはフリースピン突入後？ドヤンキーなニワトリ＆ピエロのギャング達が勝利金を引き寄せる破天荒な演出にも注目！',

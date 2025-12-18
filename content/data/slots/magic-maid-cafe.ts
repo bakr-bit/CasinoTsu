@@ -159,6 +159,10 @@ export const magic_maid_cafe: SlotData = {
       a: 'はい、多くのオンラインカジノでは、マジック・メイド・カフェのデモプレイ（無料プレイモード）を提供しています。実際のお金を使う前に、ゲームのルールやフィーチャーを試すことができるので、ぜひ活用してみてください。',
     },
   ],
+  categoryTags: {
+    volatilityLevel: 'high',
+    features: ['free-spins', 'multiplier'],
+  },
   meta: {
     title: 'マジック・メイド・カフェ | Magic Maid Cafe スロット情報',
     description: '萌え萌えキュンキュンなNetEnt社リリースのスロット、マジック・メイド・カフェ（Magic Maid Cafe）。癒し系のメイドさんたちに癒されたいプレイヤーさん必見です！✨',

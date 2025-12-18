@@ -197,6 +197,11 @@ export const cash_a_cabana: SlotData = {
       'ボーナス購入機能がない',
     ],
   },
+  categoryTags: {
+    mechanics: ['bonus-buy', 'expanding-wilds'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'multiplier', 'bonus-round'],
+  },
   meta: {
     title: 'Cash-a-Cabana（キャッシュ・ア・カバナ）スロット：CasinoTsu 攻略ガイド',
     description: 'Play’n GO社が贈る、ニューヨークのナイトクラブが舞台のオンラインスロット。マルチプライヤーや追加スピン機能で配当を爆発的に増加させる可能性を秘めています。',

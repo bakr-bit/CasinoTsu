@@ -195,6 +195,11 @@ export const power_plant: SlotData = {
       a: 'はい、Power Plant (パワープラント) にはボーナスシンボルが出現することで突入するフリースピンラウンドがあります。',
     },
   ],
+  categoryTags: {
+    mechanics: ['tumble'],
+    volatilityLevel: 'medium',
+    features: ['free-spins', 'multiplier'],
+  },
   meta: {
     title: 'Power Plant (パワープラント)',
     description: '',

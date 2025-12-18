@@ -190,6 +190,10 @@ export const jackpot_raiders: SlotData = {
       a: 'フリースピン中に、5つの同じ色のジェム（宝石）を集めることで、対応する色のジャックポットを獲得できます。特にサンケンシティフリースピン中はジャックポット獲得のチャンスが高まります。',
     },
   ],
+  categoryTags: {
+    volatilityLevel: 'medium',
+    features: ['free-spins', 'progressive-jackpot', 'multiplier'],
+  },
   meta: {
     title: 'Jackpot Raiders / ジャックポット・レイダース スロットレビュー',
     description: 'Yggdrasil社が開発した、インディ・ジョーンズのような冒険心をくすぐるテーマ、豊富なボーナスフィーチャー、そして最大4,110倍の賞金獲得の可能性が魅力のスロット。',

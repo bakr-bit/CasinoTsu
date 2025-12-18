@@ -192,6 +192,12 @@ export const sakura_masks: SlotData = {
       'ゲームシステムはRed Tigerのお馴染みのメカニクスを踏襲しており、革新性は限定的',
     ],
   },
+  categoryTags: {
+    mechanics: ['bonus-buy'],
+    volatilityLevel: 'high',
+    themes: ['japanese'],
+    features: ['free-spins', 'multiplier', 're-spins'],
+  },
   meta: {
     title: 'Sakura Masks（サクラ仮面）の最新スロットレビュー＆攻略法！ CasinoTsuより',
     description: 'Red Tiger 社より、日本をテーマにした魅力的なスロット『 Sakura Masks（サクラ仮面） 』が登場いたしました。花魁、桜、そして鬼の仮面という、他に類を見ない組み合わせが特徴です。通常のペイラインによる配当獲得に加え、「サクラ仮面」シンボルが独自の配当機会をもたらし、ゲームを一層盛り上げます。✨',

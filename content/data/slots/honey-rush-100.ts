@@ -181,6 +181,11 @@ export const honey_rush_100: SlotData = {
       a: 'ゲーム説明によると、ゲームが中断された場合、中断した箇所から再開できます。ただし、ベットが確定していないゲームは2日後に無効となり、不具合による支払いやプレイはすべて無効となります。 CasinoTsu では、プレイ中の予期せぬ中断を防ぐため、安定したインターネット環境でのプレイを推奨いたします。',
     },
   ],
+  categoryTags: {
+    mechanics: ['cluster'],
+    volatilityLevel: 'medium',
+    features: ['free-spins', 'multiplier'],
+  },
   meta: {
     title: 'Honey Rush 100（ハニー・ラッシュ100）オンラインスロット攻略',
     description: 'CasinoTsu が厳選！最大配当50,000倍！クラスターペイスロット「ハニー・ラッシュ100」を徹底レビュー！',

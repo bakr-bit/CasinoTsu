@@ -177,6 +177,12 @@ export const rich_wilde_and_the_tome_of_madness: SlotData = {
       '複雑なフィーチャーのため、初心者にはやや難解に感じる可能性',
     ],
   },
+  categoryTags: {
+    mechanics: ['cluster', 'bonus-buy'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'multiplier'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'Rich Wilde and the Tome of Madness',
     description: 'CasinoTsuがお届けする「トーム・オブ・マッドネス」は、Play’n GO社が贈る、人気スロット「Book of Dead」の主人公、リッチワイルドが登場する待望の続編スロットです。このゲームは、ユニークな5x5グリッドとクラスターペイシステムを採用し、スリル満点の冒険体験を提供いたします。特に、メガワイルドの出現は連続配当の可能性を高め、プレイヤーの皆様を熱狂の渦へと誘います。✨',

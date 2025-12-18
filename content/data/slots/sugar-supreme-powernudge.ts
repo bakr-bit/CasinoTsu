@@ -96,6 +96,11 @@ export const sugar_supreme_powernudge: SlotData = {
       a: 'リール上にスキャッターシンボルが3つ以上出現すると、フリースピンを獲得できます。出現数に応じて、10～20回のフリースピンが付与されます。',
     },
   ],
+  categoryTags: {
+    mechanics: ['cluster', 'bonus-buy'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'multiplier'],
+  },
   meta: {
     title: 'Sugar Supreme Powernudge | 最新スロットレビュー',
     description: '',

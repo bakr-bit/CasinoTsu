@@ -161,6 +161,11 @@ export const sunny_shores: SlotData = {
       a: 'はい、JSとHTML5で開発されているため、スマートフォンやタブレットなどのモバイルデバイスでも快適にプレイできます。',
     },
   ],
+  categoryTags: {
+    mechanics: ['cluster'],
+    volatilityLevel: 'low',
+    features: ['free-spins', 'multiplier', 're-spins'],
+  },
   meta: {
     title: 'サニー・ショアーズ / Sunny shores｜オンラインスロットレビュー by CasinoTsu',
     description: '暖かくなってくる時期にぴったりの、太陽とカラフルな果物が彩る常夏のビーチへようこそ！CasinoTsu は、右からでも左からでも、3つ以上の同じシンボルが連結して揃えば配当が得られる、魅力的なスロット「Sunny Shores」をご紹介します。🌊',

@@ -121,6 +121,12 @@ export const mahjong_ways_2: SlotData = {
       a: '96.95%です。 CasinoTsu の情報に基づいております。',
     },
   ],
+  categoryTags: {
+    volatilityLevel: 'medium',
+    themes: ['asian'],
+    features: ['free-spins', 'multiplier'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'Mahjong Ways 2',
     description: '麻雀のルールを知らなくても、まったく問題ございません！ PG Soft（ポケットゲームズソフト）社が提供する人気のスロット「麻雀ウェイズ2（Mahjong Ways 2）」について、CasinoTsu が徹底的に調査いたしました。',

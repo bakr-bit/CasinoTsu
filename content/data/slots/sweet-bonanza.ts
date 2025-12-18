@@ -196,6 +196,11 @@ export const sweet_bonanza: SlotData = {
       a: 'はい、フリースピン中にスキャッターシンボル（ペロペロキャンディー）が3つ以上出現すると、追加で5回のフリースピンを獲得できます。これは、ゲームをより長く楽しむための重要な要素です。',
     },
   ],
+  categoryTags: {
+    mechanics: ['cluster', 'bonus-buy', 'tumble'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'progressive-jackpot', 'multiplier'],
+  },
   meta: {
     title: 'Sweet Bonanza／スウィート・ボナンザ｜オンラインスロット攻略',
     description: 'キャンディーとフルーツがテーマの落ち物（クラスターペイ）型ビデオスロット。最大21,175倍の配当倍率と強力なマルチプライヤー機能で爆発的な勝利の可能性を秘めています。',

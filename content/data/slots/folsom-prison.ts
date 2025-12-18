@@ -263,6 +263,10 @@ export const folsom_prison: SlotData = {
       a: 'はい、モバイルデバイス（スマートフォン、タブレット）にも完全対応しています。レスポンシブデザインにより、どのデバイスからでも快適なゲームプレイをお楽しみいただけます。',
     },
   ],
+  categoryTags: {
+    mechanics: ['bonus-buy'],
+    features: ['free-spins', 'multiplier', 'bonus-round'],
+  },
   meta: {
     title: 'Folsom Prison',
     description: '「フォルサム・プリズン」は、その独特な刑務所テーマと、爆発的な高配当の可能性でプレイヤーを魅了するスロットゲームです。超高額配当が狙えるこのゲームでは、ミニマムベットからでもBIG WINが炸裂する可能性があります！💥',

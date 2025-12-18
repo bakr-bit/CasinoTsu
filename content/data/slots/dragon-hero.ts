@@ -211,6 +211,12 @@ export const dragon_hero: SlotData = {
       a: 'Pragmatic Play（プラグマティック・プレイ）です。CasinoTsuは、信頼できるプロバイダーのゲームのみを取り扱っております。',
     },
   ],
+  categoryTags: {
+    mechanics: ['bonus-buy'],
+    volatilityLevel: 'high',
+    themes: ['asian'],
+    features: ['free-spins', 'multiplier'],
+  },
   meta: {
     title: 'Dragon Hero',
     description: 'Pragmatic Play社より、絢爛豪華な中国をテーマにしたスロット「Dragon Hero（ドラゴン・ヒーロー）」が登場いたしました。神秘的な雰囲気と華やかさが融合した本作を、CasinoTsuが詳しくレビューいたします。🐲',

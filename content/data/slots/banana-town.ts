@@ -178,6 +178,11 @@ export const banana_town: SlotData = {
       a: '高ボラティリティのため、資金管理には十分ご注意ください。また、フリースピン購入機能は便利ですが、購入金額が高額になる場合があるため、リスクを理解した上でご利用ください。ゲーム中に問題が発生した場合は、各カジノのカスタマーサポートにお問い合わせください。CasinoTsuは、常に責任あるプレイを推奨しております。',
     },
   ],
+  categoryTags: {
+    mechanics: ['cluster', 'bonus-buy'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'multiplier', 'bonus-round'],
+  },
   meta: {
     title: 'Banana Town（バナナ・タウン）オンカジスロット最新レビュー',
     description: '可愛らしいおサルの爆裂スロット「Banana Town（バナナ・タウン）」の詳細を、CasinoTsuが徹底レビューします！✨',

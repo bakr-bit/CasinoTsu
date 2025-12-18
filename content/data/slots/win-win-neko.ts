@@ -192,6 +192,11 @@ export const win_win_neko: SlotData = {
       a: 'Fa Chai Gaming版は96.5%、Nextspin版は97.03%です。 CasinoTsu は、高いRTPはプレイヤーにとって有利に働くと考えます。',
     },
   ],
+  categoryTags: {
+    mechanics: ['bonus-buy'],
+    features: ['free-spins', 'progressive-jackpot', 'multiplier'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'お宝招き猫（Win Win Neko）| CasinoTsu 推薦！オンラインカジノスロット遊び方',
     description: '最大配当1,000倍（Fa Chai Gaming版）または5,000倍（Nextspin版）のジャックポットつき黄金の招き猫が幸運を引き寄せます！パチスロ風スロットを CasinoTsu が徹底レビュー！',

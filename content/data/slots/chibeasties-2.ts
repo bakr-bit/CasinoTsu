@@ -198,6 +198,10 @@ export const chibeasties_2: SlotData = {
       a: '最大配当倍率は、ベット額の 900倍 です。 CasinoTsu は、この数値がゲームのポテンシャルを理解する上で重要であると考えています。',
     },
   ],
+  categoryTags: {
+    mechanics: ['bonus-buy'],
+    features: ['free-spins', 'progressive-jackpot', 'multiplier', 're-spins'],
+  },
   meta: {
     title: 'CHiBeasties 2',
     description: 'Yggdrasil社よりリリースされたスロットCHiBeasties 2（チビースティーズ2）！4つの世界を股にかけ、世界毎にワイルドが特別な動きを見ながら楽しめます。 CasinoTsu では、このエキサイティングなゲームを詳細にレビューいたします。',

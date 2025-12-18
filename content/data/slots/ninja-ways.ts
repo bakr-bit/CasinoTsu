@@ -187,6 +187,11 @@ export const ninja_ways: SlotData = {
       a: 'ニンジャワイルドに付随するマルチプライヤーは、最大で8倍です。',
     },
   ],
+  categoryTags: {
+    volatilityLevel: 'high',
+    themes: ['japanese'],
+    features: ['free-spins', 'multiplier'],
+  },
   meta: {
     title: 'Ninja Ways（ニンジャ・ウェイズ）オンラインスロット：CasinoTsuによる徹底解説',
     description: '隠し扉やリール上を駆け巡る忍者といった、プレイヤーを飽きさせない楽しい演出が満載。日本の忍者をテーマにしたこのスロットの魅力をCasinoTsuが詳しく解説します。',

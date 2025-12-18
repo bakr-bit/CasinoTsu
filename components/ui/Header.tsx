@@ -75,7 +75,7 @@ function IconMenu(props: React.SVGProps<SVGSVGElement>) {
 }
 
 export default function Header({
-  logoSrc = "/new-logo.png",
+  logoSrc = "/tsu-logo.png",
   logoAlt = "CasinoTsu",
   logoWidth = 160,
   logoHeight = 48,
@@ -151,7 +151,7 @@ export default function Header({
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="text-blue-800 hover:text-blue-600 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 rounded inline-flex items-center gap-1"
+                  className="text-[#0019b2] hover:text-[#0019b2]/70 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0019b2] rounded inline-flex items-center gap-1"
                 >
                   {Icon ? <Icon className="h-4 w-4" aria-hidden="true" /> : null}
                   <span>{item.label}</span>
@@ -162,7 +162,7 @@ export default function Header({
               <div key={item.href} className="relative">
                 <button
                   type="button"
-                  className="inline-flex items-center gap-1 text-blue-800 hover:text-blue-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 rounded"
+                  className="inline-flex items-center gap-1 text-[#0019b2] hover:text-[#0019b2]/70 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0019b2] rounded"
                   aria-haspopup="menu"
                   aria-expanded={isOpen}
                   onClick={() => setOpenMenu((cur) => (cur === idx ? null : idx))}
@@ -184,7 +184,7 @@ export default function Header({
                         <Link
                           key={child.href}
                           href={child.href}
-                          className={`block px-4 py-2 text-sm text-blue-800 hover:text-blue-600 transition-colors focus:outline-none ${
+                          className={`block px-4 py-2 text-sm text-[#0019b2] hover:text-[#0019b2]/70 transition-colors focus:outline-none ${
                             isMainPage ? 'font-bold' : ''
                           }`}
                         >
@@ -200,13 +200,13 @@ export default function Header({
         </nav>
 
         <div className="flex items-center gap-4">
-          <div className="hidden md:flex items-center gap-3 text-blue-800">
+          <div className="hidden md:flex items-center gap-3 text-[#0019b2]">
             {socials.map((s) => (
               <Link
                 key={s.href}
                 href={s.href}
                 aria-label={s.label}
-                className="hover:text-blue-600 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 rounded"
+                className="hover:text-[#0019b2]/70 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0019b2] rounded"
               >
                 {s.icon ?? (
                   <span className="text-xs font-semibold">{s.label}</span>
@@ -217,7 +217,7 @@ export default function Header({
 
           <button
             type="button"
-            className="lg:hidden p-1 text-blue-800 hover:text-blue-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 rounded"
+            className="lg:hidden p-1 text-[#0019b2] hover:text-[#0019b2]/70 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0019b2] rounded"
             aria-label="Toggle menu"
             aria-expanded={open}
             onClick={() => setOpen((v) => !v)}
@@ -244,7 +244,7 @@ export default function Header({
                   <Link
                     key={item.href}
                     href={item.href}
-                    className="py-2 text-blue-800 hover:text-blue-600 transition-colors inline-flex items-center gap-2"
+                    className="py-2 text-[#0019b2] hover:text-[#0019b2]/70 transition-colors inline-flex items-center gap-2"
                     onClick={() => setOpen(false)}
                   >
                     {Icon ? <Icon className="h-4 w-4" aria-hidden="true" /> : null}
@@ -256,7 +256,7 @@ export default function Header({
                 <div key={item.href} className="border-b last:border-b-0">
                   <button
                     type="button"
-                    className="w-full flex items-center justify-between py-2 text-blue-800 hover:text-blue-600"
+                    className="w-full flex items-center justify-between py-2 text-[#0019b2] hover:text-[#0019b2]/70"
                     aria-expanded={isOpen}
                     onClick={() => setMobileOpenMenus((m) => ({ ...m, [idx]: !m[idx] }))}
                   >
@@ -276,7 +276,7 @@ export default function Header({
                           <Link
                             key={child.href}
                             href={child.href}
-                            className={`block py-1 pl-2 text-blue-800 hover:text-blue-600 transition-colors ${
+                            className={`block py-1 pl-2 text-[#0019b2] hover:text-[#0019b2]/70 transition-colors ${
                               isMainPage ? 'font-bold' : ''
                             }`}
                             onClick={() => setOpen(false)}
@@ -294,7 +294,7 @@ export default function Header({
           {socials.length > 0 && (
             <div className="mt-4 flex items-center gap-4 text-gray-600">
               {socials.map((s) => (
-                <Link key={s.href} href={s.href} aria-label={s.label} className="hover:text-blue-600 transition-colors">
+                <Link key={s.href} href={s.href} aria-label={s.label} className="hover:text-[#0019b2]/70 transition-colors">
                   {s.icon ?? <span className="text-xs font-semibold">{s.label}</span>}
                 </Link>
               ))}

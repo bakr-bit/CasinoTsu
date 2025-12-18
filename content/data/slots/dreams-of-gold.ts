@@ -193,6 +193,11 @@ export const dreams_of_gold: SlotData = {
       a: 'はい、HTML5で最適化されているため、スマートフォンやタブレットで快適にプレイできます。 CasinoTsu 推薦のカジノでは、スムーズなモバイルプレイ環境を提供しています。',
     },
   ],
+  categoryTags: {
+    mechanics: ['bonus-buy'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'progressive-jackpot', 'multiplier', 're-spins'],
+  },
   meta: {
     title: 'Dreams of Gold',
     description: '日本のパチスロにそっくりということで日本人プレイヤーをざわつかせたハワイアンドリームを開発したGolden Hero／ゴールデンヒーローとJTG。続々と同系統のスロットを開発し、今度はカエル？をテーマにしたスロットのDreams of Gold／ドリーム・オブ・ゴールドが誕生！早速レビューしてみましょ♪ 🐸',

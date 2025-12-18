@@ -231,6 +231,12 @@ export const oni_hunter_plus: SlotData = {
       a: 'はい、スマートフォン や タブレット などのモバイルデバイスに完全対応しており、どこでも快適にプレイできます。CasinoTsu は、モバイルでのプレイ体験の質を高く評価しています。',
     },
   ],
+  categoryTags: {
+    mechanics: ['cluster', 'bonus-buy'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'progressive-jackpot', 'multiplier', 're-spins'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'Oni Hunter Plus (鬼狩りPLUS) オンラインスロット徹底レビュー',
     description: '',

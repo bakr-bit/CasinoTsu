@@ -133,6 +133,11 @@ export const invading_vegas_revenge_on_mars: SlotData = {
       a: 'いいえ、「インベーディング・ベガス・リベンジ・オン・マーズ」にはボーナス購入機能は搭載されておりません。',
     },
   ],
+  categoryTags: {
+    mechanics: ['bonus-buy'],
+    volatilityLevel: 'medium',
+    features: ['free-spins', 'multiplier', 'bonus-round', 're-spins'],
+  },
   meta: {
     title: 'インベーディングベガス・リベンジオンマーズ｜スロットレビュー',
     description: 'Play’n GOよりリリースされた「インベーディングベガス・リベンジオンマーズ」は、エイリアンが火星に築いたラスベガス風のギャンブル都市を舞台にしたユニークなスロットです。ゲームプレイの鍵を握るのは、この独創的なテーマと、注目のウォーキングワイルド機能。前作「Invading Vegas」の続編として、シリーズファンはもちろん、新規プレイヤーにもお楽しみいただける要素が満載です。',

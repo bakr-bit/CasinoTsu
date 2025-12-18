@@ -32,7 +32,7 @@ export function AffiliateButton({
   const baseStyles =
     'inline-flex items-center justify-center px-6 py-3 rounded-lg font-bold transition-colors text-center';
   const variantStyles = {
-    primary: 'bg-emerald-600 text-white hover:bg-emerald-700',
+    primary: 'bg-red-600 text-white hover:bg-red-700',
     secondary: 'bg-gray-100 text-gray-800 hover:bg-gray-200 border border-gray-300',
   };
 
@@ -48,7 +48,7 @@ export function AffiliateButton({
       </Link>
       {bonusCode && (
         <span className="text-sm text-gray-600">
-          ボーナスコード: <code className="px-2 py-0.5 bg-amber-100 text-amber-800 rounded font-mono">{bonusCode}</code>
+          ボーナスコード: <code className="px-2 py-0.5 bg-blue-100 text-[#0019b2] rounded font-mono">{bonusCode}</code>
         </span>
       )}
     </div>

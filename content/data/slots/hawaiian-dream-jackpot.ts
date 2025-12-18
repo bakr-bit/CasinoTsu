@@ -186,6 +186,11 @@ export const hawaiian_dream_jackpot: SlotData = {
       a: 'はい、多くのオンラインカジノでは、デモプレイ（無料プレイ）モードを提供しています。実際のお金を使わずにゲームのルールやフィーチャーを試すことができるため、プレイする前に一度試してみることをお勧めします。CasinoTsu は、皆様が納得してプレイできるよう、この無料プレイの活用を推奨いたします。',
     },
   ],
+  categoryTags: {
+    volatilityLevel: 'high',
+    features: ['free-spins', 'progressive-jackpot', 'multiplier', 're-spins'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'Hawaiian Dream Jackpot',
     description: 'ハワイアンドリーム・ジャックポットは、人気の「ハワイアンドリーム」シリーズにジャックポット機能が追加された、エキサイティングなスロットゲームです。その魅力は、日本のパチスロを彷彿とさせるシンプルなゲーム性の中に、一攫千金のチャンスを秘めている点にあります。CasinoTsu では、このエキサイティングなジャックポットスロットの全てを、徹底的に深掘りしていきます。',

@@ -201,6 +201,11 @@ export const robo_ultra: SlotData = {
       a: 'ベースゲームでは連鎖ごとに増加しリセットされますが、フリースピン中は累積していき、最大で100倍まで到達する可能性があります。',
     },
   ],
+  categoryTags: {
+    mechanics: ['cluster', 'bonus-buy'],
+    volatilityLevel: 'medium',
+    features: ['free-spins', 'multiplier', 're-spins'],
+  },
   meta: {
     title: 'Robo Ultra | ロボ・ウルトラ',
     description: 'Yolted社より、ロボットをテーマにしたオンラインスロット「Robo Ultra（ロボ・ウルトラ）」が登場いたしました。そのロボットのデザインは、なんとあの「ガンダム」にそっくり！このユニークなスロットのゲーム機能や魅力について、CasinoTsuが詳しくレビューしてまいります。',

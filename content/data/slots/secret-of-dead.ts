@@ -157,6 +157,11 @@ export const secret_of_dead: SlotData = {
       a: '『Secret of Dead』のデフォルトRTPは **96.20%** です。ただし、オンラインカジノによっては、94.20%やそれ以下のRTPバージョンのゲームが提供されている場合もあります。プレイする際は、必ず利用するカジノのRTPをご確認ください。',
     },
   ],
+  categoryTags: {
+    volatilityLevel: 'high',
+    themes: ['halloween'],
+    features: ['free-spins', 'multiplier'],
+  },
   meta: {
     title: 'Secret of Dead - 古代エジプトの秘宝を掴み取れ！',
     description: '',

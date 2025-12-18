@@ -183,6 +183,10 @@ export const lucky_neko_gigablox: SlotData = {
       a: 'ゲームサーバー側では、通信が途切れた時点でのゲーム結果は記録・確定されています。もし他の問題が発生した場合は、まずはプレイしているオンラインカジノのカスタマーサポートに連絡してください。問題発生時のスクリーンショットなどを保存しておくと、スムーズな対応に役立ちます。',
     },
   ],
+  categoryTags: {
+    themes: ['asian'],
+    features: ['free-spins', 'multiplier'],
+  },
   meta: {
     title: 'ラッキーネコ：ギガブロックス',
     description: '',

@@ -36,16 +36,19 @@ export default async function BonusesPillarPage() {
     };
   });
 
-  const { content } = await loadMDX('pillars', 'bonuses');
+  const { content, frontmatter, headings } = await loadMDX('pillars', 'bonuses');
 
   return (
     <PillarPageTemplate
       category="bonuses"
       categoryNameJa="ボーナス"
       description="入金不要ボーナス、ウェルカムボーナス、キャッシュバックなど各種ボーナスを解説。"
-      heroGradient="from-amber-500 to-orange-600"
+      heroColor="bg-amber-600"
+      heroImage="/headers/bonus-header.webp"
       content={content}
       articles={enrichedArticles}
+      lastUpdated={frontmatter.lastUpdated}
+      headings={headings}
     />
   );
 }

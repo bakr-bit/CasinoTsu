@@ -167,6 +167,11 @@ export const money_train: SlotData = {
       '一部地域ではボーナス購入機能が利用できない場合がある',
     ],
   },
+  categoryTags: {
+    mechanics: ['bonus-buy'],
+    volatilityLevel: 'high',
+    features: ['multiplier', 'bonus-round'],
+  },
   meta: {
     title: 'Money Train スロットレビュー | CasinoTsu',
     description: 'Relax Gaming社が贈る、最大配当20,000倍のポテンシャルを秘めた人気スロット。',

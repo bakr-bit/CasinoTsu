@@ -181,6 +181,11 @@ export const twilight_princess: SlotData = {
       a: '金色のオーブシンボルが3つ以上出現すると、10回のフリースピンを獲得できます。また、フリースピン中に特定のスキャッターシンボルが出現すると、追加スピンを獲得することも可能です。',
     },
   ],
+  categoryTags: {
+    mechanics: ['cluster', 'bonus-buy', 'tumble'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'multiplier', 're-spins'],
+  },
   meta: {
     title: 'トワイライト・プリンセス | Pragmatic Playの人気スロットを徹底解説！',
     description: 'Pragmatic Play社からリリースされた「トワイライト・プリンセス」は、魅力的なプリンセスが主人公のクラスターウィンスロットです。隣接するシンボルが5つ以上集まることで配当が発生するクラスターペイシステムを採用し、最大7,500倍もの高配当が期待できます。美しいグラフィックとサウンド、そしてエキサイティングなフリースピン機能で、プレイヤーを幻想的な世界へと誘います。',

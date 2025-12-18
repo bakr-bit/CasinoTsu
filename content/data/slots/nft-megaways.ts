@@ -186,6 +186,11 @@ export const nft_megaways: SlotData = {
       a: 'はい、多くのオンラインカジノでNFTメガウェイズのデモプレイ（無料プレイ）が提供されています。リアルマネーでプレイする前に、ゲームの仕組みを理解するために活用することをおすすめします。CasinoTsuも、まずはデモプレイでの確認を推奨いたします。',
     },
   ],
+  categoryTags: {
+    mechanics: ['megaways'],
+    volatilityLevel: 'low',
+    features: ['free-spins', 'multiplier'],
+  },
   meta: {
     title: 'NFTメガウェイズ｜スロットの攻略法や遊び方を徹底レビュー！',
     description: '',

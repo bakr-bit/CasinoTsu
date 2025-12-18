@@ -163,6 +163,11 @@ export const mighty_wild_panther_grand_gold_edition: SlotData = {
       a: 'はい、多くのオンラインカジノやスロット情報サイトで「Mighty Wild Panther Grand Gold Edition」のデモモードが提供されています。例えば、VegasSlotsOnlineやSlotCatalogのようなサイトで、実際のお金を使わずにゲームを試すことができます。CasinoTsuは、このデモプレイ機能が、実際のゲームプレイの感触や、各フィーチャーの仕組みを十分に理解するための有効な手段だと考えています。これにより、リアルマネーでのプレイに自信を持って臨むことができます。',
     },
   ],
+  categoryTags: {
+    mechanics: ['bonus-buy'],
+    volatilityLevel: 'low',
+    features: ['free-spins', 'progressive-jackpot', 'multiplier', 're-spins'],
+  },
   meta: {
     title: 'Mighty Wild Panther Grand Gold Edition：ジャングルの王様が君臨するスロットを徹底レビュー',
     description: '最大配当1,500倍のジャックポットを秘めたこのスロットは、スリルと興奮に満ちています。パンサーシリーズの最新作として、どのような驚きが隠されているのか、CasinoTsuが徹底的にレビューいたします。正確さが第一。興奮はその次。CasinoTsu 推薦のこのスロットを、ぜひお楽しみください。',

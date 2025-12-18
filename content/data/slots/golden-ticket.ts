@@ -214,6 +214,10 @@ export const golden_ticket: SlotData = {
       a: 'Golden Ticketには、直接的なフリースピン機能はありませんが、ボーナスゲームや追加ラウンドを獲得するチャンスがあります。',
     },
   ],
+  categoryTags: {
+    mechanics: ['cluster'],
+    features: ['free-spins', 'multiplier'],
+  },
   meta: {
     title: 'Golden Ticket / ゴールデンチケット・ゲームレビュー',
     description: 'プレイヤーを飽きさせない様々な工夫が凝らされています。これは、[Play’n GO](https://casinotsu.com/providers)社が贈る、隠れた名作スロットです！ ✨',

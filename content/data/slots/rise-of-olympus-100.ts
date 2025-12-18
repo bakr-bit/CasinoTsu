@@ -183,6 +183,12 @@ export const rise_of_olympus_100: SlotData = {
       a: 'CasinoTsu が推薦する[2アップカジノ](https://casinotsu.com/go/2up:2up?referrer_path=%2Fslots%2Frise-of-olympus-100)、ミスティーノ、カジ旅、ベラジョンカジノ、カジノシークレットなどでプレイ可能です。',
     },
   ],
+  categoryTags: {
+    mechanics: ['cluster'],
+    volatilityLevel: 'high',
+    themes: ['mythology'],
+    features: ['free-spins', 'multiplier'],
+  },
   meta: {
     title: 'Rise of Olympus 100：神々の力で勝利を掴む！CasinoTsu 推薦スロットレビュー',
     description: 'Play’n Go社よりリリースされました「Rise of Olympus 100（ライズ・オブ・オリンパス100）」は、壮大なギリシャ神話を舞台にしたオンラインスロットゲームです。CasinoTsu が、このゲームの魅力と遊び方、注目のフィーチャーについて、詳しくレビューいたします。最大配当15,000倍という驚異的なポテンシャルは、プレイヤーの皆様を熱狂させるハイボラティリティな体験をお約束します。CasinoTsu 推薦のこのゲームで、神々の力を体験してください。✨',

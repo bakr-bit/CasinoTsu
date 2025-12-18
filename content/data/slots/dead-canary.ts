@@ -188,6 +188,11 @@ export const dead_canary: SlotData = {
       a: '「Dead Canary」は、「Fire in the Hole」の後継機として位置づけられることもありますが、一部のプレイヤーからは「Fire in the Hole」ほどのインパクトや完成度に達していないという意見もあります。しかし、「Dead Canary」独自のフィーチャーやゲーム性も魅力的であり、どちらが良いかはプレイヤーの好みによります。[Fire in the Hole](https://casinotsu.com/slots/fire-in-the-hole)のWild Mining機能は、ベースゲームを特に面白くしていると評価されることが多いです。CasinoTsuは、両作品ともNolimit City社の意欲作として、それぞれに異なる魅力があると認識しております。',
     },
   ],
+  categoryTags: {
+    mechanics: ['cluster', 'bonus-buy'],
+    themes: ['halloween'],
+    features: ['free-spins', 'multiplier', 're-spins'],
+  },
   meta: {
     title: 'Dead Canary (デッド・キャナリー) スロット攻略【2025年版】',
     description: '',

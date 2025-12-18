@@ -133,6 +133,10 @@ export const super_burning_wins: SlotData = {
       a: 'プレイヤーからは、昔ながらのスロットのノスタルジーや、よくレンダリングされた3Dグラフィックが高く評価されております。一方で、特別なフィーチャーが少ないため、「Xファクター」に欠けるという意見や、variation（変動性）が限定的であるという声もあります。しかし、全体的には「スムーズでプレイしやすい」という評価が多く、特にレトロスロットファンからは直接的な支持を得ております。 CasinoTsu は、皆様からのフィードバックを大切にしております。',
     },
   ],
+  categoryTags: {
+    volatilityLevel: 'high',
+    features: ['free-spins', 'multiplier', 'bonus-round'],
+  },
   meta: {
     title: 'Super Burning Wins / スーパー・バーニング・ウィン',
     description: 'Playson社が贈る、レトロなフルーツシンボルとシンプルなゲーム性が特徴の人気スロット。手軽に大勝利を狙いたいプレイヤーにおすすめ。',

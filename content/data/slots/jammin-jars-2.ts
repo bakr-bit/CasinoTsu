@@ -197,6 +197,11 @@ export const jammin_jars_2: SlotData = {
       a: '基本RTPは96.1%ですが、ゲームプレイ中に上昇し、最大で96.6%（または一部カジノでは96.83%）になることがあります。',
     },
   ],
+  categoryTags: {
+    mechanics: ['cluster'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'multiplier'],
+  },
   meta: {
     title: 'Jammin’ Jars 2（ジャミンジャーズ2） 最新スロットをCasinoTsuが徹底レビュー！',
     description: 'Push Gaming社の人気スロット『Jammin\' Jars』の続編が登場。クラスタースキーム、ジャム瓶ワイルド・マルチプライヤーは健在。さらに、インスタント・プライズ・シンボル、ゴールドレコード・シンボル、Giga Jarフィーチャーといった新機能が追加され、ゲームプレイがさらにエキサイティングに。最大配当倍率は50,000倍に大幅アップ！',

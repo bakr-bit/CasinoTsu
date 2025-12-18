@@ -257,6 +257,13 @@ export const sweet_bonanza_xmas: SlotData = {
       a: 'ゲームの規約によると、**誤作動が発生した場合、そのゲームの配当とプレイは全て無効** となります。ベットした金額は返還されることがありますが、勝利金は支払われません。万が一エラーが発生した場合は、エラー画面のスクリーンショットを撮り、速やかに利用しているオンラインカジノのカスタマーサポートに連絡してください。CasinoTsu は、万が一の際にも冷静な対応を心がけることをお勧めします。',
     },
   ],
+  categoryTags: {
+    mechanics: ['cluster', 'bonus-buy'],
+    volatilityLevel: 'high',
+    themes: ['xmas'],
+    features: ['free-spins', 'multiplier'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'Sweet Bonanza Xmas（スイートボナンザ・クリスマス）レビュー',
     description: '寒さが身にしみるこの季節、Sweet Bonanza Xmas（スイートボナンザ・クリスマス）で心も懐も温まるような、激アツな爆発的勝利を狙ってみませんか？ CasinoTsu が、Pragmatic Play（プラグマティック・プレイ）の人気スロットがホリデーシーズンを彩るクリスマス仕様になって登場した本作を徹底レビューいたします！✨',

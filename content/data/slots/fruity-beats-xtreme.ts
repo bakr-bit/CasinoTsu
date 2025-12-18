@@ -187,6 +187,13 @@ export const fruity_beats_xtreme: SlotData = {
       a: 'No, unfortunately, this slot does not feature a bonus buy option (a feature that allows you to directly access the bonus round by paying a certain multiple of your bet).',
     },
   ],
+  categoryTags: {
+    mechanics: ['bonus-buy', 'expanding-wilds'],
+    volatilityLevel: 'medium',
+    themes: ['fruit'],
+    features: ['free-spins', 'progressive-jackpot', 'multiplier', 'bonus-round'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'Fruity Beats Xtreme! Slot Review - High RTP & Neon Fruit Fun',
     description: 'Experience the thrill of classic fruit symbols with a modern neon twist in Fruity Beats Xtreme! This Spinmatic slot boasts an impressive RTP and exciting Expanding Wilds for potentially big wins.',

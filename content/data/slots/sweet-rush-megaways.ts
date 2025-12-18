@@ -201,6 +201,11 @@ export const sweet_rush_megaways: SlotData = {
       a: 'いいえ、フリースピン中にスキャッターシンボルを追加で揃えても、追加のフリースピンは付与されません。',
     },
   ],
+  categoryTags: {
+    mechanics: ['megaways', 'bonus-buy'],
+    features: ['free-spins', 'multiplier', 're-spins'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'Sweet Rush Megaways（スイートラッシュ・メガウェイズ）徹底レビュー 🍭',
     description: '可愛らしいお菓子の世界観とは裏腹に、最大12,960倍のポテンシャルを秘めたハイボラティリティスロット。チャンス×2機能や固定ワイルドによるマルチプライヤーが勝利を後押しします。',

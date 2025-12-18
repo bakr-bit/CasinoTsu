@@ -167,6 +167,11 @@ export const mutant_potatoes: SlotData = {
       a: 'はい、多くのオンラインカジノでは、リアルマネーでプレイする前にゲームのデモモード（無料プレイ）を提供しています。これにより、リスクなしでゲームを試すことができます。 CasinoTsu では、皆様が安心してゲームを楽しめるよう、デモプレイの活用を推奨しております。',
     },
   ],
+  categoryTags: {
+    mechanics: ['cluster', 'bonus-buy'],
+    volatilityLevel: 'low',
+    features: ['free-spins', 'multiplier', 'bonus-round', 're-spins'],
+  },
   meta: {
     title: 'Mutant Potatoes',
     description: 'シンボル変換やロック＆リスピンなど、オリジナル機能で連続ヒットを狙える「ミュータント・ポテト」。 CasinoTsu が初心者の方にもわかりやすく、徹底レビューいたします！',

@@ -38,16 +38,19 @@ export default async function ReviewsPillarPage() {
     };
   });
 
-  const { content } = await loadMDX('pillars', 'reviews');
+  const { content, frontmatter, headings } = await loadMDX('pillars', 'reviews');
 
   return (
     <PillarPageTemplate
       category="reviews"
       categoryNameJa="カジノレビュー"
       description="信頼できるオンラインカジノを徹底レビュー。ライセンス、ボーナス、決済方法など。"
-      heroGradient="from-purple-600 to-purple-800"
+      heroColor="bg-purple-700"
+      heroImage="/headers/reviews.webp"
       content={content}
       articles={enrichedArticles}
+      lastUpdated={frontmatter.lastUpdated}
+      headings={headings}
     />
   );
 }

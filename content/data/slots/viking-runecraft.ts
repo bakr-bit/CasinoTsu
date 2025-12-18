@@ -173,6 +173,13 @@ export const viking_runecraft: SlotData = {
       a: '96.71% です。',
     },
   ],
+  categoryTags: {
+    mechanics: ['cluster'],
+    volatilityLevel: 'medium',
+    themes: ['mythology'],
+    features: ['multiplier', 'bonus-round'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'Viking Runecraft (バイキング・ルーンクラフト)',
     description: 'レベルアップしていくゲームフィーチャーや、4人の神々がそれぞれの力を発揮するワイルドシンボルなど、CasinoTsuがその魅力を徹底レビューいたします✨',

@@ -188,6 +188,12 @@ export const apollo_pays: SlotData = {
       a: 'いいえ、このスロットには直接ボーナスを購入する機能はありません。ただし、Win Exchange™機能を利用して、勝利金をフリースピンに交換するオプションがあります。CasinoTsu は、この点も明確にいたします。',
     },
   ],
+  categoryTags: {
+    mechanics: ['hold-and-win', 'bonus-buy'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'multiplier', 're-spins'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'Apollo Pays (アポロ・ペイズ) スロット：勝利の神託を掴み取れ！',
     description: 'CasinoTsu は、このゲームのユニークなリスピン機能と、メガウェイズならではの爆発力で多くのプレイヤーを魅了する理由を、実際にプレイした結果を交え、詳細にお届けいたします。勝てるのか？どんなフィーチャーがあるのか？CasinoTsu が、その全てを明らかにします！ ✨',

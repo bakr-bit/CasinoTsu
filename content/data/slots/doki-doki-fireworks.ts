@@ -229,6 +229,10 @@ export const doki_doki_fireworks: SlotData = {
       a: 'RTPは96.34%または96.5%で、ボラティリティは「高」です。これは、勝利頻度は低いものの、一度の勝利で高額な配当が得られる可能性があることを意味します。',
     },
   ],
+  categoryTags: {
+    volatilityLevel: 'high',
+    features: ['free-spins', 'progressive-jackpot', 'multiplier', 'bonus-round', 're-spins'],
+  },
   meta: {
     title: 'ドキドキ夏祭り (Doki Doki Fireworks) スロットレビュー | CasinoTsu',
     description: 'ドキドキ夏祭り（Doki Doki Fireworks）は、日本のお祭りをイメージしたパチスロ風スロット。かき氷ボーナスなど萌えるフィーチャーを楽しんじゃおう！ ✨',

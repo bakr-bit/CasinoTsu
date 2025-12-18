@@ -178,6 +178,10 @@ export const money_train_3: SlotData = {
       a: 'はい、スマートフォンやタブレットに完全対応しており、快適にプレイできます。',
     },
   ],
+  categoryTags: {
+    mechanics: ['bonus-buy'],
+    features: ['free-spins', 'multiplier', 'bonus-round', 're-spins'],
+  },
   meta: {
     title: 'Money Train 3 - 人気スロット徹底レビュー！',
     description: '「マネー・トレイン3（Money Train 3）」は、Relax Gaming社が自信を持ってお届けする、大人気「マネー・トレイン」シリーズの待望の最新作でございます。前作からさらにパワーアップを遂げ、最大配当倍率100,000倍という驚異的なポテンシャルを秘めたハイボラティリティスロットとして、リリース前から大きな注目を集めておりました。スチームパンクとワイルドウェストが融合した独特の世界観、手に汗握るゲーム性、そして何よりもその爆発力で、多くのプレイヤーの皆様を魅了することと確信しております。',

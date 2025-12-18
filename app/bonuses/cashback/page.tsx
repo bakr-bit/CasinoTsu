@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { loadMDX } from '@/lib/mdx';
+import { ArticleContent } from '@/components/mdx';
 
 export const metadata: Metadata = {
   title: "【2025年最新版】日本のオンラインカジノで使えるキャッシュバック完全ガイド",
@@ -7,38 +8,42 @@ export const metadata: Metadata = {
 };
 
 export default async function CashbackBonusPage() {
-  const { content, frontmatter } = await loadMDX('bonuses', 'cashback');
+  const { content, frontmatter, headings } = await loadMDX('bonuses', 'cashback');
 
   return (
-    <main className="min-h-screen bg-gray-50">
+    <div className="min-h-screen">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-amber-500 to-orange-600 text-white">
-        <div className="max-w-4xl mx-auto px-4 py-12">
+      <section className="bg-amber-600 text-white">
+        <div className="container mx-auto px-4 py-16 md:py-24">
           <div className="flex items-center gap-3 mb-4">
             <span className="px-3 py-1 bg-white/20 rounded-full text-sm font-medium">
               ボーナスガイド
             </span>
           </div>
-          <h1 className="text-3xl md:text-4xl font-bold mb-4">{frontmatter.title}</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">{frontmatter.title}</h1>
           {frontmatter.description && (
-            <p className="text-lg text-amber-100">{frontmatter.description}</p>
+            <p className="text-lg md:text-xl text-white/90 max-w-2xl">{frontmatter.description}</p>
           )}
-          <div className="flex items-center gap-4 mt-6 text-sm text-amber-200">
+          <div className="flex items-center gap-4 mt-6 text-sm text-white/70">
             <span>著者: {frontmatter.author}</span>
             <span>•</span>
-            <span>更新日: {frontmatter.lastUpdated}</span>
+            {frontmatter.lastUpdated && (
+              <span>最終更新日: <time dateTime={frontmatter.lastUpdated}>{new Date(frontmatter.lastUpdated).toLocaleDateString('ja-JP', { year: 'numeric', month: 'long', day: 'numeric' })}</time></span>
+            )}
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Main Content */}
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <article className="bg-white rounded-xl shadow-sm p-6 md:p-10">
-          <div className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-amber-600 hover:prose-a:text-amber-700">
-            {content}
-          </div>
-        </article>
-      </div>
-    </main>
+      <section className="bg-white">
+        <div className="container mx-auto px-4 py-12 md:py-16">
+          <ArticleContent
+            content={content}
+            headings={headings}
+            className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-amber-600 prose-strong:text-gray-900"
+          />
+        </div>
+      </section>
+    </div>
   );
 }

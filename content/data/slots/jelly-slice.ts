@@ -213,6 +213,11 @@ export const jelly_slice: SlotData = {
       a: 'はい、『Jelly Slice』はスマートフォンやタブレットなどのモバイルデバイスに完全対応しています。iOSおよびAndroidデバイスのブラウザから、いつでもどこでも快適にプレイできます。',
     },
   ],
+  categoryTags: {
+    mechanics: ['bonus-buy'],
+    volatilityLevel: 'medium',
+    features: ['free-spins', 'multiplier', 'bonus-round'],
+  },
   meta: {
     title: 'Jelly Slice（ジェリー・スライス）スロット：キュートなゼリーが最大10,000倍の配当をお届け！',
     description: 'Hacksaw Gaming 社が贈る、最大1,048,576通りのペイラインと最大10,000倍の配当倍率を誇るメガウェイズスロット。',

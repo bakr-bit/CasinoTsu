@@ -160,6 +160,10 @@ export const fairytale_legends_hansel_gretel: SlotData = {
       a: 'はい、ございます。オートプレイ機能をご利用いただくと、自動でスピンを繰り返すことが可能です。オートプレイの回数は、10、25、50、100、250、500、750、1000の中から選択いただけます。これにより、 CasinoTsu は皆様がご自身のペースでゲームをお楽しみいただけると考えております。[スロットの戦略](https://casinotsu.com/slots/slots-strategies)と併せて活用すると、より効果的かもしれません。',
     },
   ],
+  categoryTags: {
+    features: ['free-spins', 'multiplier'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'Fairytale Legends: Hansel & Gretel - スロットレビュー 🎮',
     description: 'CasinoTsu より、NETENT社がお届けする「フェアリーテールレジェンド」シリーズの第2弾、スロット「Fairytale Legends: Hansel & Gretel」のご紹介です！ 今回は、あの有名なグリム童話「ヘンゼルとグレーテル」の世界を舞台にした、魅力あふれる機種が登場いたしました。多彩なスピン機能とボーナス機能が搭載されており、きっと皆様に楽しんでいただけることでしょう。',

@@ -163,6 +163,11 @@ export const bonanza: SlotData = {
       a: 'Bonanza の最大配当倍率は x26,000 です。',
     },
   ],
+  categoryTags: {
+    mechanics: ['bonus-buy', 'tumble'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'multiplier'],
+  },
   meta: {
     title: 'Bonanza',
     description: 'CasinoTsu では、Big Time Gaming / ビッグタイムゲーミングの大人気スロット「BONANZA / ボナンザ」を特集いたします。ハイボラティリティスロット・ランキングの常連である本作の魅力を、 CasinoTsu が詳しくご紹介します。',

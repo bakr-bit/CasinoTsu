@@ -200,6 +200,11 @@ export const magic_mirror_deluxe_2: SlotData = {
       a: '『マジックミラー・デラックスII』は2012年にリリースされたスロットであるため、現代の最新スロットと比較すると、グラフィックやデザインに古さを感じるプレイヤーもいらっしゃいます。一部では「90年代のアーケードゲームのよう」という意見もありますが、それが逆に独特の雰囲気を醸し出しているとも言えます。 CasinoTsu では、ゲームの面白さを最優先に情報を提供しております。',
     },
   ],
+  categoryTags: {
+    mechanics: ['bonus-buy'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'multiplier'],
+  },
   meta: {
     title: 'Magic Mirror Deluxe II（マジックミラー・デラックス2） レビュー',
     description: 'Merkur Gaming（マーキュア・ゲーミング）社の人気オンラインスロット『マジックミラー・デラックス2』の徹底レビューです。中世ファンタジーの世界観を彩るこのスロットは、最大配当€1,000,000（50,000倍）という驚異的なポテンシャルを秘めています✨。',

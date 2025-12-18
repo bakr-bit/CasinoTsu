@@ -181,6 +181,12 @@ export const ice_breaker: SlotData = {
       a: 'はい、スマートフォンやタブレットなどのモバイルデバイスで快適にプレイできます。 CasinoTsu は、モバイル対応の重要性を理解しています。',
     },
   ],
+  categoryTags: {
+    mechanics: ['cluster'],
+    volatilityLevel: 'medium',
+    features: ['free-spins', 'multiplier'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'Ice Breaker / アイスブレーカー：Push Gaming スロットレビュー',
     description: '',

@@ -159,6 +159,12 @@ export const moon_princess: SlotData = {
       a: 'ハイボラティリティのスロットは、勝利頻度が低い代わりに一度の勝利で大きな配当を得られる可能性があります。そのため、資金管理（バンクロールマネジメント）をしっかり行い、余裕を持ったベット額でプレイすることが重要です。また、フィーチャーやボーナスがなかなか発動しなくても、冷静にプレイを続ける忍耐力も求められます。',
     },
   ],
+  categoryTags: {
+    mechanics: ['cluster'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'multiplier'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'Moon Princess',
     description: '日本人プレイヤーの皆様に大変ご好評いただいております、Play\'n GO社よりリリースの「ムーンプリンセス（Moon Princess）」をご紹介いたします。CasinoTsuでも数々のカジノのボーナス対象として推薦させていただいており、その人気は折り紙付きです。カスケード式スロットならではの連鎖による爽快感と、まるで人気アニメのような魅力的な世界観が、日本のプレイヤーの皆様を惹きつけています。今回は、この「ムーンプリンセス」をCasinoTsuが詳しく解説いたします！✨',

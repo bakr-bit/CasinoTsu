@@ -38,16 +38,19 @@ export default async function RoulettePillarPage() {
     };
   });
 
-  const { content } = await loadMDX('pillars', 'roulette');
+  const { content, frontmatter, headings } = await loadMDX('pillars', 'roulette');
 
   return (
     <PillarPageTemplate
       category="roulette"
       categoryNameJa="ルーレット"
       description="ヨーロピアン、アメリカン、フレンチルーレットのルールと攻略法を解説。"
-      heroGradient="from-red-600 to-rose-700"
+      heroColor="bg-red-700"
+      heroImage="/headers/roulette-header.webp"
       content={content}
       articles={enrichedArticles}
+      lastUpdated={frontmatter.lastUpdated}
+      headings={headings}
     />
   );
 }

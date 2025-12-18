@@ -171,6 +171,11 @@ export const rage_to_riches: SlotData = {
       a: 'ボーナスゲームでは、プレイヤーが怪獣を選び、ビルを破壊することで賞金を獲得します。破壊するビルや怪獣の選択によって、獲得できる賞金が変わります。最大でベット額の100倍の賞金が期待できます。',
     },
   ],
+  categoryTags: {
+    volatilityLevel: 'low',
+    features: ['free-spins', 'multiplier'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'Rage to Riches (レイジ・トゥ・リッチーズ) スロットレビュー | CasinoTsu',
     description: 'Play’n GO社が贈る、迫力満点のビジュアルとスリリングなゲーム体験が魅力のスロット。',

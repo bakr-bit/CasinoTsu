@@ -168,6 +168,11 @@ export const super_sake: SlotData = {
       a: '様々なプラットフォームで評価されており、例えばChipy.comでは5つ星中4.2（29票）、SlotCatalogでは10点中2.0（1票）といった評価が見られます。総合的な評価はプレイヤーによって分かれる傾向にあります。',
     },
   ],
+  categoryTags: {
+    mechanics: ['bonus-buy'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'multiplier'],
+  },
   meta: {
     title: 'スーパー酒 (Super Sake) スロットレビュー | 特徴・ボーナス・攻略法',
     description: 'ワイルドシンボルが酔っ払うと分裂！？Indigo Magic社がお届けする、お酒とお寿司をテーマにした最新スロット「スーパー酒」のレビューと攻略法。',

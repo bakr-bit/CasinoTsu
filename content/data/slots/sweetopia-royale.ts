@@ -158,6 +158,11 @@ export const sweetopia_royale: SlotData = {
       },
     ],
   },
+  categoryTags: {
+    mechanics: ['cluster', 'bonus-buy'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'progressive-jackpot', 'multiplier', 're-spins'],
+  },
   meta: {
     title: 'Sweetopia Royale (スイートピア・ロイヤル)',
     description: 'お菓子をテーマにした、甘く楽しいスロット「スイートピア・ロイヤル」が登場！ 勝利を目指してお菓子もゲットしちゃいましょう！ CasinoTsu では、スイートピア・ロイヤルの魅力やゲームの基本情報、どこで遊べるのかまで、徹底的に解説いたします。',

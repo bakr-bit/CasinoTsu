@@ -201,6 +201,12 @@ export const book_of_demi_gods_2: SlotData = {
       a: 'CasinoTsuより、ハイボラティリティ機は、当選頻度が低い代わりに一回の配当が高くなる傾向があることをお伝えいたします。そのため、資金管理が非常に重要になります。一度の大きな損失で資金が尽きないよう、ベット額を慎重に設定し、冷静にプレイを続けることが大切です。また、フリースピン購入機能を利用する際は、そのコストと期待できるリターンをよく考慮してください。',
     },
   ],
+  categoryTags: {
+    mechanics: ['bonus-buy'],
+    volatilityLevel: 'high',
+    themes: ['egyptian', 'mythology'],
+    features: ['free-spins', 'multiplier'],
+  },
   meta: {
     title: 'Book of Demi Gods 2',
     description: 'CasinoTsu は、大人気「Book of Demi Gods」シリーズの第2弾、『ブック・オブ・デミゴッズ2（Book of Demi Gods 2）』をご紹介いたします。このゲームは、美しいグラフィックと荘厳な音楽が調和した、魅力あふれる神話スロットです。Spinomenal社が手掛けるこの機種は、シリーズ化されていることからも、その人気ぶりが伺えます。最大5,000倍の配当を目指せるこのゲームは、[ハイボラティリティ（高変動率）](https://www.casinotsu.com/slots/high-volatility) ながらも、フリースピン中の拡張シンボルによって一攫千金のチャンスが秘められています。CasinoTsuは、正確な情報提供を心がけております。',

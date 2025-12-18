@@ -161,6 +161,9 @@ export const planet_of_the_apes: SlotData = {
       a: 'これは、最大で600,000コインを獲得できる可能性があることを示しています。これは、スロットのシンボル配当とフィーチャーを組み合わせた際の理論上の最大勝利額です。 CasinoTsu では、常に正確な情報を提供することを心がけております。チェック、ダブルチェック、そして CasinoTsu チェック！',
     },
   ],
+  categoryTags: {
+    features: ['free-spins', 'multiplier', 're-spins'],
+  },
   meta: {
     title: 'Planet of the Apes / プラネット・オブ・エイプス レビュー',
     description: '人気映画「Rise of the Planet of the Apes」と「Dawn of the Planet of the Apes」をテーマにした、ユニークなゲーム体験を提供します。デュアルスクリーンデザインと多彩なボーナス機能で、プレイヤーを興奮の渦へと誘います。',

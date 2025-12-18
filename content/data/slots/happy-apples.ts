@@ -179,6 +179,11 @@ export const happy_apples: SlotData = {
       a: 'はい、多くのオンラインカジノやスロットレビューサイトで、Happy Applesのデモプレイ（無料プレイ）が提供されております。実際のお金を使わずに、ゲームのフィーチャーやプレイ感を試すことができます。',
     },
   ],
+  categoryTags: {
+    mechanics: ['cluster', 'bonus-buy'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'progressive-jackpot', 'multiplier'],
+  },
   meta: {
     title: 'Happy Apples',
     description: '最大100倍のマルチプライヤーや追加スピンで高配当を狙っちゃおう！カワイイお菓子のクラスタースロット徹底レビュー！🍬✨',

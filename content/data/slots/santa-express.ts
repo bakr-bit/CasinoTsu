@@ -182,6 +182,12 @@ export const santa_express: SlotData = {
       a: 'はい、CasinoTsuの記事「[ボーナスフィーチャーが購入できるスロット](https://casinotsu.com/slots/bonus-buy)」で、他にも購入可能なスロットゲームを多数紹介していますので、ぜひ参考にしてください。',
     },
   ],
+  categoryTags: {
+    mechanics: ['bonus-buy'],
+    volatilityLevel: 'high',
+    themes: ['xmas'],
+    features: ['free-spins', 'progressive-jackpot', 'multiplier'],
+  },
   meta: {
     title: 'サンタ・エクスプレス（Santa Express）｜ CasinoTsu 推薦最新スロットレビュー ✨',
     description: 'StakeLogic社より、クリスマスの魔法を詰め込んだスロット「**サンタ・エクスプレス（Santa Express）**」が登場しました。緑色のモンスターシンボルが鍵を握るこのゲームを、CasinoTsuが詳しくレビューします！',

@@ -191,6 +191,11 @@ export const blood_eternal: SlotData = {
       a: 'AskGamblersなどのレビューサイトでは、プレイヤーからの評価が4/10といったスコアで見られることがあります。これは、ゲームのフィーチャーやトリガーの難易度など、プレイヤーによって意見が分かれるためと考えられます。CasinoTsuでは、客観的な情報と皆様の声を参考に、最良の情報を提供できるよう努めております。',
     },
   ],
+  categoryTags: {
+    volatilityLevel: 'medium',
+    themes: ['halloween'],
+    features: ['free-spins', 'multiplier'],
+  },
   meta: {
     title: 'Blood Eternal',
     description: 'BetSoft（ベットソフト）社よりリリースされました、吸血鬼をテーマにしたスロット「Blood Eternal（ブラッド・エターナル）」について、CasinoTsuが詳細に解説いたします。人間の血を吸うことでフリースピン機能が発動するという、ダークで魅力的な世界観が特徴です。この記事では、Blood Eternalのゲーム基本情報から、搭載されているユニークなフィーチャー、そしてどこで遊べるのかまで、CasinoTsuが徹底的に分析・検証いたしました。',

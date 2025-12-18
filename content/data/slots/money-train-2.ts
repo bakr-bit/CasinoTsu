@@ -235,6 +235,11 @@ export const money_train_2: SlotData = {
       a: 'マネーカートボーナスは、Money Train 2のメインフィーチャーで、3つ以上のスキャッターシンボルが出現すると突入します。リールが拡張され、特殊なマネーシンボルが登場し、高額賞金の獲得が期待できます。',
     },
   ],
+  categoryTags: {
+    mechanics: ['bonus-buy'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'multiplier', 're-spins'],
+  },
   meta: {
     title: 'Money Train 2／マネー・トレイン2 ゲームレビュー',
     description: '西部劇とスチームパンクが融合したユニークな世界観、そして高ボラティリティならではの興奮と高額賞金の可能性は、まさにプレイヤーを飽きさせません。',

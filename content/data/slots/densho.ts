@@ -205,6 +205,12 @@ export const densho: SlotData = {
       a: 'Hacksaw Gaming社が開発したスロットでございます。',
     },
   ],
+  categoryTags: {
+    mechanics: ['bonus-buy', 'expanding-wilds'],
+    volatilityLevel: 'high',
+    themes: ['japanese'],
+    features: ['free-spins', 'multiplier'],
+  },
   meta: {
     title: 'デンショー（Densho）とは？カジノスロットの遊び方・ルール解説',
     description: '水墨画のような美しいグラフィックと尺八の音色が織りなす幻想的な世界観。4つの異なるボーナスゲーム、拡大マルチプライヤーワイルド、ユニークなプログレッション（進行）トラッカーシステムを搭載し、爆発的な勝利の可能性を秘めています。',

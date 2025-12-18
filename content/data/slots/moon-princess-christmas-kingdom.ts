@@ -168,6 +168,11 @@ export const moon_princess_christmas_kingdom: SlotData = {
       '3Dグラフィックはプレイヤーの好みが分かれる',
     ],
   },
+  categoryTags: {
+    mechanics: ['cluster'],
+    themes: ['xmas'],
+    features: ['free-spins', 'multiplier'],
+  },
   meta: {
     title: 'ムーンプリンセス・クリスマスキングダム',
     description: 'Play’n GO社が贈る「ムーンプリンセス」シリーズの最新作。クリスマスをテーマにした装飾と、パワーアップしたフィーチャーで、冬の夜を華やかに彩ります。',

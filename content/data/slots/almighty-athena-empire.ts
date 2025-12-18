@@ -202,6 +202,11 @@ export const almighty_athena_empire: SlotData = {
       a: 'はい、このスロットゲームにはボーナス購入機能が搭載されています。',
     },
   ],
+  categoryTags: {
+    mechanics: ['bonus-buy'],
+    themes: ['mythology'],
+    features: ['free-spins', 'progressive-jackpot', 'multiplier', 'bonus-round'],
+  },
   meta: {
     title: 'Almighty Athena Empire',
     description: '',

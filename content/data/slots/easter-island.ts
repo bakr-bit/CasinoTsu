@@ -161,6 +161,10 @@ export const easter_island: SlotData = {
       a: 'はい、HTML5技術で開発されているため、スマートフォンやタブレットなどのモバイルデバイスで快適にプレイできます。',
     },
   ],
+  categoryTags: {
+    volatilityLevel: 'low',
+    features: ['free-spins', 'progressive-jackpot', 'multiplier'],
+  },
   meta: {
     title: 'Easter Island',
     description: '機能の理解も容易で、ランダムなフィーチャー発動ではないため、展開の予測がしやすい、シンプルでありながら機能的で面白い南国スロットです。 CasinoTsu は、プレイヤーにとって分かりやすいゲーム性を高く評価しています。 😉',

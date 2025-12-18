@@ -165,6 +165,11 @@ export const vampires_gone_wild: SlotData = {
       a: 'カジ旅などで提供されている、オートスピンを高速化する機能です。よりスピーディーにゲームを進めたい場合に便利です。 CasinoTsu は、この機能がゲーム体験を効率化すると考えております。',
     },
   ],
+  categoryTags: {
+    volatilityLevel: 'high',
+    themes: ['halloween'],
+    features: ['free-spins', 'multiplier'],
+  },
   meta: {
     title: 'Vampires Gone Wild',
     description: 'YOLTED社から登場した、ダークなヴァンパイアの世界観をテーマにしたビデオスロット。限られたオンラインカジノでのみプレイ可能で、最大50,000倍の配当倍率を秘めている。',

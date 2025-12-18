@@ -37,16 +37,19 @@ export default async function LiveCasinoPillarPage() {
     };
   });
 
-  const { content } = await loadMDX('pillars', 'live-casino');
+  const { content, frontmatter, headings } = await loadMDX('pillars', 'live-casino');
 
   return (
     <PillarPageTemplate
       category="live-casino"
       categoryNameJa="ライブカジノ"
       description="ライブバカラ、ライブブラックジャック、ライブルーレットなどを徹底解説。"
-      heroGradient="from-amber-600 to-yellow-700"
+      heroColor="bg-amber-700"
+      heroImage="/headers/live-casino.webp"
       content={content}
       articles={enrichedArticles}
+      lastUpdated={frontmatter.lastUpdated}
+      headings={headings}
     />
   );
 }

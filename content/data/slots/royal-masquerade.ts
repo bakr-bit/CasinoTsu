@@ -180,6 +180,11 @@ export const royal_masquerade: SlotData = {
       'ギャンブル機能はリスクを伴う',
     ],
   },
+  categoryTags: {
+    mechanics: ['cluster'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'multiplier'],
+  },
   meta: {
     title: 'Royal Masquerade（ロイヤル・マスカレード）スロットレビュー | CasinoTsu',
     description: '貴族の仮面舞踏会へようこそ！優雅な雰囲気の中で、高額配当獲得のチャンスをお楽しみください。',

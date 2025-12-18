@@ -161,6 +161,10 @@ export const gonzos_quest_megaways: SlotData = {
       },
     ],
   },
+  categoryTags: {
+    mechanics: ['megaways'],
+    features: ['free-spins', 'multiplier'],
+  },
   meta: {
     title: 'Gonzo’s Quest Megaways／ゴンゾーズ クエスト メガウェイズ 解説',
     description: '',

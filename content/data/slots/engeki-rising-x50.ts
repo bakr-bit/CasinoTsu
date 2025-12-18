@@ -153,6 +153,11 @@ export const engeki_rising_x50: SlotData = {
       'パチンコ数学のため、一撃の超高額配当は狙いにくい傾向',
     ],
   },
+  categoryTags: {
+    volatilityLevel: 'low',
+    features: ['multiplier', 're-spins'],
+    isHighRtp: true,
+  },
   meta: {
     title: '炎激ライジング x50',
     description: '',

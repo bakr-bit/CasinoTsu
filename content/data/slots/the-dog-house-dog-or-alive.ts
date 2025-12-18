@@ -182,6 +182,12 @@ export const the_dog_house_dog_or_alive: SlotData = {
       a: 'Pragmatic Playのゲームでは、通常、誤作動が発生した場合、そのベットは無効となり、ベット額は返還されるとされています。詳細については、プレイしているカジノの利用規約をご確認ください。 CasinoTsu では、常に正確な情報を提供するよう努めております。',
     },
   ],
+  categoryTags: {
+    mechanics: ['bonus-buy'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'multiplier'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'ザ・ドッグ・ハウス・ドッグ・オア・アライブ',
     description: '初代の魅力を引き継ぎつつ、最大10,000倍というハイボラティリティスロットとして登場。CasinoTsu は、このエキサイティングなスロットを詳しくご紹介します。',

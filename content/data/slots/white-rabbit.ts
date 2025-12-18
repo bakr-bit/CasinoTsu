@@ -169,6 +169,11 @@ export const white_rabbit: SlotData = {
       a: '通常プレイ時は97.24％、フリースピン購入機能を使用すると97.77％となります。',
     },
   ],
+  categoryTags: {
+    mechanics: ['bonus-buy'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'multiplier'],
+  },
   meta: {
     title: 'White Rabbit／ホワイトラビット｜高RTPスロットの最新レビュー',
     description: 'ビッグタイムゲーミング社開発の「ホワイトラビット」は、最大248,832通りのペイラインと驚異的なRTPを誇るメガウェイズスロットです。不思議の国のアリスの世界観をモチーフにした幻想的なデザインと、エキサイティングなフリースピンフィーチャーが魅力です。',

@@ -165,6 +165,11 @@ export const mega_joker: SlotData = {
       a: 'はい、PCおよびモバイルデバイスに対応しています。',
     },
   ],
+  categoryTags: {
+    volatilityLevel: 'high',
+    themes: ['fruit'],
+    features: ['progressive-jackpot', 'multiplier'],
+  },
   meta: {
     title: 'メガジョーカー / Mega Joker レビュー｜NetEntの高RTPスロット！',
     description: 'メガジョーカー（Mega Joker）は、NetEnt社が開発した、クラシックな雰囲気を纏ったビデオスロットです。その最大の特徴は、特定の条件下で実現する、驚異的に高いRTP（還元率）にございます。コイン10枚ベットのスーパーメーターモードでは、RTPが約99%に達することもあり、これはオンラインスロットの中でもトップクラスの数値です。レトロなデザインながら、ジャックポット機能も搭載しており、昔ながらのスロットの魅力を追求されるプレイヤーから注目を集めております。 CasinoTsu 推薦のスロットです。',

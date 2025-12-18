@@ -195,6 +195,11 @@ export const eds_gun: SlotData = {
       a: 'ゲームの説明によると、中断した場合は中断した時点から再開できます。ただし、不具合が発生した場合の支払いやプレイは無効となる可能性がございますので、ご注意ください。',
     },
   ],
+  categoryTags: {
+    mechanics: ['bonus-buy'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'progressive-jackpot', 'multiplier', 're-spins'],
+  },
   meta: {
     title: 'Ed’s Gun（エドズ・ガン）オンラインスロットのルール・必勝法',
     description: 'まるでアメコミのようなグラフィック！ 銃弾が炸裂し、マルチプライヤーが爆発的に上昇する、サイバーパンクと西部劇が融合したスリリングなシューティングゲーム「Ed\'s Gun」をレビューいたします！ ✨',

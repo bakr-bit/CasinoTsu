@@ -219,6 +219,12 @@ export const gods_of_olympus_iii_megaways: SlotData = {
       a: 'ベット額の25,000倍が最高配当額となります。',
     },
   ],
+  categoryTags: {
+    mechanics: ['megaways', 'bonus-buy', 'tumble'],
+    volatilityLevel: 'high',
+    themes: ['mythology'],
+    features: ['free-spins', 'multiplier'],
+  },
   meta: {
     title: 'ゴッド・オブ・オリンパス 3 メガウェイズ（Gods of Olympus III Megaways）｜レビュー・評価・攻略',
     description: 'Iron Dog Studio（アイアン・ドッグ・スタジオ）社が提供する「ゴッド・オブ・オリンパス 3 メガウェイズ」は、最大200,704通りのペイラインを持つ、ギリシャ神話をテーマにしたエキサイティングなオンラインスロットです。神々の力を借りて、最大25,000倍の勝利を目指しましょう。',

@@ -180,6 +180,11 @@ export const big_bad_wolf: SlotData = {
       a: 'Quickspin社（クイックスピン）のゲームを取り扱っているオンラインカジノでプレイできます。CasinoTsu がおすすめするカジノリストをぜひご参照ください。例えば、[カジ旅](/reviews/kaxitabi)、[ミスティーノ](/reviews/mystino)、[遊雅堂](/reviews/yuugado)、[カジノミー](/reviews/casino-me)、[ベラジョンカジノ](/reviews/vera-john)、[インターカジノ](/reviews/inter-casino)、[エルドアカジノ](/reviews/eldoah-casino)、[ジョイカジノ](/reviews/joycasino)、[ステークカジノ](/reviews/stake)など、多数の信頼できるプラットフォームで楽しむことができます。',
     },
   ],
+  categoryTags: {
+    volatilityLevel: 'high',
+    features: ['free-spins', 'multiplier'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'Big Bad Wolf (ビッグバッドウルフ) スロットレビュー｜RTP・攻略・ボーナス情報',
     description: '可愛らしいグラフィックとユニークなゲームシステムで、プレイヤーを魅了するQuickspin社の人気スロット『Big Bad Wolf』。連続勝利で子豚がワイルドに変化する「ビッグターンワイルド」や、狼が家を吹き飛ばすフリースピンフィーチャーなど、おとぎ話の世界を再現したゲーム体験をお楽しみください。',

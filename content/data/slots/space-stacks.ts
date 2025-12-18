@@ -159,6 +159,10 @@ export const space_stacks: SlotData = {
       a: 'Bitz、Roobet、Oh My Spins！、Wonder Casino、Trust Diceなど、多くのオンラインカジノでプレイ可能です。ただし、地域によっては提供されていない場合もあります（例：アメリカ合衆国ニュージャージー州では確認されていません）。',
     },
   ],
+  categoryTags: {
+    volatilityLevel: 'medium',
+    features: ['multiplier'],
+  },
   meta: {
     title: 'Space Stacks (スペース・スタックス)',
     description: '',

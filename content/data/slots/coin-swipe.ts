@@ -150,6 +150,10 @@ export const coin_swipe: SlotData = {
       a: 'はい、SlotCatalog、CasinoRating、VegasSlots.netなどのプラットフォームでデモ版（無料プレイ）が提供されています。実際のお金でプレイする前に、これらのデモでゲームを試すことをお勧めします。 CasinoTsu は、正確さが第一。興奮はその次。の精神で、このデモプレイの活用を推奨いたします。',
     },
   ],
+  categoryTags: {
+    volatilityLevel: 'high',
+    features: ['multiplier', 'bonus-round'],
+  },
   meta: {
     title: 'Coin Swipe／コインスワイプ ゲームレビュー by CasinoTsu 🕹️',
     description: 'YOLTED社が開発した、スマートフォンの操作性を最大限に活かしたユニークなスワイプ型スロット。中国をテーマにしたエキゾチックな音楽とグラフィック、そして「お宝箱フィーチャー」による最大5,000倍の賞金獲得のチャンスが魅力です。忙しい現代人の隙間時間を彩る、テンポの良いゲームプレイをお楽しみください。',

@@ -168,6 +168,11 @@ export const berryburst_max: SlotData = {
       a: 'ボラティリティは「High（高）」です。これは、勝利の頻度は低いものの、一度の勝利で大きな配当が得られる可能性があることを意味します。そのため、資金管理には十分注意が必要です。 CasinoTsu は、[責任あるプレイ](/info/responsible-gambling)を第一に考えております。',
     },
   ],
+  categoryTags: {
+    mechanics: ['cluster'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'multiplier', 're-spins'],
+  },
   meta: {
     title: 'Berryburst MAX（ベリーバースト マックス）スロットレビュー｜NetEnt社開発',
     description: 'NetEnt社が贈る、人気の「Starburst」シリーズの進化版とも言える、鮮やかなフルーツテーマのスロット「Berryburst MAX」。クラスターペイシステムと拡張ワイルドによるリスピン機能が特徴です。',

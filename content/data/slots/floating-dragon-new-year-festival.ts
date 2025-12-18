@@ -171,6 +171,13 @@ export const floating_dragon_new_year_festival: SlotData = {
       a: 'はい、多くのオンラインカジノでデモプレイ（無料プレイ）が提供されています。VegasSlotsOnline.com のようなサイトでも、リアルマネーでプレイする前にゲームを試すことができます。デモプレイは、ゲームのルールやフィーチャーを理解するのに最適です。 CasinoTsu は、皆様が十分にご理解された上でプレイされることを推奨いたします。',
     },
   ],
+  categoryTags: {
+    mechanics: ['bonus-buy', 'tumble'],
+    volatilityLevel: 'high',
+    themes: ['asian'],
+    features: ['free-spins', 'multiplier', 'bonus-round'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'Floating Dragon New Year Festival',
     description: '最大配当2万倍のメガウェイズスロット。回収機能やホールド＆スピンなど、ゲームフィーチャー満載のニューイヤースロットで爆裂な祝賀配当狙っちゃお♪',

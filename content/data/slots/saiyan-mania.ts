@@ -186,6 +186,12 @@ export const saiyan_mania: SlotData = {
       a: 'ベースゲーム、フリースピン両方ともRTPは96.50%です。',
     },
   ],
+  categoryTags: {
+    mechanics: ['cluster', 'bonus-buy', 'tumble'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'multiplier'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'サイヤン・マニア（Saiyan Mania）',
     description: 'Pragmatic Play社がリリースした、最大5,000倍の配当を狙えるスロットゲーム。クラスターペイシステムとマルチプライヤー機能が特徴。',

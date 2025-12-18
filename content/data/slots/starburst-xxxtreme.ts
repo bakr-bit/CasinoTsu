@@ -181,6 +181,11 @@ export const starburst_xxxtreme: SlotData = {
       a: '主な違いは、ペイライン（左から右のみ）、ボラティリティ（ハイ）、最大配当（200,000倍）、そしてマルチプライヤー付きワイルドとエクストリームスピン機能の追加です。オリジナルのStarburstは、両方向ペイライン、ローボラティリティ、最大500倍の配当で、より安定した勝利が期待できました。',
     },
   ],
+  categoryTags: {
+    mechanics: ['bonus-buy'],
+    volatilityLevel: 'high',
+    features: ['multiplier', 're-spins'],
+  },
   meta: {
     title: 'Starburst XXXtreme：伝説がさらに過激に進化！',
     description: '全世界で熱狂的な支持を得る、NetEnt社の象徴的なスロット『Starburst』が、さらにパワフルになって帰ってきました！それが 【Starburst XXXtreme】 です。',

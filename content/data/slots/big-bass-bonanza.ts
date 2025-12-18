@@ -200,6 +200,12 @@ export const big_bass_bonanza: SlotData = {
       a: 'ビッグ・バス・ボナンザは、Pragmatic Play社のゲームを取り扱っている多くのオンラインカジノでプレイ可能です。例えば、記事内でCasinoTsu がおすすめしているカジノ（ReSpin、Golden Panda、Betgoat、2up、Roobet、Mystinoなど）で遊ぶことができます。また、WOW Vegas、Stake.us、McLuck Casino、BetRivers.netといったスウィープストークス・カジノでもプレイ可能です。CasinoTsu は、皆様が安心してプレイできるカジノ選びをお手伝いいたします。',
     },
   ],
+  categoryTags: {
+    mechanics: ['bonus-buy'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'multiplier', 'bonus-round', 're-spins'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'ビッグ・バス・ボナンザ（Big Bass Bonanza）を攻略！',
     description: '',

@@ -241,6 +241,12 @@ export const geisha_story_jackpot: SlotData = {
       a: '「ドラゴン・ジャックポット」と呼ばれる4段階のプログレッシブジャックポットシステムが搭載されており、ランダムにトリガーされます。ベット額が大きいほど当選確率が高まります。CasinoTsu では、このジャックポット機能がゲームの大きな魅力であると評価しております。',
     },
   ],
+  categoryTags: {
+    volatilityLevel: 'medium',
+    themes: ['japanese', 'geisha'],
+    features: ['free-spins', 'progressive-jackpot', 'multiplier'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'Geisha Story Jackpot',
     description: '「Geisha Story Jackpot」は、人気プロバイダーPlaytech（プレイテック）がお届けする、日本の芸者文化をテーマにしたジャックポット機能付きビデオスロットです。本作は、かつて「ダラーボール・ジャックポット」としても親しまれた「Geisha Story」のミステリージャックポット版として登場しました。クラシックなゲーム性ながらも、美しい日本の伝統的なデザイン、心地よいサウンド、そして約97.42%という高いRTP（還元率）により、CasinoTsu も長く楽しめるスロットとして多くのプレイヤーに支持されていると分析しております。',

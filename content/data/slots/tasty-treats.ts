@@ -170,6 +170,10 @@ export const tasty_treats: SlotData = {
       a: 'このスロットは、ハイボラティリティ（高変動率）のため、少額ベットで多くのスピンを回し、フリースピンでの一撃の大きな配当を狙うプレイヤー、いわゆる「グリンド（地道に回し続ける）」スタイルを楽しむプレイヤーに特におすすめです。また、可愛らしい見た目ながらも高いポテンシャルを秘めているため、ギャンブルの醍醐味を味わいたい方にも向いています。',
     },
   ],
+  categoryTags: {
+    mechanics: ['cluster', 'bonus-buy'],
+    features: ['free-spins', 'multiplier'],
+  },
   meta: {
     title: '『テイスティ・トリーツ』（Tasty Treats）｜オンラインカジノスロット解説！ CasinoTsu 推薦！',
     description: '',

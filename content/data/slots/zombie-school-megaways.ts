@@ -165,6 +165,13 @@ export const zombie_school_megaways: SlotData = {
       a: 'はい、デモプレイを提供しているカジノでは、無料でプレイすることが可能です。また、一部のオンラインカジノでは「入金不要ボーナス」を利用することで、実質無料でプレイすることもできます。',
     },
   ],
+  categoryTags: {
+    mechanics: ['megaways', 'bonus-buy', 'tumble'],
+    volatilityLevel: 'high',
+    themes: ['halloween'],
+    features: ['free-spins', 'multiplier'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'Zombie School Megaways（ゾンビスクール・メガウェイズ）徹底解説',
     description: '',

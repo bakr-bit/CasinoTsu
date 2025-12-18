@@ -148,6 +148,11 @@ export const blobsters_clusterbuster: SlotData = {
       a: 'フリースピン中に、スロット中央にある3×3の特殊シンボル（お魚のような見た目）の周りで配当が成立し、シンボルが消滅すると、フリースピンが3回追加されます。CasinoTsuは、この追加スピンの獲得が、さらなる勝利への期待を高めると分析しています。',
     },
   ],
+  categoryTags: {
+    mechanics: ['cluster', 'bonus-buy'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'multiplier'],
+  },
   meta: {
     title: 'Blobsters Clusterbuster',
     description: 'カスケードスロット「ブロッブスターズ・クラスターバスター」は、ユニークな「クラスターバスター」メカニズムと可愛らしいエイリアンたちが魅力のゲームです。 CasinoTsuが、その詳細を徹底レビューします！',

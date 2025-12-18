@@ -170,6 +170,11 @@ export const esqueleto_explosivo_3: SlotData = {
       a: 'はい、HTML5とJavaScript技術により、スマートフォンやタブレットなどのモバイルデバイスに完全に最適化されており、スムーズなゲームプレイが可能です。 CasinoTsu は、モバイルでのプレイ体験も重視しております。',
     },
   ],
+  categoryTags: {
+    mechanics: ['cluster', 'bonus-buy'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'progressive-jackpot', 'multiplier'],
+  },
   meta: {
     title: 'Esqueleto Explosivo 3 のスロット詳細解説',
     description: 'メキシコの10月の死者の日、ディア・デ・ロス・ムエルトスに向けて、サンダーキック社より3作目となる「エスケレート・エクスプロシーボ 3」がリリースされました。2014年の第1作目から続く進化を感じ取れる作品となっております！ 最大7,500倍のスケルトン爆発を目指し、CasinoTsuがスロットを詳しく解説いたします！',

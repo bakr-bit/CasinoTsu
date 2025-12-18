@@ -210,6 +210,12 @@ export const treasure_island: SlotData = {
       a: '「Treasure Island」は HTML5 技術で作られているため、 **PC、スマートフォン、タブレット** など、ほとんどのデバイスでプレイ可能です。',
     },
   ],
+  categoryTags: {
+    mechanics: ['bonus-buy'],
+    volatilityLevel: 'medium',
+    features: ['free-spins', 'multiplier'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'Treasure Island／トレジャーアイランド',
     description: 'CasinoTsu 推薦！ Quickspin 社の高RTPスロット「Treasure Island／トレジャーアイランド」が登場！早速 CasinoTsu でチェックしましょう。',

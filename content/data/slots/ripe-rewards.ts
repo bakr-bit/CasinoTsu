@@ -204,6 +204,11 @@ export const ripe_rewards: SlotData = {
       a: 'ボラティリティは Very High（非常に高い）です。これは、勝利の頻度は低いかもしれませんが、一度当たった時の配当は大きくなる傾向があることを意味します。',
     },
   ],
+  categoryTags: {
+    mechanics: ['bonus-buy'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'multiplier'],
+  },
   meta: {
     title: 'ライプ・リワード (Ripe Rewards) スロットレビュー | Pragmatic Play',
     description: 'クラシックなフルーツテーマに、爽やかなアクセントを加えたゲーム性。最大10,000倍のポテンシャルを秘めたハイボラティリティスロット。',

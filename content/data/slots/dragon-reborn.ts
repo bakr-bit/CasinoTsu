@@ -178,6 +178,12 @@ export const dragon_reborn: SlotData = {
       a: 'キャラクターが登場し、吹き出しでストーリーが展開されたり、アニメさながらの声優によるボイスが聞けたりと、単なるスロットプレイにとどまらず、アニメを視聴しているような感覚で楽しめるゲームです。パチスロ風の演出とバトル要素が融合し、懐かしさと新しさを兼ね備えた体験を提供します。',
     },
   ],
+  categoryTags: {
+    volatilityLevel: 'medium',
+    themes: ['asian'],
+    features: ['free-spins', 'multiplier', 'bonus-round', 're-spins'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'Dragon Reborn スロットレビュー | 特徴・ボーナス・評価・おすすめカジノ',
     description: '2000年代のパチスロのような、学園、バトル、美少女といった要素が融合したパチスロ風スロットゲーム「Dragon Reborn」をご紹介します。頻繁に訪れる大当たりと、中毒性の高いゲーム演出、そして魅力的なスペックについて、CasinoTsuが詳しく解説いたします😉',

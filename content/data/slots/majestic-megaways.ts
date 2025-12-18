@@ -210,6 +210,11 @@ export const majestic_megaways: SlotData = {
       a: 'このゲームはハイボラティリティ（高変動性）のため、フリースピンに突入するには時間がかかることがあります。頻繁に当たるわけではありませんが、一度フリースピンに入ると大きな配当が期待できます。ボーナス購入機能を利用すると、より早くフリースピンを体験できます。 CasinoTsuでも、この点はプレイヤーの皆様にお伝えしたい重要な情報です。',
     },
   ],
+  categoryTags: {
+    mechanics: ['megaways', 'bonus-buy'],
+    features: ['free-spins', 'multiplier'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'マジェスティック・メガウェイズ：サバンナの息吹を感じる、賞金への扉を開くスロット',
     description: 'アフリカの広大なサバンナをテーマにした、iSoftBet社が贈る人気スロット「マジェスティック・メガウェイズ」を、CasinoTsuが徹底的にレビューいたします。その魅力とゲーム性を、余すところなくお伝えいたします。✨',

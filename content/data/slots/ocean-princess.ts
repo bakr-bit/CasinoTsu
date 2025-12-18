@@ -161,6 +161,10 @@ export const ocean_princess: SlotData = {
       'ボラティリティ情報がない',
     ],
   },
+  categoryTags: {
+    features: ['free-spins', 'multiplier', 'bonus-round'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'Ocean Princess / オーシャン・プリンセスのスロットレビュー',
     description: '人魚をテーマにした、クラシックかつシンプルなスロットゲーム。一見すると古風なデザインですが、その魅力はなんといっても非常に高いRTP（還元率）にあります。この高いRTPのおかげで、長年にわたり多くのプレイヤーに愛され続けている名作スロットと言えるでしょう。',

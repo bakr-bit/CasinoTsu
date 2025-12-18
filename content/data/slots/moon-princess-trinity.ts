@@ -193,6 +193,11 @@ export const moon_princess_trinity: SlotData = {
       a: 'いいえ、フリースピン（トリニティフィーチャー）中にシンボル全消しによるラウンド再開（トリニティスピン）はありません。トリニティスピンは、ベースゲーム中にシンボルが全消しされた場合に発生する可能性があります。フリースピン中は、マルチプライヤーが上昇していくため、高配当を狙うチャンスがあります。',
     },
   ],
+  categoryTags: {
+    mechanics: ['cluster'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'multiplier'],
+  },
   meta: {
     title: 'ムーンプリンセス・トリニティ（Moon Princess Trinity）攻略法｜Play’n GO',
     description: 'Play’n GO社が贈る人気スロットシリーズの最新作「ムーンプリンセス・トリニティ」を徹底レビュー。トリニティフリースピンやシンボル全消しによる配当確定など、初心者の方でも楽しめる要素が満載の本作。その魅力と攻略法を、CasinoTsuが詳しく解説いたします。',

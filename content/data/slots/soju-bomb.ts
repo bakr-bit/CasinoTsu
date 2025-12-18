@@ -150,6 +150,12 @@ export const soju_bomb: SlotData = {
       a: 'いいえ、「Soju Bomb」にはボーナス購入機能はありません。フリースピンは、スキャッターシンボルの出現によってのみ獲得できます。',
     },
   ],
+  categoryTags: {
+    mechanics: ['bonus-buy'],
+    volatilityLevel: 'medium',
+    features: ['free-spins', 'multiplier', 'bonus-round'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'Soju Bomb（ソジュ・ボム）カジノスロットの攻略法・ルール',
     description: 'ネオン輝く街並みと魅力的な韓国美女が登場するこのスロットで、フリースピンとマルチプライヤーを駆使して、爆発的な勝利を目指しましょう！',

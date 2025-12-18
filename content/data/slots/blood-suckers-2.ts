@@ -224,6 +224,12 @@ export const blood_suckers_2: SlotData = {
       a: '「Blood Suckers 2」のボラティリティは **Low to Medium（低〜中）** です。これは、比較的頻繁に勝利が発生するものの、爆発的な配当はボーナスフィーチャーによってもたらされる傾向があることを示しております。',
     },
   ],
+  categoryTags: {
+    volatilityLevel: 'medium',
+    themes: ['halloween'],
+    features: ['free-spins', 'multiplier'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'Blood Suckers 2',
     description: 'ヴァンパイアハンターの物語が、再び幕を開けます！ NetEnt社の人気スロット「Blood Suckers」の待望の続編、「Blood Suckers 2（ブラッドサッカーズ2）」は、魅力的なボーナスフィーチャーと高い還元率で、スロットの醍醐味を存分に味わえるゲームです。このエキサイティングな機種を、ぜひ [casinotsu.com](https://casinotsu.com) でお楽しみください。',

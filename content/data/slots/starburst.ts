@@ -159,6 +159,11 @@ export const starburst: SlotData = {
       '人によっては単調に感じる可能性がある',
     ],
   },
+  categoryTags: {
+    mechanics: ['cluster'],
+    volatilityLevel: 'low',
+    features: ['free-spins', 'multiplier', 'bonus-round', 're-spins'],
+  },
   meta: {
     title: 'スターバースト（Starburst）世界で一番人気のスロットレビュー',
     description: 'スターバーストは、NETENT（ネットエント）社が開発した、世界中で絶大な人気を誇るオンラインスロットゲームです。そのシンプルながらも洗練されたゲーム性、美しいグラフィック、そして宇宙をテーマにした魅力的な世界観で、多くのプレイヤーを魅了し続けています。フリースピンや複雑なボーナスゲームは搭載されていませんが、その分、初心者からベテランまで誰でも簡単に楽しむことができるのが特徴です。リール全体を覆うワイルドシンボルからの連鎖的な配当獲得を目指す、王道とも言えるスロット体験を提供します。 CasinoTsu 推薦！',

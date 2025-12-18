@@ -192,6 +192,11 @@ export const rotten: SlotData = {
       a: 'はい、HTML5技術で開発されているため、スマートフォン、タブレット、PCなど、様々なデバイスでダウンロードなしに快適にプレイできます。',
     },
   ],
+  categoryTags: {
+    mechanics: ['bonus-buy'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'multiplier', 're-spins'],
+  },
   meta: {
     title: 'Rotten（ロッテン） スロットレビュー｜ハイボラティリティスロット',
     description: 'Hacksaw Gaming社が贈る、ホラーテイストのスロット「Rotten（ロッテン）」をご紹介します。最大配当1万倍というポテンシャルを秘めた、まさにハイボラティリティスロットです。CasinoTsuが、ゲームの基本情報から魅力的なフィーチャー、そしてどこで遊べるのかまで、徹底的にレビューいたします♪',

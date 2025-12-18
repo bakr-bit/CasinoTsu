@@ -168,6 +168,12 @@ export const misa_augur_sweetie: SlotData = {
       a: '現時点では、最大配当倍率に関する公式な情報は確認されていません。CasinoTsu では、正確さが第一。興奮はその次。を徹底しておりますので、詳細が判明次第、追記いたします。',
     },
   ],
+  categoryTags: {
+    mechanics: ['bonus-buy'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'multiplier', 're-spins'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'ミサ・アウグル・スウィーティー (Misa Augur Sweetie) スロットレビュー | CasinoTsu',
     description: 'Manna Play社から登場した、パチスロ風オンラインスロット『ミサ・アウグル・スウィーティー』。魅力的なキャラクター、ステージ移行システム、そして多彩なゲームフィーチャーが満載です。',

@@ -170,6 +170,10 @@ export const baron_lord_of_saturday: SlotData = {
       a: 'はい、もちろんです。このスロットは、スマートフォンやタブレットなどのモバイルデバイスに完全対応しており、どこでも快適にプレイできます。',
     },
   ],
+  categoryTags: {
+    mechanics: ['bonus-buy'],
+    features: ['free-spins', 'multiplier'],
+  },
   meta: {
     title: 'Baron Lord of Saturday',
     description: 'まるでホラー映画のような雰囲気のスロット、「土曜日の男爵」？ いえいえ、正確には、ブードゥー教の死者の神であるサメディ男爵がテーマとなっております。一見、妖しいテーマですが、当たれば大きいのがこの機種の魅力です！ アンダーグラウンドな世界で、最大3,500倍の爆益を目指して、CasinoTsuがこのスロットを徹底レビューいたします！',

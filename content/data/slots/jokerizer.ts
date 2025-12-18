@@ -174,6 +174,11 @@ export const jokerizer: SlotData = {
       a: '「Jokerizer」のボラティリティは、一部のソースでは「Medium」とされていますが、ジョーカライザーモードの性質上、高頻度で大きな変動をもたらす可能性もあるため、「High」と分類されることもあります。プレイヤー様によっては、ジョーカライザーモードが短期間で資金を大きく増減させる可能性があると感じられるかもしれません。 CasinoTsu は、この点を考慮し、ご自身の資金管理を徹底していただくことをお勧めいたします。',
     },
   ],
+  categoryTags: {
+    volatilityLevel: 'medium',
+    themes: ['fruit'],
+    features: ['free-spins', 'progressive-jackpot', 'multiplier'],
+  },
   meta: {
     title: 'Jokerizer／ジョーカライザー スロットレビュー | CasinoTsu',
     description: 'Yggdrasil（ユグドラシル）社が贈る「Jokerizer／ジョーカライザー」は、クラシックスロットの魅力と、戦略的な「ジョーカライザーモード」が融合したユニークなオンラインスロットです。最大 RTP98% を誇るこのモードをいかに活用するかが、勝利への鍵となります。',

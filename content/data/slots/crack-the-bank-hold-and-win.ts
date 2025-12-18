@@ -194,6 +194,11 @@ export const crack_the_bank_hold_and_win: SlotData = {
       a: 'PC、タブレット、スマートフォンのいずれのデバイスでもプレイ可能です。HTML5技術を使用しているため、どのデバイスからでもスムーズなゲーム体験が得られます。',
     },
   ],
+  categoryTags: {
+    mechanics: ['hold-and-win', 'bonus-buy'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'progressive-jackpot', 'multiplier', 'bonus-round', 're-spins'],
+  },
   meta: {
     title: 'Crack the Bank Hold and Win スロットレビュー | Booming Games | CasinoTsu',
     description: 'Booming Games社が贈る、銀行強盗をテーマにしたオンラインスロット「Crack the Bank Hold and Win」。コミカルなアメコミ風グラフィックとアップテンポなサウンドが特徴で、プレイヤーをスリリングな金庫破りの世界へと誘います。特に「ホールド＆ウィン」フィーチャーと、フリースピン中に固定されるワイルドシンボルは、大きな配当獲得のチャンスをもたらします。',

@@ -194,6 +194,12 @@ export const golden_fish_tank: SlotData = {
       a: 'オリジナルのGolden Fish TankのRTPは95.90%で、ゴールデンベット使用時は96.5%になります。続編のGolden Fish Tank 2 GigabloxのRTPは96.0%です。',
     },
   ],
+  categoryTags: {
+    mechanics: ['bonus-buy'],
+    volatilityLevel: 'medium',
+    features: ['free-spins', 'multiplier', 'bonus-round'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'Golden Fish Tank',
     description: '夏にぴったりの爽やかなオンラインスロット、ゴールデンフィッシュタンク（Golden Fish Tank）をCasinoTsuがご紹介します。🌊 可愛らしいお魚たちがモチーフの見た目とは裏腹に、爆裂性能で大人気の機種です。フリースピン突入時に、プレイヤー自身が選択したフィーチャーピックによって毎回異なるゲーム体験ができる、まさに「レッツ・フィッシング！」なワクワク感をお楽しみください。',

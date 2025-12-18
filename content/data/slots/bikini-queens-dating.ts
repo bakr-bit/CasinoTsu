@@ -198,6 +198,10 @@ export const bikini_queens_dating: SlotData = {
       a: '夏の陽気なBGMの中に、可愛らしい女の子の声も混ざっています。「私と付き合ってください」といったセリフが聞こえてきたら、思わず「はい」と答えたくなってしまうかもしれませんね！CasinoTsu も、その可愛らしさに魅了されました。',
     },
   ],
+  categoryTags: {
+    features: ['progressive-jackpot', 'multiplier'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'Bikini Queens Dating (ビキニ・クイーンズ・デーティング) スロット｜Manna Play社',
     description: 'Manna Play社が贈る「Bikini Queens Dating」は、まさに夏にぴったりのスロットゲームです。4人の魅力的な美女たちと共に、リゾート気分を味わいながらプレイできるのが特徴です。アニメや漫画のキャラクターがお好きなプレイヤー、そして夏らしいテーマのスロットをお探しの方には、特にCasinoTsu 推薦の一作となっております。',

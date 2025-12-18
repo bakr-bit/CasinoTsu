@@ -179,6 +179,12 @@ export const golden_ticket_2: SlotData = {
       a: '一番高額なシンボルは「リングマスター」（シルクハットをかぶった女性）です。 CasinoTsu は、このシンボルの出現に期待を寄せております。',
     },
   ],
+  categoryTags: {
+    mechanics: ['cluster', 'bonus-buy'],
+    volatilityLevel: 'high',
+    features: ['free-spins', 'multiplier'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'ゴールデンチケット2',
     description: '前作の魅力を引き継ぎつつ、ボーナスステージでは高配当獲得のチャンスがさらに拡大しました。',

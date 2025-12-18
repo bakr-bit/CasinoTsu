@@ -220,6 +220,12 @@ export const christmas_big_bass_bonanza: SlotData = {
       a: 'はい、モバイルデバイスに完全最適化 されており、スマートフォンやタブレットから快適にプレイ可能です。',
     },
   ],
+  categoryTags: {
+    mechanics: ['bonus-buy'],
+    themes: ['xmas'],
+    features: ['free-spins', 'multiplier'],
+    isHighRtp: true,
+  },
   meta: {
     title: 'Christmas Big Bass Bonanza',
     description: 'クリスマス・ビッグ・バス・ボナンザ',
