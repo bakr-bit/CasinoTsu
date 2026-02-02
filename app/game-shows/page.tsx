@@ -16,7 +16,7 @@ export default async function GameShowsPillarPage() {
 
   // Extract meta from data registry
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const extractMeta = (d) => ({
+  const extractMeta = (d: any) => ({
       category: d.category,
       providerName: d.providerJa || d.provider,
     });
@@ -37,7 +37,7 @@ export default async function GameShowsPillarPage() {
     };
   });
 
-  const { content, frontmatter, headings } = await loadMDX('pillars', 'game-shows');
+  const { content } = await loadMDX('pillars', 'game-shows');
 
   return (
     <PillarPageTemplate
@@ -48,8 +48,6 @@ export default async function GameShowsPillarPage() {
       heroImage="/headers/game-shows.webp"
       content={content}
       articles={enrichedArticles}
-      lastUpdated={frontmatter.lastUpdated}
-      headings={headings}
     />
   );
 }

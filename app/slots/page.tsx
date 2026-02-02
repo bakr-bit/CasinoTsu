@@ -16,7 +16,7 @@ export default async function SlotsPillarPage() {
 
   // Extract meta from data registry
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const extractMeta = (d) => ({
+  const extractMeta = (d: any) => ({
       provider: d.hero?.provider,
       rtp: d.hero?.rtp,
       volatility: d.hero?.volatility,
@@ -40,7 +40,7 @@ export default async function SlotsPillarPage() {
     };
   });
 
-  const { content, frontmatter, headings } = await loadMDX('pillars', 'slots');
+  const { content } = await loadMDX('pillars', 'slots');
 
   return (
     <PillarPageTemplate
@@ -51,8 +51,6 @@ export default async function SlotsPillarPage() {
       heroImage="/headers/slots-header.webp"
       content={content}
       articles={enrichedArticles}
-      lastUpdated={frontmatter.lastUpdated}
-      headings={headings}
     />
   );
 }

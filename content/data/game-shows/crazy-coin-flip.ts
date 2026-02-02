@@ -7,6 +7,7 @@ export const crazy_coin_flip: GameShowData = {
   provider: 'Evolution Gaming',
   category: 'other',
   rtp: '96.05%',
+  maxWin: '10,000x',
 
   highlights: [
     'スロットとライブゲームショーが融合した革新的なゲーム',

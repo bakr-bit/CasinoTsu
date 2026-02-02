@@ -16,7 +16,7 @@ export default async function ProvidersPillarPage() {
 
   // Extract meta from data registry
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const extractMeta = (d) => ({
+  const extractMeta = (d: any) => ({
       gameCount: d.gameCount,
       gameTypes: d.gameTypes,
     });
@@ -37,7 +37,7 @@ export default async function ProvidersPillarPage() {
     };
   });
 
-  const { content, frontmatter, headings } = await loadMDX('pillars', 'providers');
+  const { content } = await loadMDX('pillars', 'providers');
 
   return (
     <PillarPageTemplate
@@ -48,8 +48,6 @@ export default async function ProvidersPillarPage() {
       heroImage="/headers/providers.webp"
       content={content}
       articles={enrichedArticles}
-      lastUpdated={frontmatter.lastUpdated}
-      headings={headings}
     />
   );
 }

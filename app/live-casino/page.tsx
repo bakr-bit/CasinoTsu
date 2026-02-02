@@ -16,7 +16,7 @@ export default async function LiveCasinoPillarPage() {
 
   // Extract meta from data registry
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const extractMeta = (d) => ({
+  const extractMeta = (d: any) => ({
       gameType: d.gameType,
       providerName: d.providerJa || d.provider,
     });
@@ -37,7 +37,7 @@ export default async function LiveCasinoPillarPage() {
     };
   });
 
-  const { content, frontmatter, headings } = await loadMDX('pillars', 'live-casino');
+  const { content } = await loadMDX('pillars', 'live-casino');
 
   return (
     <PillarPageTemplate
@@ -48,8 +48,6 @@ export default async function LiveCasinoPillarPage() {
       heroImage="/headers/live-casino.webp"
       content={content}
       articles={enrichedArticles}
-      lastUpdated={frontmatter.lastUpdated}
-      headings={headings}
     />
   );
 }

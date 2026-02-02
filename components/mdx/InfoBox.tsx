@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+import { Info, AlertTriangle, CheckCircle, Lightbulb } from 'lucide-react';
 
 interface InfoBoxProps {
   /** Type of info box */
@@ -11,76 +12,65 @@ interface InfoBoxProps {
 
 /**
  * Info box component for MDX content
- * Displays highlighted information, warnings, or tips
+ * Displays highlighted information, warnings, or tips with colorful gradients
  */
 export function InfoBox({ type = 'info', title, children }: InfoBoxProps) {
   const styles = {
     info: {
-      container: 'bg-blue-50 border-blue-200 text-blue-800',
-      icon: 'text-blue-500',
-      title: 'text-blue-900',
+      wrapper: 'from-indigo-600 via-indigo-700 to-indigo-800',
+      iconBg: 'bg-white/20',
+      body: 'bg-indigo-50 border-indigo-200',
+      text: 'text-indigo-800',
     },
     warning: {
-      container: 'bg-amber-50 border-amber-200 text-amber-800',
-      icon: 'text-amber-500',
-      title: 'text-amber-900',
+      wrapper: 'from-amber-500 via-orange-500 to-amber-600',
+      iconBg: 'bg-white/20',
+      body: 'bg-amber-50 border-amber-200',
+      text: 'text-amber-800',
     },
     success: {
-      container: 'bg-green-50 border-green-200 text-green-800',
-      icon: 'text-green-500',
-      title: 'text-green-900',
+      wrapper: 'from-emerald-600 via-green-600 to-emerald-700',
+      iconBg: 'bg-white/20',
+      body: 'bg-emerald-50 border-emerald-200',
+      text: 'text-emerald-800',
     },
     tip: {
-      container: 'bg-purple-50 border-purple-200 text-purple-800',
-      icon: 'text-purple-500',
-      title: 'text-purple-900',
+      wrapper: 'from-violet-600 via-purple-600 to-violet-700',
+      iconBg: 'bg-white/20',
+      body: 'bg-violet-50 border-violet-200',
+      text: 'text-violet-800',
     },
   };
 
   const icons = {
-    info: (
-      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-        <path
-          fillRule="evenodd"
-          d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-          clipRule="evenodd"
-        />
-      </svg>
-    ),
-    warning: (
-      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-        <path
-          fillRule="evenodd"
-          d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
-          clipRule="evenodd"
-        />
-      </svg>
-    ),
-    success: (
-      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-        <path
-          fillRule="evenodd"
-          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-          clipRule="evenodd"
-        />
-      </svg>
-    ),
-    tip: (
-      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-        <path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1h4v1a2 2 0 11-4 0zM12 14c.015-.34.208-.646.477-.859a4 4 0 10-4.954 0c.27.213.462.519.476.859h4.002z" />
-      </svg>
-    ),
+    info: Info,
+    warning: AlertTriangle,
+    success: CheckCircle,
+    tip: Lightbulb,
   };
 
   const style = styles[type];
+  const IconComponent = icons[type];
 
   return (
-    <div className={`my-6 p-4 border rounded-lg ${style.container}`}>
-      <div className="flex gap-3">
-        <div className={`flex-shrink-0 ${style.icon}`}>{icons[type]}</div>
-        <div className="flex-grow">
-          {title && <p className={`font-bold mb-1 ${style.title}`}>{title}</p>}
-          <div className="text-sm">{children}</div>
+    <div className="my-8 not-prose overflow-hidden rounded-2xl shadow-lg">
+      {/* Header with gradient and shine */}
+      <div className={`px-4 py-3 bg-gradient-to-r ${style.wrapper} relative`}>
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -skew-x-12" />
+        <div className="flex items-center gap-3 relative z-10">
+          <div className={`flex-shrink-0 w-8 h-8 ${style.iconBg} rounded-lg flex items-center justify-center`}>
+            <IconComponent className="w-5 h-5 text-white" />
+          </div>
+          {title && (
+            <h4 className="font-bold text-white text-sm">{title}</h4>
+          )}
+        </div>
+      </div>
+
+      {/* Body */}
+      <div className={`px-4 py-4 ${style.body} border-x border-b`}>
+        <div className={`text-sm leading-relaxed ${style.text}`}>
+          {children}
         </div>
       </div>
     </div>

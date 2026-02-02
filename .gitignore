@@ -43,3 +43,4 @@ next-env.d.ts
 
 # Conversion logs (generated during content conversion)
 content/data/*/conversion-log.json
+site-template/

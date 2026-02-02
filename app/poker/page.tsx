@@ -16,7 +16,7 @@ export default async function PokerPillarPage() {
 
   // Extract meta from data registry
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const extractMeta = (d) => ({
+  const extractMeta = (d: any) => ({
       category: d.category,
       difficulty: d.difficulty,
     });
@@ -37,7 +37,7 @@ export default async function PokerPillarPage() {
     };
   });
 
-  const { content, frontmatter, headings } = await loadMDX('pillars', 'poker');
+  const { content } = await loadMDX('pillars', 'poker');
 
   return (
     <PillarPageTemplate
@@ -48,8 +48,6 @@ export default async function PokerPillarPage() {
       heroImage="/headers/poker-header.webp"
       content={content}
       articles={enrichedArticles}
-      lastUpdated={frontmatter.lastUpdated}
-      headings={headings}
     />
   );
 }

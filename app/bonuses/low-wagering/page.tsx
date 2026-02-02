@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import { loadMDX } from '@/lib/mdx';
-import { ArticleContent } from '@/components/mdx';
 
 export const metadata: Metadata = {
   title: "オンカジ出金条件が甘いボーナス徹底ガイド2025年版",
@@ -8,7 +7,7 @@ export const metadata: Metadata = {
 };
 
 export default async function LowWageringBonusPage() {
-  const { content, frontmatter, headings } = await loadMDX('bonuses', 'low-wagering');
+  const { content, frontmatter } = await loadMDX('bonuses', 'low-wagering');
 
   return (
     <div className="min-h-screen">
@@ -27,9 +26,7 @@ export default async function LowWageringBonusPage() {
           <div className="flex items-center gap-4 mt-6 text-sm text-white/70">
             <span>著者: {frontmatter.author}</span>
             <span>•</span>
-            {frontmatter.lastUpdated && (
-              <span>最終更新日: <time dateTime={frontmatter.lastUpdated}>{new Date(frontmatter.lastUpdated).toLocaleDateString('ja-JP', { year: 'numeric', month: 'long', day: 'numeric' })}</time></span>
-            )}
+            <span>更新日: {frontmatter.lastUpdated}</span>
           </div>
         </div>
       </section>
@@ -37,11 +34,9 @@ export default async function LowWageringBonusPage() {
       {/* Main Content */}
       <section className="bg-white">
         <div className="container mx-auto px-4 py-12 md:py-16">
-          <ArticleContent
-            content={content}
-            headings={headings}
-            className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-amber-600 prose-strong:text-gray-900"
-          />
+          <div className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-amber-600 prose-strong:text-gray-900">
+            {content}
+          </div>
         </div>
       </section>
     </div>

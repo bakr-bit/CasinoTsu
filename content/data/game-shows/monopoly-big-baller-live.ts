@@ -7,6 +7,7 @@ export const monopoly_big_baller_live: GameShowData = {
   provider: 'Evolution Gaming',
   category: 'other',
   rtp: '96%',
+  maxWin: '500,000x',
 
   highlights: [
     'モノポリーとビンゴ（メガボール）が融合した新感覚ゲーム',

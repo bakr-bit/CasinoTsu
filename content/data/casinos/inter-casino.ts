@@ -4,7 +4,7 @@ export const inter_casino: CasinoData = {
   slug: 'inter-casino',
   name: 'InterCasino',
   nameJa: 'インターカジノ',
-  logo: '/assets/casino/inter-casino.png',
+  logo: '/assets/casino/intercasino.png',
   rating: 4.4,
 
   license: {

@@ -16,7 +16,7 @@ export default async function OffersPillarPage() {
 
   // Extract meta from data registry
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const extractMeta = (d) => ({
+  const extractMeta = (d: any) => ({
       offerType: d.offerType,
       casinoSlug: d.casinoSlug,
       bonusAmount: d.bonusAmount,
@@ -38,7 +38,7 @@ export default async function OffersPillarPage() {
     };
   });
 
-  const { content, frontmatter, headings } = await loadMDX('pillars', 'offers');
+  const { content } = await loadMDX('pillars', 'offers');
 
   return (
     <PillarPageTemplate
@@ -48,8 +48,6 @@ export default async function OffersPillarPage() {
       heroColor="bg-pink-600"
       content={content}
       articles={enrichedArticles}
-      lastUpdated={frontmatter.lastUpdated}
-      headings={headings}
     />
   );
 }

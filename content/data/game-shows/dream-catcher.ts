@@ -7,6 +7,7 @@ export const dream_catcher: GameShowData = {
   provider: 'Evolution Gaming',
   category: 'wheel',
   rtp: '96.58%',
+  maxWin: '40x',
 
   highlights: [
     '誰でも簡単に始められるシンプルなマネーホイールゲーム',

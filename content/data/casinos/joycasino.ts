@@ -4,7 +4,7 @@ export const joycasino: CasinoData = {
   slug: 'joycasino',
   name: 'Joy Casino',
   nameJa: 'ジョイカジノ',
-  logo: '/assets/casino/joycasino.png',
+  logo: '/assets/casino/joy-casino.png',
   rating: 4.4,
 
   license: {

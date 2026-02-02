@@ -16,8 +16,9 @@ export default async function BonusesPillarPage() {
 
   // Extract meta from data registry
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const extractMeta = (d) => ({
-      type: d.type,
+  const extractMeta = (d: any) => ({
+      name: d.name,
+      nameJa: d.nameJa,
     });
 
   // Merge MDX frontmatter with registry data
@@ -36,7 +37,7 @@ export default async function BonusesPillarPage() {
     };
   });
 
-  const { content, frontmatter, headings } = await loadMDX('pillars', 'bonuses');
+  const { content } = await loadMDX('pillars', 'bonuses');
 
   return (
     <PillarPageTemplate
@@ -47,8 +48,6 @@ export default async function BonusesPillarPage() {
       heroImage="/headers/bonus-header.webp"
       content={content}
       articles={enrichedArticles}
-      lastUpdated={frontmatter.lastUpdated}
-      headings={headings}
     />
   );
 }

@@ -47,6 +47,24 @@ export interface ArticleCardProps {
   imageUrl?: string;
 }
 
+// Category-specific gradient colors
+const categoryGradients: Record<string, string> = {
+  slots: 'from-indigo-600 via-indigo-700 to-indigo-800',
+  reviews: 'from-violet-600 via-purple-700 to-violet-800',
+  bonuses: 'from-amber-600 via-orange-600 to-amber-700',
+  payment: 'from-emerald-600 via-teal-700 to-emerald-800',
+  providers: 'from-sky-600 via-blue-700 to-sky-800',
+  poker: 'from-red-600 via-rose-700 to-red-800',
+  roulette: 'from-green-600 via-emerald-700 to-green-800',
+  'live-casino': 'from-red-600 via-rose-700 to-red-800',
+  'crash-games': 'from-violet-600 via-purple-700 to-violet-800',
+  'game-shows': 'from-amber-600 via-orange-600 to-amber-700',
+  baccarat: 'from-red-600 via-rose-700 to-red-800',
+  blackjack: 'from-green-600 via-emerald-700 to-green-800',
+};
+
+const defaultGradient = 'from-indigo-600 via-indigo-700 to-indigo-800';
+
 /**
  * Reusable article card component for pillar page listings
  */
@@ -60,20 +78,27 @@ export function ArticleCard({
   imageUrl,
 }: ArticleCardProps) {
   const href = `/${category}/${slug}`;
+  const gradient = categoryGradients[category] || defaultGradient;
 
   return (
     <Link
       href={href}
-      className="group block bg-white rounded-lg border border-gray-200 hover:border-blue-300 hover:shadow-md transition-all overflow-hidden"
+      className="group block bg-white rounded-2xl border-0 shadow-lg shadow-indigo-100/50 hover:shadow-xl hover:shadow-indigo-200/50 hover:-translate-y-0.5 transition-all duration-300 overflow-hidden"
     >
-      {/* Image placeholder */}
-      {imageUrl && (
-        <div className="aspect-video bg-gray-100 overflow-hidden">
+      {/* Header with gradient and shine - or image */}
+      {imageUrl ? (
+        <div className="aspect-video bg-gray-100 overflow-hidden relative">
           <img
             src={imageUrl}
             alt={title}
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
           />
+          {/* Gradient overlay on image */}
+          <div className={`absolute inset-0 bg-gradient-to-t ${gradient} opacity-40 group-hover:opacity-30 transition-opacity`} />
+        </div>
+      ) : (
+        <div className={`h-2 bg-gradient-to-r ${gradient} relative overflow-hidden`}>
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12 animate-pulse" />
         </div>
       )}
 
@@ -84,7 +109,7 @@ export function ArticleCard({
         </div>
 
         {/* Title */}
-        <h3 className="font-bold text-gray-900 group-hover:text-blue-600 transition-colors line-clamp-2 mb-1">
+        <h3 className="font-bold text-gray-900 group-hover:text-indigo-600 transition-colors line-clamp-2 mb-1">
           {title}
         </h3>
 
@@ -216,7 +241,7 @@ function MetaBadges({ category, meta }: { category: string; meta: ArticleMeta })
   return <>{badges}</>;
 }
 
-type BadgeVariant = 'blue' | 'green' | 'purple' | 'gold' | 'gray';
+type BadgeVariant = 'blue' | 'green' | 'purple' | 'gold' | 'gray' | 'indigo';
 
 function Badge({
   children,
@@ -226,15 +251,16 @@ function Badge({
   variant?: BadgeVariant;
 }) {
   const variantClasses: Record<BadgeVariant, string> = {
-    blue: 'bg-blue-100 text-blue-800',
-    green: 'bg-green-100 text-green-800',
-    purple: 'bg-purple-100 text-purple-800',
-    gold: 'bg-yellow-100 text-yellow-800',
-    gray: 'bg-gray-100 text-gray-600',
+    blue: 'bg-sky-100 text-sky-700 border border-sky-200',
+    green: 'bg-emerald-100 text-emerald-700 border border-emerald-200',
+    purple: 'bg-violet-100 text-violet-700 border border-violet-200',
+    gold: 'bg-amber-100 text-amber-700 border border-amber-200',
+    gray: 'bg-gray-100 text-gray-600 border border-gray-200',
+    indigo: 'bg-indigo-100 text-indigo-700 border border-indigo-200',
   };
 
   return (
-    <span className={`text-xs px-2 py-0.5 rounded-full ${variantClasses[variant]}`}>
+    <span className={`text-[10px] font-medium px-2 py-0.5 rounded-lg ${variantClasses[variant]}`}>
       {children}
     </span>
   );

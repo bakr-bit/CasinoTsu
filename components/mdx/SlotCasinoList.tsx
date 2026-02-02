@@ -1,4 +1,5 @@
 import { getSlot } from '@/content/data/slots';
+import { Building2, ExternalLink, Percent, Zap, TrendingUp, Trophy } from 'lucide-react';
 
 interface SlotCasinoListProps {
   slotId: string;
@@ -11,65 +12,69 @@ export function SlotCasinoList({ slotId }: SlotCasinoListProps) {
     return null;
   }
 
-  // For now, display a placeholder with slot info
-  // In the future, this can be connected to a shared casino registry
+  const stats = [
+    { icon: Building2, label: 'プロバイダー', value: slotData.hero.provider, gradient: 'from-indigo-600 to-indigo-700' },
+    { icon: Percent, label: 'RTP', value: slotData.hero.rtp, gradient: 'from-violet-500 to-purple-600' },
+    { icon: Zap, label: 'ボラティリティ', value: slotData.hero.volatility, gradient: 'from-amber-500 to-orange-500' },
+    { icon: Trophy, label: '最大倍率', value: slotData.hero.maxMultiplier, gradient: 'from-emerald-500 to-green-600' },
+  ].filter(stat => stat.value);
+
   return (
-    <div className="my-6 p-6 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl border border-blue-100">
-      <div className="flex items-center gap-3 mb-4">
-        <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
-          <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-          </svg>
+    <div className="my-8 not-prose">
+      <div className="overflow-hidden rounded-2xl shadow-xl">
+        {/* Header */}
+        <div className="px-6 py-4 bg-gradient-to-r from-indigo-600 via-indigo-700 to-indigo-800 relative">
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -skew-x-12" />
+          <div className="flex items-center gap-4 relative z-10">
+            <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center backdrop-blur-sm">
+              <TrendingUp className="w-6 h-6 text-white" />
+            </div>
+            <div>
+              <h3 className="font-bold text-white text-lg">
+                {slotData.hero.title}が遊べるカジノ
+              </h3>
+              <p className="text-white/70 text-sm">
+                このスロットは多くのオンラインカジノでプレイできます
+              </p>
+            </div>
+          </div>
         </div>
-        <div>
-          <h3 className="font-semibold text-gray-900">
-            {slotData.hero.title}が遊べるカジノ
-          </h3>
-          <p className="text-sm text-gray-600">
-            このスロットは多くのオンラインカジノでプレイできます
-          </p>
+
+        {/* Stats grid */}
+        <div className="bg-white p-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+            {stats.map((stat, index) => {
+              const IconComponent = stat.icon;
+              return (
+                <div
+                  key={index}
+                  className="relative overflow-hidden rounded-xl bg-gradient-to-br from-slate-50 to-slate-100 p-4 border border-slate-200/50"
+                >
+                  <div className={`absolute top-0 right-0 w-16 h-16 bg-gradient-to-br ${stat.gradient} opacity-10 rounded-bl-full`} />
+                  <div className="relative z-10">
+                    <div className={`w-8 h-8 rounded-lg bg-gradient-to-br ${stat.gradient} flex items-center justify-center mb-2 shadow-sm`}>
+                      <IconComponent className="w-4 h-4 text-white" />
+                    </div>
+                    <div className="text-xs text-gray-500 mb-0.5">{stat.label}</div>
+                    <div className="font-bold text-gray-900 text-sm">{stat.value}</div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+
+          {/* CTA */}
+          <div className="mt-4 text-center">
+            <a
+              href="/reviews"
+              className="group relative inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-bold text-white transition-all duration-300 hover:scale-105 bg-gradient-to-r from-indigo-600 to-indigo-700 shadow-lg shadow-indigo-500/30 hover:shadow-indigo-500/50 overflow-hidden"
+            >
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12 group-hover:animate-pulse" />
+              <span className="relative z-10">カジノ一覧を見る</span>
+              <ExternalLink className="relative z-10 w-5 h-5 transition-transform group-hover:translate-x-0.5" />
+            </a>
+          </div>
         </div>
-      </div>
-
-      {/* Slot quick info */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-4">
-        {slotData.hero.provider && (
-          <div className="bg-white rounded-lg p-3 text-center">
-            <div className="text-xs text-gray-500 mb-1">プロバイダー</div>
-            <div className="font-semibold text-gray-900 text-sm">{slotData.hero.provider}</div>
-          </div>
-        )}
-        {slotData.hero.rtp && (
-          <div className="bg-white rounded-lg p-3 text-center">
-            <div className="text-xs text-gray-500 mb-1">RTP</div>
-            <div className="font-semibold text-gray-900 text-sm">{slotData.hero.rtp}</div>
-          </div>
-        )}
-        {slotData.hero.volatility && (
-          <div className="bg-white rounded-lg p-3 text-center">
-            <div className="text-xs text-gray-500 mb-1">ボラティリティ</div>
-            <div className="font-semibold text-gray-900 text-sm">{slotData.hero.volatility}</div>
-          </div>
-        )}
-        {slotData.hero.maxMultiplier && (
-          <div className="bg-white rounded-lg p-3 text-center">
-            <div className="text-xs text-gray-500 mb-1">最大倍率</div>
-            <div className="font-semibold text-blue-600 text-sm">{slotData.hero.maxMultiplier}</div>
-          </div>
-        )}
-      </div>
-
-      {/* CTA */}
-      <div className="text-center">
-        <a
-          href="/reviews"
-          className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors"
-        >
-          カジノ一覧を見る
-          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-          </svg>
-        </a>
       </div>
     </div>
   );

@@ -16,7 +16,7 @@ export default async function RoulettePillarPage() {
 
   // Extract meta from data registry
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const extractMeta = (d) => ({
+  const extractMeta = (d: any) => ({
       category: d.category,
       wheelType: d.wheelType,
       houseEdge: d.houseEdge,
@@ -38,7 +38,7 @@ export default async function RoulettePillarPage() {
     };
   });
 
-  const { content, frontmatter, headings } = await loadMDX('pillars', 'roulette');
+  const { content } = await loadMDX('pillars', 'roulette');
 
   return (
     <PillarPageTemplate
@@ -49,8 +49,6 @@ export default async function RoulettePillarPage() {
       heroImage="/headers/roulette-header.webp"
       content={content}
       articles={enrichedArticles}
-      lastUpdated={frontmatter.lastUpdated}
-      headings={headings}
     />
   );
 }

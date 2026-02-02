@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
-import { getAllMDXWithFrontmatter, loadMDX } from '@/lib/mdx';
-
+import { getAllMDXWithFrontmatter } from '@/lib/mdx';
+import { loadMDX } from '@/lib/mdx';
 import { getAllGuides } from '@/content/data/guides';
 import PillarPageTemplate from '@/components/templates/PillarPageTemplate';
 
@@ -16,7 +16,7 @@ export default async function GuidesPillarPage() {
 
   // Extract meta from data registry
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const extractMeta = (d) => ({
+  const extractMeta = (d: any) => ({
       category: d.category,
       targetAudience: d.targetAudience,
     });
@@ -37,7 +37,7 @@ export default async function GuidesPillarPage() {
     };
   });
 
-  const { content, frontmatter, headings } = await loadMDX('pillars', 'guides');
+  const { content } = await loadMDX('pillars', 'guides');
 
   return (
     <PillarPageTemplate
@@ -45,11 +45,8 @@ export default async function GuidesPillarPage() {
       categoryNameJa="ガイド"
       description="初心者向けガイド、攻略法、ゲーム戦略など実践的なガイド集。"
       heroColor="bg-green-700"
-      heroImage="/headers/guides.webp"
       content={content}
       articles={enrichedArticles}
-      lastUpdated={frontmatter.lastUpdated}
-      headings={headings}
     />
   );
 }

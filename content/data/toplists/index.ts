@@ -616,18 +616,18 @@ export function getResolvedToplist(
 
   const entries = limit ? toplist.casinos.slice(0, limit) : toplist.casinos;
 
-  return entries
-    .map((entry) => {
-      const casino = getCasino(entry.casinoSlug);
-      if (!casino) return null;
+  const resolved: ResolvedToplistEntry[] = [];
+  for (const entry of entries) {
+    const casino = getCasino(entry.casinoSlug);
+    if (!casino) continue;
 
-      return {
-        casino,
-        headline: entry.headlineOverride || casino.features.bonusHeadline,
-        description:
-          entry.descriptionOverride || casino.features.highlights.slice(0, 2).join('。') + '。',
-        badge: entry.badge,
-      };
-    })
-    .filter((entry): entry is ResolvedToplistEntry => entry !== null);
+    resolved.push({
+      casino,
+      headline: entry.headlineOverride || casino.features.bonusHeadline,
+      description:
+        entry.descriptionOverride || casino.features.highlights.slice(0, 2).join('。') + '。',
+      badge: entry.badge,
+    });
+  }
+  return resolved;
 }

@@ -1,4 +1,5 @@
 import { getPayment } from '@/content/data/payments';
+import { Clock, Wallet, Receipt, Settings, CheckCircle, XCircle, AlertCircle } from 'lucide-react';
 
 interface PaymentTableProps {
   /** Payment method slug to display */
@@ -11,7 +12,7 @@ interface PaymentTableProps {
 
 /**
  * Payment method info table component for MDX content
- * Displays structured data about a payment method
+ * Displays structured data about a payment method with colorful design
  */
 export function PaymentTable({ slug, paymentSlug, fields }: PaymentTableProps) {
   // Support both slug and paymentSlug prop names
@@ -20,8 +21,11 @@ export function PaymentTable({ slug, paymentSlug, fields }: PaymentTableProps) {
 
   if (!payment) {
     return (
-      <div className="p-4 bg-red-50 text-red-700 rounded-lg">
-        Payment method not found: {paymentKey || 'no slug provided'}
+      <div className="my-8 not-prose p-4 bg-gradient-to-r from-red-500 to-rose-500 text-white rounded-2xl shadow-lg">
+        <div className="flex items-center gap-2">
+          <XCircle className="w-5 h-5" />
+          <span className="font-bold">Payment method not found: {paymentKey || 'no slug provided'}</span>
+        </div>
       </div>
     );
   }
@@ -29,126 +33,138 @@ export function PaymentTable({ slug, paymentSlug, fields }: PaymentTableProps) {
   type FieldType = 'processingTime' | 'limits' | 'fees' | 'features';
   const showField = (field: FieldType) => !fields || fields.includes(field);
 
+  const sections = [
+    {
+      key: 'processingTime' as const,
+      icon: Clock,
+      title: '処理時間',
+      gradient: 'from-indigo-600 to-indigo-700',
+      rows: [
+        { label: '入金', value: payment.processingTime.deposit },
+        { label: '出金', value: payment.processingTime.withdrawal },
+      ],
+    },
+    {
+      key: 'limits' as const,
+      icon: Wallet,
+      title: '入出金限度額',
+      gradient: 'from-violet-500 to-purple-600',
+      rows: [
+        payment.limits.minDeposit && { label: '最小入金額', value: payment.limits.minDeposit },
+        payment.limits.maxDeposit && { label: '最大入金額', value: payment.limits.maxDeposit },
+        payment.limits.minWithdrawal && { label: '最小出金額', value: payment.limits.minWithdrawal },
+        payment.limits.maxWithdrawal && { label: '最大出金額', value: payment.limits.maxWithdrawal },
+      ].filter(Boolean),
+    },
+    {
+      key: 'fees' as const,
+      icon: Receipt,
+      title: '手数料',
+      gradient: 'from-amber-500 to-orange-500',
+      rows: [
+        payment.fees.deposit && { label: '入金手数料', value: payment.fees.deposit },
+        payment.fees.withdrawal && { label: '出金手数料', value: payment.fees.withdrawal },
+      ].filter(Boolean),
+      note: payment.fees.note,
+    },
+    {
+      key: 'features' as const,
+      icon: Settings,
+      title: '特徴',
+      gradient: 'from-emerald-500 to-green-600',
+      rows: [
+        {
+          label: 'JPY対応',
+          value: payment.features.jpySupported,
+          isBoolean: true,
+        },
+        {
+          label: '本人確認（KYC）',
+          value: payment.features.kycRequired,
+          isBoolean: true,
+          invertColor: true,
+        },
+      ],
+    },
+  ];
+
   return (
-    <div className="my-6 overflow-hidden rounded-lg border border-gray-200">
-      <table className="w-full text-sm">
-        <tbody>
-          {/* Processing Time */}
-          {showField('processingTime') && (
-            <>
-              <tr className="bg-gray-50">
-                <td colSpan={2} className="px-4 py-2 font-bold text-gray-700">
-                  処理時間
-                </td>
-              </tr>
-              <tr className="border-t border-gray-100">
-                <td className="px-4 py-2 text-gray-600 w-1/3">入金</td>
-                <td className="px-4 py-2">{payment.processingTime.deposit}</td>
-              </tr>
-              <tr className="border-t border-gray-100">
-                <td className="px-4 py-2 text-gray-600">出金</td>
-                <td className="px-4 py-2">{payment.processingTime.withdrawal}</td>
-              </tr>
-            </>
-          )}
+    <div className="my-8 not-prose space-y-4">
+      {sections.map((section) => {
+        if (!showField(section.key) || section.rows.length === 0) return null;
 
-          {/* Limits */}
-          {showField('limits') && (
-            <>
-              <tr className="bg-gray-50 border-t border-gray-200">
-                <td colSpan={2} className="px-4 py-2 font-bold text-gray-700">
-                  入出金限度額
-                </td>
-              </tr>
-              {payment.limits.minDeposit && (
-                <tr className="border-t border-gray-100">
-                  <td className="px-4 py-2 text-gray-600">最小入金額</td>
-                  <td className="px-4 py-2">{payment.limits.minDeposit}</td>
-                </tr>
-              )}
-              {payment.limits.maxDeposit && (
-                <tr className="border-t border-gray-100">
-                  <td className="px-4 py-2 text-gray-600">最大入金額</td>
-                  <td className="px-4 py-2">{payment.limits.maxDeposit}</td>
-                </tr>
-              )}
-              {payment.limits.minWithdrawal && (
-                <tr className="border-t border-gray-100">
-                  <td className="px-4 py-2 text-gray-600">最小出金額</td>
-                  <td className="px-4 py-2">{payment.limits.minWithdrawal}</td>
-                </tr>
-              )}
-              {payment.limits.maxWithdrawal && (
-                <tr className="border-t border-gray-100">
-                  <td className="px-4 py-2 text-gray-600">最大出金額</td>
-                  <td className="px-4 py-2">{payment.limits.maxWithdrawal}</td>
-                </tr>
-              )}
-            </>
-          )}
+        const IconComponent = section.icon;
 
-          {/* Fees */}
-          {showField('fees') && (
-            <>
-              <tr className="bg-gray-50 border-t border-gray-200">
-                <td colSpan={2} className="px-4 py-2 font-bold text-gray-700">
-                  手数料
-                </td>
-              </tr>
-              {payment.fees.deposit && (
-                <tr className="border-t border-gray-100">
-                  <td className="px-4 py-2 text-gray-600">入金手数料</td>
-                  <td className="px-4 py-2">{payment.fees.deposit}</td>
-                </tr>
-              )}
-              {payment.fees.withdrawal && (
-                <tr className="border-t border-gray-100">
-                  <td className="px-4 py-2 text-gray-600">出金手数料</td>
-                  <td className="px-4 py-2">{payment.fees.withdrawal}</td>
-                </tr>
-              )}
-              {payment.fees.note && (
-                <tr className="border-t border-gray-100">
-                  <td colSpan={2} className="px-4 py-2 text-gray-500 text-xs italic">
-                    {payment.fees.note}
-                  </td>
-                </tr>
-              )}
-            </>
-          )}
+        return (
+          <div key={section.key} className="overflow-hidden rounded-2xl shadow-lg">
+            {/* Header */}
+            <div className={`px-4 py-3 bg-gradient-to-r ${section.gradient} relative`}>
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -skew-x-12" />
+              <div className="flex items-center gap-3 relative z-10">
+                <div className="flex-shrink-0 w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center">
+                  <IconComponent className="w-5 h-5 text-white" />
+                </div>
+                <h4 className="font-bold text-white text-sm">{section.title}</h4>
+              </div>
+            </div>
 
-          {/* Features */}
-          {showField('features') && (
-            <>
-              <tr className="bg-gray-50 border-t border-gray-200">
-                <td colSpan={2} className="px-4 py-2 font-bold text-gray-700">
-                  特徴
-                </td>
-              </tr>
-              <tr className="border-t border-gray-100">
-                <td className="px-4 py-2 text-gray-600">JPY対応</td>
-                <td className="px-4 py-2">
-                  {payment.features.jpySupported ? (
-                    <span className="text-green-600">対応</span>
-                  ) : (
-                    <span className="text-red-600">非対応</span>
-                  )}
-                </td>
-              </tr>
-              <tr className="border-t border-gray-100">
-                <td className="px-4 py-2 text-gray-600">本人確認（KYC）</td>
-                <td className="px-4 py-2">
-                  {payment.features.kycRequired ? (
-                    <span className="text-orange-600">必要</span>
-                  ) : (
-                    <span className="text-green-600">不要の場合あり</span>
-                  )}
-                </td>
-              </tr>
-            </>
-          )}
-        </tbody>
-      </table>
+            {/* Body */}
+            <div className="bg-white border-x border-b border-gray-100">
+              {section.rows.map((row, index) => {
+                if (!row) return null;
+                const typedRow = row as { label: string; value: string | boolean; isBoolean?: boolean; invertColor?: boolean };
+
+                return (
+                  <div
+                    key={index}
+                    className={`flex items-center justify-between px-4 py-3 ${
+                      index !== section.rows.length - 1 ? 'border-b border-gray-100' : ''
+                    }`}
+                  >
+                    <span className="text-gray-600 text-sm">{typedRow.label}</span>
+                    {typedRow.isBoolean !== undefined ? (
+                      <div className="flex items-center gap-1.5">
+                        {typedRow.value ? (
+                          <>
+                            <CheckCircle className={`w-4 h-4 ${typedRow.invertColor ? 'text-orange-500' : 'text-emerald-500'}`} />
+                            <span className={`text-sm font-medium ${typedRow.invertColor ? 'text-orange-600' : 'text-emerald-600'}`}>
+                              {typedRow.invertColor ? '必要' : '対応'}
+                            </span>
+                          </>
+                        ) : (
+                          <>
+                            {typedRow.invertColor ? (
+                              <>
+                                <CheckCircle className="w-4 h-4 text-emerald-500" />
+                                <span className="text-sm font-medium text-emerald-600">不要の場合あり</span>
+                              </>
+                            ) : (
+                              <>
+                                <XCircle className="w-4 h-4 text-red-500" />
+                                <span className="text-sm font-medium text-red-600">非対応</span>
+                              </>
+                            )}
+                          </>
+                        )}
+                      </div>
+                    ) : (
+                      <span className="text-gray-900 font-medium text-sm">{String(typedRow.value)}</span>
+                    )}
+                  </div>
+                );
+              })}
+              {section.note && (
+                <div className="px-4 py-2 bg-gray-50 border-t border-gray-100">
+                  <div className="flex items-start gap-2">
+                    <AlertCircle className="w-4 h-4 text-gray-400 mt-0.5 flex-shrink-0" />
+                    <span className="text-xs text-gray-500 italic">{section.note}</span>
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+        );
+      })}
     </div>
   );
 }

@@ -291,7 +291,7 @@ export function generateSlotsMetadata(data: SlotsPageData, canonicalPath: string
   let keywords = "スロット, オンラインカジノ, RTP, 還元率, CasinoTsu";
 
   if (data.providers) {
-    const providerNames = data.providers.map(p => p.provider).join(", ");
+    const providerNames = data.providers.map(p => p.name).join(", ");
     keywords += `, ${providerNames}`;
   }
 

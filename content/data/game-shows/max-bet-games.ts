@@ -6,7 +6,8 @@ export const max_bet_games: GameShowData = {
   nameJa: 'ハイローラー向け最高額ベットゲーム',
   provider: 'Evolution Gaming / NetEnt Live (他)',
   category: 'other',
-  maxWin: '1,100万円以上 (ベットリミット)',
+  rtp: '97-99%',
+  maxWin: '1,100万円+',
 
   highlights: [
     'バカラ、BJ、ルーレットなど主要ゲームで高額ベットが可能',

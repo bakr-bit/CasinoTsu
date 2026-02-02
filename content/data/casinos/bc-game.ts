@@ -4,7 +4,7 @@ export const bc_game: CasinoData = {
   slug: 'bc-game',
   name: 'BC.Game',
   nameJa: 'BCGAME（BCゲーム）',
-  logo: '/assets/casino/bc-game.png',
+  logo: '/assets/casino/bcgame.png',
   rating: 4,
 
   license: {

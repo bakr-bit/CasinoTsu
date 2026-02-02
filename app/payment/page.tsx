@@ -16,7 +16,7 @@ export default async function PaymentPillarPage() {
 
   // Extract meta from data registry
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const extractMeta = (d) => ({
+  const extractMeta = (d: any) => ({
       type: d.type,
       jpySupported: d.features?.jpySupported,
     });
@@ -37,7 +37,7 @@ export default async function PaymentPillarPage() {
     };
   });
 
-  const { content, frontmatter, headings } = await loadMDX('pillars', 'payment');
+  const { content } = await loadMDX('pillars', 'payment');
 
   return (
     <PillarPageTemplate
@@ -48,8 +48,6 @@ export default async function PaymentPillarPage() {
       heroImage="/headers/payments.webp"
       content={content}
       articles={enrichedArticles}
-      lastUpdated={frontmatter.lastUpdated}
-      headings={headings}
     />
   );
 }

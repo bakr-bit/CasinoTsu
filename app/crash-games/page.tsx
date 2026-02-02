@@ -16,7 +16,7 @@ export default async function CrashGamesPillarPage() {
 
   // Extract meta from data registry
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const extractMeta = (d) => ({
+  const extractMeta = (d: any) => ({
       maxMultiplier: d.maxMultiplier,
       providerName: d.providerJa || d.provider,
     });
@@ -37,7 +37,7 @@ export default async function CrashGamesPillarPage() {
     };
   });
 
-  const { content, frontmatter, headings } = await loadMDX('pillars', 'crash-games');
+  const { content } = await loadMDX('pillars', 'crash-games');
 
   return (
     <PillarPageTemplate
@@ -48,8 +48,6 @@ export default async function CrashGamesPillarPage() {
       heroImage="/headers/crash-games.webp"
       content={content}
       articles={enrichedArticles}
-      lastUpdated={frontmatter.lastUpdated}
-      headings={headings}
     />
   );
 }

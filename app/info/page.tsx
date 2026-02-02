@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
-import { getAllMDXWithFrontmatter, loadMDX } from '@/lib/mdx';
-
+import { getAllMDXWithFrontmatter } from '@/lib/mdx';
+import { loadMDX } from '@/lib/mdx';
 import { getAllInfo } from '@/content/data/info';
 import PillarPageTemplate from '@/components/templates/PillarPageTemplate';
 
@@ -16,7 +16,7 @@ export default async function InfoPillarPage() {
 
   // Extract meta from data registry
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const extractMeta = (d) => ({
+  const extractMeta = (d: any) => ({
       category: d.category,
     });
 
@@ -36,7 +36,7 @@ export default async function InfoPillarPage() {
     };
   });
 
-  const { content, frontmatter, headings } = await loadMDX('pillars', 'info');
+  const { content } = await loadMDX('pillars', 'info');
 
   return (
     <PillarPageTemplate
@@ -44,11 +44,8 @@ export default async function InfoPillarPage() {
       categoryNameJa="カジノ情報"
       description="カジノライセンス、歴史、業界ニュース、トリビアなど幅広い情報。"
       heroColor="bg-slate-700"
-      heroImage="/headers/info.webp"
       content={content}
       articles={enrichedArticles}
-      lastUpdated={frontmatter.lastUpdated}
-      headings={headings}
     />
   );
 }

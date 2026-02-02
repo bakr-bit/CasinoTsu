@@ -58,7 +58,7 @@ const PILLAR_CATEGORIES: PillarConfig[] = [
     heroImage: '/headers/slots-header.webp',
     dataGetter: 'getAllSlots',
     dataImport: "import { getAllSlots } from '@/content/data/slots';",
-    metaExtractor: `(d) => ({
+    metaExtractor: `(d: any) => ({
       provider: d.hero?.provider,
       rtp: d.hero?.rtp,
       volatility: d.hero?.volatility,
@@ -74,7 +74,7 @@ const PILLAR_CATEGORIES: PillarConfig[] = [
     heroImage: '/headers/payments.webp',
     dataGetter: 'getAllPayments',
     dataImport: "import { getAllPayments } from '@/content/data/payments';",
-    metaExtractor: `(d) => ({
+    metaExtractor: `(d: any) => ({
       type: d.type,
       jpySupported: d.features?.jpySupported,
     })`,
@@ -87,7 +87,7 @@ const PILLAR_CATEGORIES: PillarConfig[] = [
     heroImage: '/headers/reviews.webp',
     dataGetter: 'getAllCasinos',
     dataImport: "import { getAllCasinos } from '@/content/data/casinos';",
-    metaExtractor: `(d) => ({
+    metaExtractor: `(d: any) => ({
       rating: d.rating,
       bonusHeadline: d.features?.bonusHeadline,
       logo: d.logo,
@@ -101,7 +101,7 @@ const PILLAR_CATEGORIES: PillarConfig[] = [
     heroImage: '/headers/providers.webp',
     dataGetter: 'getAllProviders',
     dataImport: "import { getAllProviders } from '@/content/data/providers';",
-    metaExtractor: `(d) => ({
+    metaExtractor: `(d: any) => ({
       gameCount: d.gameCount,
       gameTypes: d.gameTypes,
     })`,
@@ -114,8 +114,9 @@ const PILLAR_CATEGORIES: PillarConfig[] = [
     heroImage: '/headers/bonus-header.webp',
     dataGetter: 'getAllBonusTypes',
     dataImport: "import { getAllBonusTypes } from '@/content/data/bonus-types';",
-    metaExtractor: `(d) => ({
-      type: d.type,
+    metaExtractor: `(d: any) => ({
+      name: d.name,
+      nameJa: d.nameJa,
     })`,
   },
   {
@@ -126,7 +127,7 @@ const PILLAR_CATEGORIES: PillarConfig[] = [
     heroImage: '/headers/poker-header.webp',
     dataGetter: 'getAllPoker',
     dataImport: "import { getAllPoker } from '@/content/data/poker';",
-    metaExtractor: `(d) => ({
+    metaExtractor: `(d: any) => ({
       category: d.category,
       difficulty: d.difficulty,
     })`,
@@ -139,7 +140,7 @@ const PILLAR_CATEGORIES: PillarConfig[] = [
     heroImage: '/headers/roulette-header.webp',
     dataGetter: 'getAllRoulette',
     dataImport: "import { getAllRoulette } from '@/content/data/roulette';",
-    metaExtractor: `(d) => ({
+    metaExtractor: `(d: any) => ({
       category: d.category,
       wheelType: d.wheelType,
       houseEdge: d.houseEdge,
@@ -153,7 +154,7 @@ const PILLAR_CATEGORIES: PillarConfig[] = [
     heroImage: '/headers/live-casino.webp',
     dataGetter: 'getAllLiveCasino',
     dataImport: "import { getAllLiveCasino } from '@/content/data/live-casino';",
-    metaExtractor: `(d) => ({
+    metaExtractor: `(d: any) => ({
       gameType: d.gameType,
       providerName: d.providerJa || d.provider,
     })`,
@@ -166,7 +167,7 @@ const PILLAR_CATEGORIES: PillarConfig[] = [
     heroImage: '/headers/crash-games.webp',
     dataGetter: 'getAllCrashGames',
     dataImport: "import { getAllCrashGames } from '@/content/data/crash-games';",
-    metaExtractor: `(d) => ({
+    metaExtractor: `(d: any) => ({
       maxMultiplier: d.maxMultiplier,
       providerName: d.providerJa || d.provider,
     })`,
@@ -179,7 +180,7 @@ const PILLAR_CATEGORIES: PillarConfig[] = [
     heroImage: '/headers/game-shows.webp',
     dataGetter: 'getAllGameShows',
     dataImport: "import { getAllGameShows } from '@/content/data/game-shows';",
-    metaExtractor: `(d) => ({
+    metaExtractor: `(d: any) => ({
       category: d.category,
       providerName: d.providerJa || d.provider,
     })`,
@@ -191,7 +192,7 @@ const PILLAR_CATEGORIES: PillarConfig[] = [
     color: 'bg-orange-700',
     dataGetter: 'getAllCraps',
     dataImport: "import { getAllCraps } from '@/content/data/craps';",
-    metaExtractor: `(d) => ({
+    metaExtractor: `(d: any) => ({
       category: d.category,
       difficulty: d.difficulty,
     })`,
@@ -203,7 +204,7 @@ const PILLAR_CATEGORIES: PillarConfig[] = [
     color: 'bg-pink-600',
     dataGetter: 'getAllOffers',
     dataImport: "import { getAllOffers } from '@/content/data/offers';",
-    metaExtractor: `(d) => ({
+    metaExtractor: `(d: any) => ({
       offerType: d.offerType,
       casinoSlug: d.casinoSlug,
       bonusAmount: d.bonusAmount,
@@ -216,7 +217,7 @@ const PILLAR_CATEGORIES: PillarConfig[] = [
     color: 'bg-slate-700',
     dataGetter: 'getAllInfo',
     dataImport: "import { getAllInfo } from '@/content/data/info';",
-    metaExtractor: `(d) => ({
+    metaExtractor: `(d: any) => ({
       category: d.category,
     })`,
   },
@@ -227,7 +228,7 @@ const PILLAR_CATEGORIES: PillarConfig[] = [
     color: 'bg-green-700',
     dataGetter: 'getAllGuides',
     dataImport: "import { getAllGuides } from '@/content/data/guides';",
-    metaExtractor: `(d) => ({
+    metaExtractor: `(d: any) => ({
       category: d.category,
       targetAudience: d.targetAudience,
     })`,

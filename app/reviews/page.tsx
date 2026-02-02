@@ -16,7 +16,7 @@ export default async function ReviewsPillarPage() {
 
   // Extract meta from data registry
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const extractMeta = (d) => ({
+  const extractMeta = (d: any) => ({
       rating: d.rating,
       bonusHeadline: d.features?.bonusHeadline,
       logo: d.logo,
@@ -38,7 +38,7 @@ export default async function ReviewsPillarPage() {
     };
   });
 
-  const { content, frontmatter, headings } = await loadMDX('pillars', 'reviews');
+  const { content } = await loadMDX('pillars', 'reviews');
 
   return (
     <PillarPageTemplate
@@ -49,8 +49,6 @@ export default async function ReviewsPillarPage() {
       heroImage="/headers/reviews.webp"
       content={content}
       articles={enrichedArticles}
-      lastUpdated={frontmatter.lastUpdated}
-      headings={headings}
     />
   );
 }

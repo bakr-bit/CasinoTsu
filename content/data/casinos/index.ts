@@ -21,7 +21,6 @@ import { betpanda } from './betpanda';
 import { betrebels } from './betrebels';
 import { bets_io } from './bets-io';
 import { betswap } from './betswap';
-import { bettilt } from './bettilt';
 import { big_wins } from './big-wins';
 import { bitcasino_io } from './bitcasino-io';
 import { bitstarz } from './bitstarz';
@@ -123,7 +122,6 @@ export const casinosRegistry: CasinoRegistry = {
   betrebels: betrebels,
   'bets-io': bets_io,
   betswap: betswap,
-  bettilt: bettilt,
   'big-wins': big_wins,
   'bitcasino-io': bitcasino_io,
   bitstarz: bitstarz,

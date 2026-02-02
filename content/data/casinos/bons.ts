@@ -4,7 +4,7 @@ export const bons: CasinoData = {
   slug: 'bons',
   name: 'Bons Casino',
   nameJa: 'ボンズカジノ',
-  logo: '/assets/casino/bons.png',
+  logo: '/assets/casino/bonscom.png',
   rating: 4.6,
 
   license: {

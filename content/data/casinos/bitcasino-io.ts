@@ -4,7 +4,7 @@ export const bitcasino_io: CasinoData = {
   slug: 'bitcasino-io',
   name: 'Bitcasino.io',
   nameJa: 'ビットカジノ',
-  logo: '/assets/casino/bitcasino-io.png',
+  logo: '/assets/casino/bitcasinoio.png',
   rating: 4.3,
 
   license: {

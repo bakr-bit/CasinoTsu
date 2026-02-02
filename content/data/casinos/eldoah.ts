@@ -4,7 +4,7 @@ export const eldoah: CasinoData = {
   slug: 'eldoah',
   name: 'Eldoah Casino',
   nameJa: 'エルドアカジノ',
-  logo: '/assets/casino/eldoah.png',
+  logo: '/assets/casino/eldoah-casino.png',
   rating: 4.4,
 
   license: {

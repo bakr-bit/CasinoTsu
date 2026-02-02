@@ -16,7 +16,7 @@ export default async function CrapsPillarPage() {
 
   // Extract meta from data registry
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const extractMeta = (d) => ({
+  const extractMeta = (d: any) => ({
       category: d.category,
       difficulty: d.difficulty,
     });
@@ -37,7 +37,7 @@ export default async function CrapsPillarPage() {
     };
   });
 
-  const { content, frontmatter, headings } = await loadMDX('pillars', 'craps');
+  const { content } = await loadMDX('pillars', 'craps');
 
   return (
     <PillarPageTemplate
@@ -47,8 +47,6 @@ export default async function CrapsPillarPage() {
       heroColor="bg-orange-700"
       content={content}
       articles={enrichedArticles}
-      lastUpdated={frontmatter.lastUpdated}
-      headings={headings}
     />
   );
 }

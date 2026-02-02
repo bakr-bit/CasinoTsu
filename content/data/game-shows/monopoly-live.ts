@@ -7,6 +7,7 @@ export const monopoly_live: GameShowData = {
   provider: 'Evolution Gaming',
   category: 'wheel',
   rtp: '96.23%',
+  maxWin: '10,000x',
 
   highlights: [
     'ボードゲーム「モノポリー」の世界観を再現したマネーホイールゲーム',

@@ -6,7 +6,8 @@ export const lightning_baccarat: GameShowData = {
   nameJa: 'ライトニングバカラ',
   provider: 'Evolution Gaming',
   category: 'baccarat',
-  maxWin: '262,144倍',
+  rtp: '98.76%',
+  maxWin: '262,144x',
 
   highlights: [
     '最大262,144倍の超高額配当チャンスがある',

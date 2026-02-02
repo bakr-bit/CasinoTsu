@@ -6,7 +6,8 @@ export const game_shows: GameShowData = {
   nameJa: 'クレイジータイム',
   provider: 'Evolution Gaming',
   category: 'wheel',
-  maxWin: '160,000倍',
+  rtp: '96.08%',
+  maxWin: '160,000x',
 
   highlights: [
     '4つのボーナスゲーム（キャッシュハント、コインフリップ、パチンコ、クレイジータイム）が魅力',
